@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Wismitha Peiris — Electronic and Embedded Engineer portfolio with 7 detailed project case studies.">
+<title>Wismitha Peiris — Electronic &amp; Embedded Engineer</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%231F3A5F'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%23FAFAF6'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--p:#FAFAF6;--p2:#F4F1EA;--pw:#FFFBF2;--i:#1A1A1A;--i2:#2C2C2C;--s:#5A5A5A;--s2:#8A8A85;--l:#E4E0D8;--l2:#D4CFC4;--n:#1F3A5F;--n2:#2C5282;--r:#B23A28;--r2:#C2410C;--g:#2D7A3E;--fd:"Fraunces",Georgia,serif;--fb:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,sans-serif;--fm:"IBM Plex Mono","SF Mono",Consolas,monospace;--cw:1240px;--gx:clamp(20px,4vw,56px);--sy:clamp(72px,9vw,140px)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{font-family:var(--fb);font-size:16.5px;line-height:1.55;color:var(--i);background:var(--p);-webkit-font-smoothing:antialiased;background-image:radial-gradient(circle at 1px 1px,rgba(31,58,95,.06) 1px,transparent 0);background-size:28px 28px}
+img,svg,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}a:hover{color:var(--r2)}
+h1,h2,h3,h4{font-family:var(--fd);font-weight:500;letter-spacing:-.015em;line-height:1.08;color:var(--i);font-variation-settings:"opsz" 144,"SOFT" 30}
+h1{font-size:clamp(48px,8vw,104px);font-weight:400;letter-spacing:-.035em}
+h2{font-size:clamp(30px,4vw,48px);font-weight:400;letter-spacing:-.025em}
+h3{font-size:clamp(20px,2.4vw,28px);font-weight:500}
+p{margin:0 0 1em;max-width:64ch}
+.co{max-width:var(--cw);margin:0 auto;padding:0 var(--gx)}
+section{padding-block:var(--sy);position:relative}
+section+section{border-top:1px solid var(--l)}
+.eb{font-family:var(--fm);font-size:11.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--r2);display:inline-block}
+.ld{font-family:var(--fd);font-weight:300;font-size:clamp(20px,2.4vw,28px);line-height:1.42;color:var(--i2);letter-spacing:-.014em;font-variation-settings:"opsz" 100,"SOFT" 50}
+
+/* NAV */
+.nv{position:sticky;top:0;z-index:100;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(250,250,246,.82);border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
+.nv.sc{border-bottom-color:var(--l);background:rgba(250,250,246,.94)}
+.ni{max-width:var(--cw);margin:0 auto;padding:16px var(--gx);display:flex;justify-content:space-between;align-items:center;gap:24px}
+.nb{font-family:var(--fd);font-weight:500;font-size:18px;color:var(--i);display:flex;align-items:baseline;gap:8px}
+.nb .dt{display:inline-block;width:7px;height:7px;background:var(--r2);border-radius:50%;transform:translateY(-2px)}
+.nl{display:flex;gap:clamp(14px,2.8vw,32px);font-family:var(--fm);font-size:12.5px;letter-spacing:.04em}
+.nl a{color:var(--s);transition:color .2s;padding:6px 0;position:relative}
+.nl a:hover{color:var(--i)}
+.nl a.ac{color:var(--i)}.nl a.ac::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:1px;background:var(--r2)}
+@media(max-width:760px){.nl{display:none}}
+
+/* HERO */
+.hr{padding-top:clamp(80px,10vw,140px);padding-bottom:clamp(60px,8vw,120px)}
+.hr h1 .fi{display:block;color:var(--i)}
+.hr h1 .la{display:block;font-style:italic;color:var(--n);font-variation-settings:"opsz" 144,"SOFT" 100}
+.ht{font-family:var(--fm);font-size:13px;letter-spacing:.06em;color:var(--s);margin-bottom:32px;line-height:1.6}
+.hi{max-width:60ch;margin-bottom:40px}
+.cr{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:48px}
+.bt{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;font-family:var(--fm);font-size:13px;font-weight:500;letter-spacing:.04em;border-radius:2px;transition:all .18s;border:1px solid transparent}
+.bp{background:var(--i);color:var(--p)}.bp:hover{background:var(--n);color:var(--p);transform:translateY(-1px)}
+.bg{background:transparent;color:var(--i);border-color:var(--l2)}.bg:hover{border-color:var(--i);transform:translateY(-1px)}
+.hs{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:28px;padding:28px 0;border-top:1px solid var(--l);margin-top:48px}
+.st .sn{font-family:var(--fd);font-size:clamp(28px,3.4vw,40px);font-weight:400;color:var(--i);font-variation-settings:"opsz" 144,"SOFT" 0;line-height:1;margin-bottom:6px}
+.st .sn .su{font-size:.5em;color:var(--s2);margin-left:2px}
+.st .sa{font-family:var(--fm);font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--s)}
+.hm{display:flex;flex-direction:column;gap:14px;padding-top:clamp(8px,1vw,18px)}
+.hm .lb{font-family:var(--fm);font-size:12px;color:var(--s2);letter-spacing:.1em}
+.hm .sts{display:inline-flex;align-items:center;gap:8px;font-family:var(--fm);font-size:12px;color:var(--i2)}
+.hm .pu{width:7px;height:7px;background:var(--g);border-radius:50%;position:relative}.hm .pu::after{content:'';position:absolute;inset:-3px;border-radius:50%;border:1.5px solid var(--g);opacity:0;animation:pu 2s ease-in-out infinite}
+@keyframes pu{0%{opacity:.6;transform:scale(.8)}100%{opacity:0;transform:scale(2.2)}}
+
+/* ABOUT */
+.ab p{font-size:17.5px;line-height:1.65;color:var(--i2);max-width:64ch}
+.ab p+p{margin-top:1.4em}
+.ab em{background:linear-gradient(transparent 60%,rgba(178,58,40,.18) 60%);padding:0 2px;font-style:normal;color:var(--i)}
+
+/* GRID for hero/about */
+.hg{display:grid;grid-template-columns:1fr;gap:28px}
+@media(min-width:880px){.hg{grid-template-columns:220px 1fr;gap:56px}}
+
+/* SECTION HEAD */
+.shd{display:grid;grid-template-columns:1fr;gap:18px;margin-bottom:clamp(36px,5vw,64px)}
+@media(min-width:880px){.shd{grid-template-columns:220px 1fr;gap:56px;align-items:start}}
+.shm{display:flex;flex-direction:column;gap:10px;padding-top:8px}
+.shm .ix{font-family:var(--fm);font-size:13px;color:var(--s2);letter-spacing:.08em}
+.shm .ru{height:1px;background:var(--i);width:36px}
+
+/* PROJECT INDEX CARDS */
+.pi{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:clamp(32px,4vw,48px)}
+.ic{display:block;padding:18px;background:var(--pw);border:1px solid var(--l);border-radius:3px;transition:all .2s;position:relative}
+.ic:hover{border-color:var(--i);transform:translateY(-2px);box-shadow:0 8px 24px -8px rgba(31,58,95,.18);color:var(--i)}
+.icn{font-family:var(--fm);font-size:11px;color:var(--r2);letter-spacing:.1em;font-weight:500;display:block}
+.ict{font-family:var(--fd);font-size:16px;font-weight:500;line-height:1.18;margin-top:8px;color:var(--i);display:block;font-variation-settings:"opsz" 96}
+.icy{font-family:var(--fm);font-size:11px;color:var(--s2);margin-top:8px;display:block}
+.ica{position:absolute;top:18px;right:18px;color:var(--s2);transition:all .2s}
+.ic:hover .ica{color:var(--r2);transform:translate(2px,-2px)}
+
+/* PROJECT CASE STUDY */
+.pj{border-top:1px solid var(--l);padding-top:clamp(56px,7vw,88px);padding-bottom:clamp(48px,6vw,80px);scroll-margin-top:80px}
+.pj:first-of-type{border-top-color:var(--i)}
+.ps-strip{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px 24px;margin-bottom:28px;padding-bottom:16px;border-bottom:1px dashed var(--l2);font-family:var(--fm);font-size:12.5px;color:var(--s)}
+.pn{color:var(--r2);letter-spacing:.12em;font-weight:500;font-size:14px}
+.psrc{font-family:var(--fb);font-style:italic;color:var(--s)}
+.pt{display:flex;flex-wrap:wrap;gap:6px;margin-left:auto}
+.tag{font-family:var(--fm);font-size:11px;letter-spacing:.04em;padding:4px 9px;background:var(--p2);color:var(--i2);border-radius:2px;border:1px solid var(--l)}
+.tag-a{background:rgba(178,58,40,.08);color:var(--r);border-color:rgba(178,58,40,.18)}
+.pjt{margin-bottom:16px}
+.pjs{display:block;font-style:italic;color:var(--n);font-variation-settings:"opsz" 144,"SOFT" 100;font-size:clamp(18px,2.2vw,26px);font-weight:400;margin-top:6px}
+.lv{font-family:var(--fm);font-size:11px;font-weight:500;letter-spacing:.06em;color:var(--g);text-transform:uppercase;background:rgba(45,122,62,.1);padding:3px 8px;border-radius:2px;vertical-align:middle;font-style:normal;margin-left:8px}
+.pjsum{font-family:var(--fd);font-weight:300;font-size:clamp(17px,1.8vw,20px);line-height:1.5;color:var(--i2);letter-spacing:-.012em;font-variation-settings:"opsz" 100,"SOFT" 30;max-width:70ch;margin-bottom:36px}
+
+/* HERO IMAGE */
+.ph{margin:0 0 clamp(36px,5vw,56px);background:var(--p2);border:1px solid var(--l);position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:3px}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph.missing img{display:none}
+.ph.missing::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent 0 12px,rgba(31,58,95,.04) 12px 13px),radial-gradient(circle at 50% 50%,rgba(31,58,95,.05),transparent 70%)}
+.ph.missing::after{content:attr(data-slot);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--fm);font-size:13px;color:var(--s2);letter-spacing:.16em;background:var(--p);padding:8px 14px;border:1px solid var(--l);border-radius:2px}
+
+/* WHAT THIS PROJECT DOES (simple explanation) */
+.wtd{margin:0 0 36px;padding:28px 32px;background:var(--pw);border-left:3px solid var(--r2);border-radius:0 3px 3px 0}
+.wtd h3{font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--r2);font-variation-settings:normal;margin-bottom:14px}
+.wtd p{font-size:16px;line-height:1.65;color:var(--i2);max-width:70ch;margin-bottom:.8em}
+.wtd p:last-child{margin-bottom:0}
+
+/* FEATURES */
+.pd{margin-bottom:clamp(40px,5vw,64px)}
+.sh{font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--r2);font-variation-settings:normal;padding-bottom:8px;border-bottom:1px solid var(--l);margin-bottom:16px}
+.pf{list-style:none;display:grid;gap:11px;margin:18px 0 12px}
+.pf li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.55;color:var(--i2);max-width:78ch}
+.pf li::before{content:'';position:absolute;left:0;top:11px;width:12px;height:1px;background:var(--r2)}
+.pf li strong{color:var(--i)}
+
+/* ARCHITECTURE DIAGRAM */
+.arch{margin:48px 0;padding:clamp(24px,3vw,36px);background:var(--pw);border:1px solid var(--l);border-radius:3px}
+.arch-h{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--l)}
+.arch-l{font-family:var(--fm);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--r2);font-weight:500}
+.arch-t{font-family:var(--fd);font-size:20px;font-weight:400;color:var(--i);flex:1;min-width:200px;letter-spacing:-.012em}
+.arch-c{font-size:14px;color:var(--s);margin-top:16px;padding-top:14px;border-top:1px dashed var(--l2);max-width:78ch}
+/* SVG diagram component classes */
+.db{fill:#FAFAF6;stroke:#1A1A1A;stroke-width:1.2;rx:2}
+.db-a{fill:#1A1A1A;stroke:#1A1A1A;stroke-width:1.2;rx:2}
+.db-r{fill:rgba(178,58,40,.08);stroke:#B23A28;stroke-width:1.2;rx:2}
+.db-n{fill:rgba(31,58,95,.08);stroke:#1F3A5F;stroke-width:1.2;rx:2}
+.db-s{fill:#F4F1EA;stroke:#D4CFC4;stroke-width:1;rx:2}
+.dl{fill:none;stroke:#2C2C2C;stroke-width:1.4}
+.dl-s{fill:none;stroke:#8A8A85;stroke-width:1;stroke-dasharray:3 3}
+.dl-a{fill:none;stroke:#C2410C;stroke-width:1.4}
+.dt{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:#1A1A1A;letter-spacing:.04em}
+.dt-w{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:#FAFAF6;letter-spacing:.04em}
+.dt-s{font-family:"IBM Plex Mono",monospace;font-size:9px;fill:#8A8A85;letter-spacing:.1em;text-transform:uppercase}
+.dt-t{font-family:"Fraunces",Georgia,serif;font-size:13px;fill:#1A1A1A;font-weight:500}
+
+/* GALLERY */
+.pg{margin:48px 0}
+.pgh{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--l)}
+.pgl{font-family:var(--fm);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--r2);font-weight:500}
+.pgm{font-family:var(--fm);font-size:11px;color:var(--s2);letter-spacing:.04em;margin-left:auto}
+.gg{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+@media(min-width:700px){.gg{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.gg{grid-template-columns:repeat(5,1fr)}}
+.gi{position:relative;background:var(--p2);border:1px solid var(--l);border-radius:3px;overflow:hidden;aspect-ratio:4/3;transition:all .2s}
+.gi:hover{border-color:var(--i2);transform:translateY(-2px);box-shadow:0 8px 20px -8px rgba(31,58,95,.16)}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gi:hover img{transform:scale(1.02)}
+.gc{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(26,26,26,.78));color:var(--p);font-family:var(--fm);font-size:10.5px;letter-spacing:.04em;line-height:1.4;opacity:0;transform:translateY(6px);transition:all .25s}
+.gi:hover .gc{opacity:1;transform:translateY(0)}
+
+/* VIDEO */
+.pv{margin:48px 0}
+.pvh{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--l)}
+.pvl{font-family:var(--fm);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--r2);font-weight:500}
+.pvt{font-family:var(--fd);font-size:20px;font-weight:400;color:var(--i);flex:1;min-width:200px;letter-spacing:-.012em}
+.vs{position:relative;background:var(--i);border:1px solid var(--i);border-radius:3px;overflow:hidden;aspect-ratio:16/9}
+.vs video{width:100%;height:100%;object-fit:cover;background:var(--i)}
+.vp{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;pointer-events:none}
+.vpb{width:76px;height:76px;background:var(--p);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 0 3px rgba(250,250,246,.18),0 8px 24px rgba(0,0,0,.4)}
+.vpb::before{content:'';width:0;height:0;border-style:solid;border-width:14px 0 14px 22px;border-color:transparent transparent transparent var(--i);margin-left:4px}
+.vpt{font-family:var(--fm);font-size:11.5px;color:rgba(250,250,246,.78);letter-spacing:.16em;text-transform:uppercase;text-align:center}
+.vps{display:block;font-size:10px;color:rgba(250,250,246,.5);letter-spacing:.1em;margin-top:6px}
+
+/* STACK */
+.ps{display:flex;flex-wrap:wrap;gap:6px;padding:22px 0 0;border-top:1px dashed var(--l2);margin-top:28px}
+.sl{font-family:var(--fm);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--s2);margin-right:6px;align-self:center}
+.si{font-family:var(--fm);font-size:12px;color:var(--i2);padding:3px 8px;background:transparent;border:1px solid var(--l);border-radius:2px}
+
+/* SKILLS */
+.sg{display:grid;grid-template-columns:1fr;gap:32px}
+@media(min-width:700px){.sg{grid-template-columns:repeat(2,1fr);gap:40px 56px}}
+.sr{display:flex;flex-direction:column;gap:10px}
+.sr h4{font-family:var(--fm);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--r2);font-weight:500;padding-bottom:8px;border-bottom:1px solid var(--l)}
+.skl{display:flex;flex-wrap:wrap;gap:6px}
+.skl span{font-family:var(--fm);font-size:12.5px;color:var(--i2);padding:4px 9px;background:var(--pw);border:1px solid var(--l);border-radius:2px;transition:all .15s}
+.skl span:hover{background:var(--i);color:var(--p);border-color:var(--i)}
+
+/* EDUCATION */
+.el{display:flex;flex-direction:column}
+.ei{display:grid;grid-template-columns:1fr;gap:6px;padding:20px 0;border-top:1px solid var(--l)}
+.ei:first-child{border-top-color:var(--i)}
+@media(min-width:720px){.ei{grid-template-columns:1fr auto;gap:24px;align-items:baseline}}
+.ed{font-size:16px;color:var(--i)}.ein{color:var(--s)}
+.ey{font-family:var(--fm);font-size:13px;color:var(--s2);letter-spacing:.04em}
+.ex{margin-top:24px;padding-top:18px;border-top:1px dashed var(--l2);font-size:15px;color:var(--s);display:flex;flex-wrap:wrap;gap:8px 18px}
+.ex span{display:inline-flex;align-items:center;gap:8px}.ex span::before{content:'';width:6px;height:6px;background:var(--r2);border-radius:50%}
+
+/* CONTACT */
+.ct{background:var(--i);color:var(--p);border-top:none}
+.ct h2{color:var(--p)}.ct .eb{color:#F4A261}
+.ct .shm .ix{color:rgba(250,250,246,.5)}.ct .shm .ru{background:var(--p)}
+.cg{display:grid;grid-template-columns:1fr;gap:40px}
+@media(min-width:880px){.cg{grid-template-columns:1fr 1fr;gap:64px;align-items:start}}
+.cc{display:flex;flex-direction:column;gap:4px;font-family:var(--fm);font-size:14px;margin-top:24px}
+.cc a{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(250,250,246,.15);color:var(--p);transition:padding .2s;letter-spacing:.02em}
+.cc a:hover{color:#F4A261;padding-left:8px}
+.cc a .lb{font-size:11px;letter-spacing:.1em;color:rgba(250,250,246,.5);text-transform:uppercase;width:80px;flex-shrink:0}
+.cc a .vl{flex:1;text-align:right}
+.cc a .ar{margin-left:14px;transition:transform .2s;color:rgba(250,250,246,.5)}.cc a:hover .ar{transform:translateX(4px);color:#F4A261}
+.ca p{color:rgba(250,250,246,.75);font-size:16px;line-height:1.6}
+.rc{margin-top:28px;padding:24px;background:rgba(250,250,246,.05);border:1px solid rgba(250,250,246,.15);border-radius:4px}
+.rc .rt{font-family:var(--fd);font-size:22px;font-weight:400;font-style:italic;color:var(--p);margin-bottom:8px;font-variation-settings:"opsz" 144,"SOFT" 100}
+.rc .rd{font-size:14px;color:rgba(250,250,246,.7);margin-bottom:16px}
+.rc a{display:inline-flex;align-items:center;gap:8px;font-family:var(--fm);font-size:12.5px;letter-spacing:.06em;color:#F4A261;padding:10px 16px;border:1px solid #F4A261;border-radius:2px;transition:all .18s}.rc a:hover{background:#F4A261;color:var(--i)}
+.ft{background:var(--i);color:rgba(250,250,246,.5);padding:32px var(--gx);border-top:1px solid rgba(250,250,246,.1);font-family:var(--fm);font-size:11.5px;letter-spacing:.04em}
+.fi-inner{max-width:var(--cw);margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+
+.rv{opacity:0;transform:translateY(14px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0ms)}
+.rv.in{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+@media print{.nv,.ct,.ft,.vs{display:none}body{background:#fff}.pj{page-break-inside:avoid}}
+/* LIGHTBOX GALLERY VIEWER */
+.lb-overlay{position:fixed;inset:0;z-index:9999;background:rgba(10,10,10,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;flex-direction:column;opacity:0;transition:opacity .3s ease}
+.lb-overlay.active{display:flex;opacity:1}
+.lb-overlay.show{opacity:1}
+.lb-img-wrap{position:relative;max-width:90vw;max-height:80vh;display:flex;align-items:center;justify-content:center}
+.lb-img-wrap img{max-width:90vw;max-height:80vh;object-fit:contain;border-radius:4px;box-shadow:0 16px 48px rgba(0,0,0,.5);transition:opacity .25s ease,transform .25s ease}
+.lb-img-wrap img.loading{opacity:.3;transform:scale(.96)}
+.lb-caption{font-family:var(--fm);font-size:13px;color:rgba(250,250,246,.75);text-align:center;margin-top:18px;letter-spacing:.04em;max-width:70ch;padding:0 20px}
+.lb-close{position:fixed;top:24px;right:28px;width:44px;height:44px;cursor:pointer;z-index:10000;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(250,250,246,.08);border:1px solid rgba(250,250,246,.15);transition:all .2s}
+.lb-close:hover{background:rgba(250,250,246,.18);transform:scale(1.08)}
+.lb-close::before,.lb-close::after{content:'';position:absolute;width:20px;height:1.5px;background:rgba(250,250,246,.85);border-radius:1px}
+.lb-close::before{transform:rotate(45deg)}.lb-close::after{transform:rotate(-45deg)}
+.lb-nav{position:fixed;top:50%;transform:translateY(-50%);width:48px;height:48px;cursor:pointer;z-index:10000;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(250,250,246,.08);border:1px solid rgba(250,250,246,.15);transition:all .2s;font-family:var(--fm);font-size:20px;color:rgba(250,250,246,.8)}
+.lb-nav:hover{background:rgba(250,250,246,.18);transform:translateY(-50%) scale(1.08)}
+.lb-nav.prev{left:20px}.lb-nav.next{right:20px}
+.lb-counter{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);font-family:var(--fm);font-size:12px;color:rgba(250,250,246,.5);letter-spacing:.1em;z-index:10000}
+.gi{cursor:pointer}
+</style>
+</head>
+<body>
+
+<nav class="nv" id="nav"><div class="ni">
+<a href="#top" class="nb"><span class="dt"></span>Wismitha Peiris</a>
+<div class="nl">
+<a href="#about" data-link>About</a>
+<a href="#projects" data-link>Projects</a>
+<a href="#skills" data-link>Skills</a>
+<a href="#education" data-link>Education</a>
+<a href="#contact" data-link>Contact</a>
+</div>
+</div></nav>
+<header id="top" class="hr"><div class="co">
+<div class="hg">
+<aside class="hm rv"><span class="lb">Portfolio · 2026</span><span class="lb" style="margin-top:14px">Based in</span><span style="font-family:var(--fm);font-size:12.5px;color:var(--i2)">Moratuwa, Sri Lanka</span></aside>
+<div>
+<p class="ht rv" style="--d:60ms"><span style="color:var(--r2)">●</span> ELECTRONIC &amp; EMBEDDED ENGINEER <span style="color:var(--l2);margin:0 10px">/</span> PCB · ROBOTICS · ML</p>
+<h1 class="rv" style="--d:120ms"><span class="fi">Wismitha</span><span class="la">Peiris.</span></h1>
+<p class="ld hi rv" style="--d:200ms">I design and build complete systems across hardware, software, and everything in between. My work covers autonomous robotics with computer vision and LiDAR, industrial predictive maintenance with custom PCBs and ML, speech and handwriting recognition platforms, PLC-based factory automation, IoT devices with custom circuit boards, and a full Android SaaS product live on Google Play.</p>
+<div class="cr rv" style="--d:280ms">
+<a class="bt bp" href="#projects">View Selected Work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="bt bg" href="Wismitha_Peiris_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+<a class="bt bg" href="#contact">Get in Touch</a>
+</div>
+<div class="hs rv" style="--d:360ms">
+<div class="st"><div class="sn">8</div><div class="sa">Case studies</div></div>
+<div class="st"><div class="sn">4</div><div class="sa">Years professional</div></div>
+<div class="st"><div class="sn">1</div><div class="sa">Live SaaS product</div></div>
+<div class="st"><div class="sn">2</div><div class="sa">Beta platforms</div></div>
+</div></div></div></div></header>
+<section id="about"><div class="co">
+<div class="shd rv"><div class="shm"><span class="ix">§ 01 / Introduction</span><span class="ru"></span></div>
+<div><span class="eb">About</span><h2 style="margin-top:12px">A practical builder, working full stack from the metal up.</h2></div></div>
+<div class="hg"><aside></aside><div class="ab rv" style="--d:80ms">
+<p>I am an Electrical and Electronic Engineer with a hands-on approach to building real systems that work in the real world. Over the past four years, I have worked across a wide range of engineering disciplines, from designing circuit boards and programming industrial PLCs to building machine learning models and shipping mobile applications.</p>
+
+<p>On the hardware side, I have designed custom PCBs in KiCad for power switching and battery backup systems, programmed industrial vibration, current, and temperature sensors for high-speed data acquisition on Raspberry Pi, and built electrical control panels with PLC programming for factory automation. I have also designed and built a smart home controller from scratch using an ESP32 microcontroller with a custom PCB, integrating it with Google Home and Alexa.</p>
+
+<p>On the software and AI side, I built a complete autonomous vehicle platform on Raspberry Pi 5 with dual AI cameras, LiDAR-based obstacle avoidance, PID steering control, and a real-time web dashboard. For Figmentum Robotics in the USA, I developed two production-grade testing platforms: one for evaluating speech-to-text accuracy across multiple providers under simulated real-world audio conditions, and another for benchmarking OCR models on children's handwriting with 13+ AI backends and cost-optimized routing chains.</p>
+
+<p>I also independently designed, developed, and deployed <a href="https://eventplanners.app" target="_blank" rel="noopener" style="border-bottom:1px solid var(--r2);color:var(--i)">EventPlanners</a>, a full-featured Android event management SaaS application built with Kotlin, Jetpack Compose, and Firebase, currently live on the Google Play Store with a tiered subscription model.</p>
+
+<p>I hold a BSc Hons in Electrical and Electronic Engineering from the University of Peradeniya, Sri Lanka, and I am currently pursuing an MSc in Electronic and Electrical Engineering at Anglia Ruskin University in the United Kingdom. What I enjoy most is taking a project from the initial idea all the way to a working, deployed system, whether that means soldering a circuit board, training an ML model, or writing the frontend code.</p>
+</div></div></div></section>
+<section id="projects"><div class="co">
+<div class="shd rv"><div class="shm"><span class="ix">§ 02 / Selected Work</span><span class="ru"></span></div>
+<div><span class="eb">Projects</span><h2 style="margin-top:12px">Eight projects, each with architecture & gallery.</h2>
+<div class="pi"><a href="#p01-autonomous-vehicle" class="ic"><span class="icn">PROJ. 01</span><span class="ict">Autonomous Vehicle Platform</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
+<a href="#p02-children-robot" class="ic"><span class="icn">PROJ. 02</span><span class="ict">Children-Interaction Robot</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
+<a href="#p03-audio-sim" class="ic"><span class="icn">PROJ. 03</span><span class="ict">Audio Simulation &amp; STT Testing</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
+<a href="#p04-ocr" class="ic"><span class="icn">PROJ. 04</span><span class="ict">OCR Simulation &amp; Benchmarking</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
+<a href="#p05-event-planner" class="ic"><span class="icn">PROJ. 05</span><span class="ict">EventPlanners — Digital Invitation SaaS</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
+<a href="#p06-predictive-maintenance" class="ic"><span class="icn">PROJ. 06</span><span class="ict">Predictive Maintenance Platform</span><span class="icy">2024 — 2025</span><span class="ica">↗</span></a>
+<a href="#p07-heat-transfer" class="ic"><span class="icn">PROJ. 07</span><span class="ict">Heat Transfer Machine</span><span class="icy">2023</span><span class="ica">↗</span></a>
+<a href="#p08-smart-home" class="ic"><span class="icn">PROJ. 08</span><span class="ict">Smart Home System (ESP32)</span><span class="icy">2023</span><span class="ica">↗</span></a>
+</div>
+</div></div>
+<div class="pjl">
+
+<article class="pj rv" id="p01-autonomous-vehicle">
+<div class="ps-strip">
+<span class="pn">PROJ. 01</span><span>2025 — 2026</span>
+<span class="psrc">Independent Engineering Project</span>
+<div class="pt"><span class="tag tag-a">Robotics</span><span class="tag">Embedded ML</span><span class="tag">Computer Vision</span></div>
+</div>
+<h2 class="pjt">Autonomous Vehicle Platform<span class="pjs">Vision, LiDAR &amp; Real-Time Web Dashboard</span></h2>
+<p class="pjsum">End-to-end software platform for a 4-wheel autonomous car on Raspberry Pi 5. Combines dual IMX500 AI cameras, TF Luna LiDAR for distance-based braking, MG996 servo steering, and L298N motor control with a modular Python architecture and real-time web dashboard.</p>
+
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p01-autonomous-vehicle/hero.jpg" alt="Autonomous car prototype" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+
+<div class="wtd">
+<h3>What This Project Does</h3>
+<p>I wanted to build a small car that could drive itself around a track without any human input. So I put together a Raspberry Pi 5 as the brain, mounted two Sony IMX500 AI cameras on it (one looking forward for lane detection and obstacle spotting, one looking down for a bird's-eye perspective that helps with smooth steering), added a TF Luna laser distance sensor for measuring how far away things are, and wired up a servo motor for steering and a DC motor for driving.</p>
+<p>The software side is where most of the work went. I wrote a modular Python codebase with separate modules for perception (processing what the cameras and LiDAR see), planning (deciding what to do next using an 8-state finite state machine), and control (actually turning the wheels using a PID controller that I tuned by hand). The car can follow lanes, detect obstacles, change lanes to go around them, slow down behind a slower object, and emergency-brake if something appears too close. There is also a full web dashboard built with Flask and Socket.IO where I can watch both camera feeds live, see telemetry data, tune the lane detection parameters in real time, and hit an emergency stop button if needed.</p>
+<p>I also built a simulator mode so I could test the state machine and control logic on my laptop without needing the physical car, which saved a lot of development time. The entire codebase is around 10,600 lines of Python, organized into clean modules that I could work on independently.</p>
+</div>
+
+<div class="pd">
+<h3 class="sh">Key Features &amp; Technical Highlights</h3>
+<ul class="pf">
+<li><strong>8-state finite state machine</strong> (IDLE, LANE_FOLLOW, OBSTACLE_DETECTED, LANE_CHANGE, SLOW_FOLLOW, STOPPED, EMERGENCY_BRAKE, MANUAL) with stuck-prevention timeouts and guaranteed fallback transitions.</li>
+<li><strong>Dual camera perception:</strong> front-facing IMX500 for lane detection + obstacle recognition; rear/bird's-eye IMX500 for smooth driving and reversing. Both processed at 30 FPS on-device.</li>
+<li><strong>Computer-vision lane detection</strong> using ROI-based binary thresholding, with PID steering control featuring anti-windup, configurable gains, and live tuning via the dashboard.</li>
+<li><strong>LiDAR-based obstacle handling:</strong> TF Luna sensor measures distance continuously. Below 30 cm triggers an emergency brake that bypasses the normal fusion pipeline for instant stopping.</li>
+<li><strong>Sensor fusion</strong> combining LiDAR distance, wheel encoder odometry, and dual camera feeds into a unified world model that the planning FSM consumes each cycle.</li>
+<li><strong>Flask + Socket.IO dashboard</strong> with dual MJPEG camera feeds, live telemetry (speed, steering angle, state, distance), live ROI/threshold tuning sliders, latency monitoring, and a big red emergency stop button.</li>
+<li><strong>Built-in simulator</strong> for hardware-free testing; SQLite event logging; battery voltage monitor; watchdog timer (500 ms timeout auto-stops motors if main loop freezes); YAML config with hot-reload.</li>
+<li><strong>Modular architecture:</strong> perception/ planning/ control/ learning/ dashboard/ simulation/ calibration/ utils/ — 10,600+ lines of Python, cleanly separated by responsibility.</li>
+</ul>
+</div>
+
+<!-- ▼▼▼ ARCHITECTURE DIAGRAM — P01 ONLY ▼▼▼ -->
+<div class="arch">
+<div class="arch-h"><span class="arch-l">ARCHITECTURE</span><span class="arch-t">System Architecture — Sensor to Actuator</span></div>
+<svg viewBox="0 0 960 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Autonomous vehicle system architecture" style="width:100%;height:auto;display:block;margin:12px 0">
+<defs><marker id="a1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#C2410C"/></marker><marker id="a2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#8A8A85"/></marker></defs>
+<text x="30" y="20" class="dt-s">SENSORS</text><text x="330" y="20" class="dt-s">EDGE COMPUTE · RASPBERRY PI 5</text><text x="740" y="20" class="dt-s">OUTPUT</text>
+<rect x="30" y="40" width="180" height="34" class="db"/><text x="44" y="62" class="dt">IMX500 Front Cam</text>
+<rect x="30" y="82" width="180" height="34" class="db"/><text x="44" y="104" class="dt">IMX500 Rear Cam</text>
+<rect x="30" y="124" width="180" height="34" class="db"/><text x="44" y="146" class="dt">TF Luna LiDAR</text>
+<rect x="30" y="166" width="180" height="34" class="db"/><text x="44" y="188" class="dt">Wheel Encoders</text>
+<rect x="30" y="208" width="180" height="34" class="db-s"/><text x="44" y="230" class="dt">Battery Monitor</text>
+<rect x="270" y="40" width="400" height="260" class="db-s"/>
+<text x="290" y="64" class="dt-t">Modular Python Architecture</text>
+<rect x="290" y="80" width="170" height="50" class="db-r"/><text x="304" y="102" class="dt">Perception</text><text x="304" y="118" class="dt-s">CV · LiDAR · fusion</text>
+<rect x="480" y="80" width="170" height="50" class="db-n"/><text x="494" y="102" class="dt">Planning</text><text x="494" y="118" class="dt-s">8-state FSM</text>
+<rect x="290" y="144" width="170" height="50" class="db"/><text x="304" y="166" class="dt">Control</text><text x="304" y="182" class="dt-s">PID · anti-windup</text>
+<rect x="480" y="144" width="170" height="50" class="db"/><text x="494" y="166" class="dt">Learning</text><text x="494" y="182" class="dt-s">profiles · odometry</text>
+<rect x="290" y="210" width="360" height="38" class="db-a"/><text x="304" y="234" class="dt-w">Dashboard · Flask + Socket.IO</text>
+<rect x="290" y="260" width="360" height="30" class="db-s"/><text x="304" y="280" class="dt">Config · SQLite · Watchdog</text>
+<rect x="730" y="80" width="200" height="34" class="db"/><text x="744" y="102" class="dt">MG996 Servo (steer)</text>
+<rect x="730" y="124" width="200" height="34" class="db"/><text x="744" y="146" class="dt">L298N Motor Driver</text>
+<rect x="730" y="168" width="200" height="34" class="db-s"/><text x="744" y="190" class="dt">Browser Dashboard</text>
+<path class="dl" d="M210 57 L270 100"/><path class="dl" d="M210 99 L270 110"/>
+<path class="dl" d="M210 141 L270 120"/><path class="dl" d="M210 183 L270 170"/>
+<path class="dl-a" d="M670 100 L730 97" marker-end="url(#a1)"/>
+<path class="dl-a" d="M670 170 L730 141" marker-end="url(#a1)"/>
+<path class="dl-s" d="M670 229 L730 185" marker-end="url(#a2)"/>
+<text x="30" y="340" class="dt-s">DATA FLOW</text><line x1="30" y1="352" x2="930" y2="352" class="dl-s"/>
+<text x="30" y="374" class="dt" style="fill:#5A5A5A;font-size:10px">Sensors → Perception (CV + fusion) → Planning (FSM) → Control (PID) → Actuators · 30 Hz main loop · 500 ms watchdog</text>
+</svg>
+<p class="arch-c">Sensors feed the perception module (CV + LiDAR fusion); the 8-state FSM in planning decides behavior; PID control drives steering and throttle; the Flask dashboard provides real-time operator visibility. All on a single Raspberry Pi 5.</p>
+</div>
+<!-- ▲▲▲ END P01 DIAGRAM ▲▲▲ -->
+
+<div class="pg">
+<div class="pgh"><span class="pgl">GALLERY</span></div>
+<div class="gg">
+<figure class="gi" data-slot="IMAGE 01"><img src="media/p01-autonomous-vehicle/01.jpg" alt="Hardware assembly with sensors" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Hardware assembly with sensors</span></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p01-autonomous-vehicle/02.jpg" alt="Dashboard UI dual camera feeds" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Dashboard UI dual camera feeds</span></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p01-autonomous-vehicle/03.jpg" alt="Lane detection binary view" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Lane detection binary view</span></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p01-autonomous-vehicle/04.jpg" alt="LiDAR obstacle visualization" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">LiDAR obstacle visualization</span></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p01-autonomous-vehicle/05.jpg" alt="PID calibration screen" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">PID calibration screen</span></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p01-autonomous-vehicle/06.jpg" alt="Sensor wiring detail" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Sensor wiring detail</span></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p01-autonomous-vehicle/07.jpg" alt="FSM state display" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">FSM state display</span></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p01-autonomous-vehicle/08.jpg" alt="Bird-eye camera view" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Bird-eye camera view</span></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p01-autonomous-vehicle/09.jpg" alt="Emergency braking test" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Emergency braking test</span></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p01-autonomous-vehicle/10.jpg" alt="Night driving test" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Night driving test</span></figure>
+</div></div>
+<div class="pv">
+<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Full autonomous driving demo on test track</span></div>
+<div class="vs">
+<video controls preload="metadata" poster="media/p01-autonomous-vehicle/demo-poster.jpg" onloadedmetadata="this.parentNode.querySelector('.vp').style.display='none'">
+<source src="media/p01-autonomous-vehicle/demo.mp4" type="video/mp4">
+</video>
+<div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH<span class="vps">Add demo.mp4 to media/p01-autonomous-vehicle/</span></div></div>
+</div></div>
+<div class="ps"><span class="sl">TECH STACK</span>
+<span class="si">Python</span><span class="si">Raspberry Pi 5</span><span class="si">IMX500</span><span class="si">TF Luna LiDAR</span><span class="si">OpenCV</span><span class="si">NumPy</span><span class="si">Flask</span><span class="si">Socket.IO</span><span class="si">simple-pid</span><span class="si">transitions FSM</span><span class="si">pigpio</span>
+</div>
+</article>
+
+
+<article class="pj rv" id="p02-children-robot">
+<div class="ps-strip">
+<span class="pn">PROJ. 02</span><span>2025 — 2026</span>
+<span class="psrc">Figmentum Robotics LLC, USA</span>
+<div class="pt"><span class="tag tag-a">Robotics</span><span class="tag">Embedded AI</span><span class="tag">HCI</span><span class="tag">Computer Vision</span></div>
+</div>
+<h2 class="pjt">Children-Interaction Robot<span class="pjs">Real-Time Multi-language AI with Vision, Games &amp; Projector UI</span></h2>
+<p class="pjsum">A conversational learning robot for children that listens, talks, sees what they write, and teaches through interactive games. Combines wake-word detection, real-time LLM conversation with emotion-aware speech, camera-based handwriting recognition, and a projector-based interactive display.</p>
+
+
+
+<div class="wtd">
+<h3>What This Project Does</h3>
+<p>I built this robot as a prototype engineer for Figmentum Robotics, a company developing educational robots for children. The idea is simple: a robot that a child can talk to naturally, play learning games with, and get real-time feedback on their handwriting and spelling. The challenge was making all of this feel instant and natural, because children lose interest in seconds if there is a delay.</p>
+<p>When a child says "Hey Buddy" (the custom wake word I configured using Picovoice Porcupine), the robot starts listening. Their speech is captured through a microphone, processed with voice activity detection to know exactly when they stop talking, and then transcribed using OpenAI's API. The system figures out what the child wants: a conversation, a math game, a spelling bee, a quiz, or a pronunciation exercise. For general conversation, the text goes to GPT-4o-mini which generates a child-friendly response with emotion tags (happy, excited, confused, sad), and ElevenLabs converts that response to natural-sounding speech with matching emotional tone.</p>
+<p>The games are where it gets interesting. In the math game, the robot projects a math problem onto a surface using an HDMI projector with software keystone correction. The child solves it on paper, and when they hold their paper under the OAK-D depth camera, the system automatically detects the page (using edge detection and stability checking), captures it, and sends the image to GPT-4.1-mini for OCR. The LLM then evaluates whether the answer is correct and gives step-by-step feedback. The spelling game works in two modes: the child can either spell words out loud (checked via speech-to-text) or write them on paper (checked via camera OCR). There is also a quiz game covering geography, history, and science, and a pronunciation game that uses Azure Speech SDK to score how well the child pronounces words and sentences.</p>
+<p>The entire interaction flow runs as a pipeline: wake word detection disables during games, a filler sound plays while the LLM is thinking so the child does not hear silence, and the projector display updates in real time to show questions, results, scores, and feedback. I optimized every stage for minimum latency because even a one-second delay makes the interaction feel broken for a young child.</p>
+</div>
+
+<div class="pd">
+<h3 class="sh">Key Features &amp; Technical Highlights</h3>
+<ul class="pf">
+<li><strong>Wake word detection:</strong> Picovoice Porcupine with custom "Hey Buddy" keyword, running continuously at low latency. Automatically disables during active game sessions to prevent false triggers.</li>
+<li><strong>Conversational AI pipeline:</strong> Microphone → WebRTC VAD (voice activity detection with configurable silence threshold, energy baseline, and pre/post-roll) → OpenAI Whisper transcription → GPT-4o-mini with emotion tagging → ElevenLabs TTS with emotion-matched voice settings (stability, similarity boost tuned per emotion).</li>
+<li><strong>Math game:</strong> LLM generates age-appropriate math problems, projector displays the question, child solves on paper, OAK-D camera auto-detects the page (edge detection + stability + motion check for "writing finished"), GPT-4.1-mini reads the handwriting, and LLM evaluates the answer with step-by-step feedback and encouragement.</li>
+<li><strong>Spelling bee (two modes):</strong> Spoken mode where the child spells words aloud and STT checks each letter, and written mode where the child writes words on paper and the camera OCR reads them. Both modes use LLM-generated word lists tuned to the child's age (4-16 years).</li>
+<li><strong>Quiz game:</strong> Three rounds (Geography, History, Science) with LLM-generated questions displayed on the projector. Child answers vocally, system transcribes and checks answers with fuzzy matching and LLM verification.</li>
+<li><strong>Pronunciation assessment:</strong> Azure Speech SDK scores pronunciation accuracy (phoneme-level), and the LLM generates friendly feedback explaining which sounds need practice.</li>
+<li><strong>Projector-based UI:</strong> Full 1920×1080 projector output via OpenCV with software keystone correction (configurable 4-point warp), 180° rotation, child-friendly color palette, Patrick Hand font for a handwritten feel. Displays questions, word lists, scores, and real-time feedback.</li>
+<li><strong>OAK-D camera pipeline:</strong> DepthAI-based capture with auto-focus, page quad detection (Canny + contour + polygon approximation), stability tracking (8 consecutive stable frames required), motion detection gate (ensures child has finished writing before capture), and perspective-corrected cropping.</li>
+<li><strong>Latency optimization:</strong> Filler audio plays during LLM processing so the child never hears dead silence. Streaming TTS starts speaking the first sentence while the rest is still generating. Audio stream reuse (same sounddevice stream for wake word and speech capture to avoid open/close latency).</li>
+<li><strong>Context-aware utilities:</strong> Weather queries (Open-Meteo API), time/date responses, location-based place recommendations (Google Places API), all routed through natural language intent detection before falling back to the general LLM.</li>
+</ul>
+</div>
+
+<!-- ▼▼▼ ARCHITECTURE DIAGRAM — P02 ONLY ▼▼▼ -->
+<div class="arch">
+<div class="arch-h"><span class="arch-l">ARCHITECTURE</span><span class="arch-t">Full Interaction Pipeline — Wake Word to Response</span></div>
+<svg viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Children robot interaction pipeline" style="width:100%;height:auto;display:block;margin:12px 0">
+<defs><marker id="r1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#1A1A1A"/></marker><marker id="r2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#C2410C"/></marker></defs>
+<text x="30" y="20" class="dt-s">AUDIO INPUT</text><text x="280" y="20" class="dt-s">PROCESSING</text><text x="580" y="20" class="dt-s">INTENT ROUTING</text><text x="800" y="20" class="dt-s">OUTPUT</text>
+
+<rect x="30" y="40" width="180" height="40" class="db-r"/><text x="44" y="64" class="dt">Porcupine Wake Word</text><text x="44" y="74" class="dt-s">"Hey Buddy"</text>
+<rect x="30" y="92" width="180" height="40" class="db"/><text x="44" y="116" class="dt">Microphone Capture</text><text x="44" y="126" class="dt-s">WebRTC VAD · 16 kHz</text>
+
+<rect x="250" y="40" width="180" height="40" class="db"/><text x="264" y="64" class="dt">OpenAI Transcribe</text><text x="264" y="74" class="dt-s">Whisper / GPT-4o</text>
+<rect x="250" y="92" width="180" height="40" class="db-n"/><text x="264" y="116" class="dt">Intent Detection</text><text x="264" y="126" class="dt-s">keyword matching</text>
+
+<rect x="480" y="40" width="170" height="34" class="db-r"/><text x="494" y="62" class="dt">Math Game</text>
+<rect x="480" y="82" width="170" height="34" class="db-r"/><text x="494" y="104" class="dt">Spelling Bee</text>
+<rect x="480" y="124" width="170" height="34" class="db"/><text x="494" y="146" class="dt">Quiz Game</text>
+<rect x="480" y="166" width="170" height="34" class="db"/><text x="494" y="188" class="dt">Pronunciation</text>
+<rect x="480" y="208" width="170" height="34" class="db-n"/><text x="494" y="230" class="dt">LLM Conversation</text>
+<rect x="480" y="250" width="170" height="34" class="db-s"/><text x="494" y="272" class="dt">Weather / Time / Places</text>
+
+<rect x="700" y="40" width="230" height="50" class="db-a"/><text x="714" y="64" class="dt-w">ElevenLabs TTS</text><text x="714" y="80" class="dt-s" style="fill:rgba(250,250,246,.6)">emotion-aware voice</text>
+<rect x="700" y="100" width="230" height="50" class="db-r"/><text x="714" y="124" class="dt">Projector Display</text><text x="714" y="140" class="dt-s">1920×1080 · keystone</text>
+<rect x="700" y="160" width="230" height="50" class="db"/><text x="714" y="184" class="dt">OAK-D Camera</text><text x="714" y="200" class="dt-s">page detect · OCR · GPT-4.1</text>
+
+<path class="dl" d="M210 60 L250 60" marker-end="url(#r1)"/>
+<path class="dl" d="M210 112 L250 112" marker-end="url(#r1)"/>
+<path class="dl" d="M430 60 L480 57" marker-end="url(#r1)"/>
+<path class="dl" d="M430 112 L480 99" marker-end="url(#r1)"/>
+<path class="dl" d="M430 112 L480 141" marker-end="url(#r1)"/>
+<path class="dl" d="M430 112 L480 183" marker-end="url(#r1)"/>
+<path class="dl" d="M430 112 L480 225" marker-end="url(#r1)"/>
+<path class="dl" d="M430 112 L480 267" marker-end="url(#r1)"/>
+<path class="dl-a" d="M650 57 L700 65" marker-end="url(#r2)"/>
+<path class="dl-a" d="M650 99 L700 125" marker-end="url(#r2)"/>
+<path class="dl-a" d="M650 225 L700 65" marker-end="url(#r2)"/>
+
+<text x="30" y="320" class="dt-s">GAME MODE DETAIL · MATH GAME FLOW</text>
+<line x1="30" y1="332" x2="930" y2="332" class="dl-s"/>
+<rect x="30" y="346" width="155" height="40" class="db"/><text x="42" y="370" class="dt" style="font-size:10px">LLM generates Q</text>
+<text x="192" y="370" class="dt" style="font-size:13px;fill:#C2410C">→</text>
+<rect x="208" y="346" width="155" height="40" class="db-r"/><text x="220" y="370" class="dt" style="font-size:10px">Projector shows Q</text>
+<text x="370" y="370" class="dt" style="font-size:13px;fill:#C2410C">→</text>
+<rect x="388" y="346" width="155" height="40" class="db"/><text x="400" y="366" class="dt" style="font-size:10px">Child writes on paper</text><text x="400" y="380" class="dt-s">motion detection</text>
+<text x="550" y="370" class="dt" style="font-size:13px;fill:#C2410C">→</text>
+<rect x="568" y="346" width="155" height="40" class="db-n"/><text x="580" y="366" class="dt" style="font-size:10px">Camera captures page</text><text x="580" y="380" class="dt-s">OAK-D · auto-focus</text>
+<text x="730" y="370" class="dt" style="font-size:13px;fill:#C2410C">→</text>
+<rect x="748" y="346" width="182" height="40" class="db-r"/><text x="760" y="366" class="dt" style="font-size:10px">GPT-4.1 OCR + evaluate</text><text x="760" y="380" class="dt-s">step-by-step feedback</text>
+
+<text x="30" y="410" class="dt" style="fill:#5A5A5A;font-size:10px">Full pipeline: wake word → VAD capture → transcribe → intent route → game/LLM → TTS response + projector update · filler audio bridges processing gaps</text>
+</svg>
+<p class="arch-c">The main loop listens for the "Hey Buddy" wake word, captures speech with VAD, transcribes it, detects intent, and routes to the appropriate game or conversational LLM. Games use the projector for display and the OAK-D camera for reading handwritten answers. ElevenLabs TTS with emotion-aware voice settings provides all spoken output.</p>
+</div>
+<!-- ▲▲▲ END P02 DIAGRAM ▲▲▲ -->
+
+<div class="pg">
+<div class="pgh"><span class="pgl">GALLERY</span></div>
+<div class="gg">
+<figure class="gi" data-slot="IMAGE 01"><img src="media/p02-children-robot/01.jpg" alt="Robot prototype with projector and camera" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Robot prototype with projector and camera</span></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p02-children-robot/02.jpg" alt="Math game projected on surface" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Math game projected on surface</span></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p02-children-robot/03.jpg" alt="Spelling bee results display" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Spelling bee results display</span></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p02-children-robot/04.jpg" alt="OAK-D camera capturing handwriting" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">OAK-D camera capturing handwriting</span></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p02-children-robot/05.jpg" alt="Quiz game score display" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Quiz game score display</span></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p02-children-robot/06.jpg" alt="Projector keystone correction" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Projector keystone correction</span></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p02-children-robot/07.jpg" alt="Child interacting with robot" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Child interacting with robot</span></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p02-children-robot/08.jpg" alt="Pronunciation game feedback" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Pronunciation game feedback</span></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p02-children-robot/09.jpg" alt="Hardware setup overview" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Hardware setup overview</span></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p02-children-robot/10.jpg" alt="Tracing projector mode" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Tracing projector mode</span></figure>
+</div></div>
+
+<div class="pv">
+<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Full interaction demo: conversation, math game, spelling bee</span></div>
+<div class="vs">
+<video controls preload="metadata" poster="media/p02-children-robot/demo-poster.jpg" onloadedmetadata="this.parentNode.querySelector('.vp').style.display='none'">
+<source src="media/p02-children-robot/demo.mp4" type="video/mp4">
+</video>
+<div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH<span class="vps">Add demo.mp4 to media/p02-children-robot/</span></div></div>
+</div></div>
+
+<div class="ps"><span class="sl">TECH STACK</span>
+<span class="si">Python</span><span class="si">OpenAI GPT-4o</span><span class="si">GPT-4.1-mini</span><span class="si">ElevenLabs TTS</span><span class="si">Picovoice Porcupine</span><span class="si">WebRTC VAD</span><span class="si">OAK-D Camera</span><span class="si">DepthAI</span><span class="si">OpenCV</span><span class="si">Azure Speech SDK</span><span class="si">Projector UI</span><span class="si">sounddevice</span>
+</div>
+</article>
+
+<article class="pj rv" id="p03-audio-sim">
+<div class="ps-strip">
+<span class="pn">PROJ. 03</span><span>2025 — 2026</span>
+<span class="psrc">Figmentum Robotics LLC, USA</span>
+<div class="pt"><span class="tag tag-a">ML / AI</span><span class="tag">Speech</span><span class="tag">Test Infrastructure</span></div>
+</div>
+<h2 class="pjt">Audio Simulation &amp; STT Accuracy Testing Platform<span class="pjs">Transcription Testing Under Real-World Conditions</span></h2>
+<p class="pjsum">Streamlit-based platform for testing speech-to-text accuracy under simulated real-world audio conditions. 16 audio transforms, multi-provider STT, conversation simulation with VAD and barge-in detection, and automated WER/CER evaluation. Currently in beta inside Figmentum's robot pipeline.</p>
+
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p03-audio-sim/hero.jpg" alt="Audio Simulation &amp; STT Accuracy Testing Platform" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+
+<div class="wtd">
+<h3>What This Project Does</h3>
+<p>At Figmentum Robotics, we were building a robot that talks to children. One of the hardest problems was getting the speech-to-text (STT) engine to work reliably in a child's room, where there is background noise, echo from walls, and the child might be standing far from the microphone. I needed a way to systematically test how well different STT providers handle these messy real-world conditions, so I built this platform.</p>
+<p>The platform lets me take a clean audio recording, then deliberately degrade it by adding specific types of noise, reverb, codec compression, network packet loss, echo, and other real-world artifacts. I built 16 different audio transform blocks that can be chained together and individually tuned. The degraded audio is then sent to multiple STT providers simultaneously, including OpenAI's GPT-4o Transcribe and Google's Gemini 2.5 Flash, and the platform automatically compares their transcription accuracy using metrics like Word Error Rate (WER) and Character Error Rate (CER).</p>
+<p>There is also a conversation simulation engine that tests the full back-and-forth dialogue flow, including voice activity detection (knowing when the child starts and stops speaking), barge-in handling (what happens if the child interrupts the robot), and end-to-end latency measurement. Everything runs through a Streamlit web interface where I can configure tests, run parameter sweeps, save presets, and export results. The platform is currently in beta testing and being used daily by the Figmentum team to optimize the robot's audio pipeline.</p>
+</div>
+
+<div class="pd">
+<h3 class="sh">Key Features &amp; Technical Highlights</h3>
+<ul class="pf"><li><strong>16 audio transform blocks:</strong> noise (white/pink/brown + library), gain, clipping, reverb, resample, crosstalk, transients, codec artifacts, network impairments, bandpass, AGC, noise suppression, echo leakage, speed perturbation, pitch shift.</li><li><strong>Multi-provider STT:</strong> GPT-4o Transcribe (OpenAI), Gemini 2.5 Flash Native Audio (Vertex AI), with adapter pattern for one-line provider extension.</li><li><strong>VAD + endpointing:</strong> WebRTC + Silero, state machine (idle → speaking → thinking → finished), per-pause classification distinguishing thinking pauses from complete stops.</li><li><strong>Conversation simulation</strong> with AEC (acoustic echo cancellation), barge-in detection, turn-taking, and end-to-end latency measurement (TTFT, TTFinal, RTF).</li><li><strong>Automated evaluation:</strong> WER, CER, alignment view, keyword accuracy, confidence scoring, yes/no flip detection, critical-phrase flags.</li><li><strong>Run history</strong> (JSON-based, CSV/zip export), presets, parameter sweep builder, dependency manager with one-click installs.</li></ul>
+</div>
+
+<div class="arch">
+<div class="arch-h"><span class="arch-l">ARCHITECTURE</span><span class="arch-t">Pipeline Flow — Audio to Evaluation</span></div>
+<svg viewBox="0 0 960 290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Audio simulation pipeline" style="width:100%;height:auto;display:block;margin:12px 0">
+<defs><marker id="b1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#1A1A1A"/></marker></defs>
+<rect x="30" y="40" width="130" height="70" class="db-r"/><text x="44" y="68" class="dt">Audio Input</text><text x="44" y="86" class="dt-s">file · mic · TTS</text>
+<rect x="200" y="30" width="180" height="160" class="db-s"/><text x="216" y="54" class="dt-t">16 Transforms</text><text x="216" y="74" class="dt-s">parameterised</text>
+<text x="216" y="96" class="dt" style="font-size:10px">· Noise (W/P/B)</text><text x="216" y="112" class="dt" style="font-size:10px">· Reverb · Codec</text>
+<text x="216" y="128" class="dt" style="font-size:10px">· AGC · Echo leak</text><text x="216" y="144" class="dt" style="font-size:10px">· Bandpass · Pitch</text>
+<text x="216" y="160" class="dt" style="font-size:10px">· Network · Far-field</text><text x="216" y="178" class="dt-s" style="fill:#C2410C">+ configurable params</text>
+<rect x="420" y="30" width="160" height="70" class="db"/><text x="434" y="58" class="dt">VAD + Endpointing</text><text x="434" y="76" class="dt-s">WebRTC · Silero</text>
+<rect x="420" y="120" width="160" height="70" class="db-n"/><text x="434" y="148" class="dt">Multi-Provider STT</text><text x="434" y="166" class="dt-s">GPT-4o · Gemini 2.5</text>
+<rect x="620" y="30" width="150" height="70" class="db"/><text x="634" y="58" class="dt">Conversation Sim</text><text x="634" y="76" class="dt-s">AEC · barge-in</text>
+<rect x="620" y="120" width="150" height="70" class="db-r"/><text x="634" y="148" class="dt">Evaluation</text><text x="634" y="166" class="dt-s">WER · CER · kw acc</text>
+<rect x="810" y="30" width="120" height="160" class="db-a"/><text x="826" y="62" class="dt-w">Reports</text><text x="826" y="84" class="dt-w" style="font-size:10px">Run history</text><text x="826" y="102" class="dt-w" style="font-size:10px">CSV / ZIP</text><text x="826" y="126" class="dt-w" style="font-size:10px">Param sweep</text><text x="826" y="148" class="dt-w" style="font-size:10px">Presets</text><text x="826" y="170" class="dt-w" style="font-size:10px">Streamlit UI</text>
+<path class="dl" d="M160 75 L200 75" marker-end="url(#b1)"/><path class="dl" d="M380 75 L420 65" marker-end="url(#b1)"/><path class="dl" d="M380 155 L420 155" marker-end="url(#b1)"/><path class="dl" d="M580 65 L620 65" marker-end="url(#b1)"/><path class="dl" d="M580 155 L620 155" marker-end="url(#b1)"/><path class="dl" d="M770 65 L810 65" marker-end="url(#b1)"/><path class="dl" d="M770 155 L810 155" marker-end="url(#b1)"/>
+<text x="30" y="240" class="dt-s">EVAL METRICS PER RUN</text><line x1="30" y1="252" x2="930" y2="252" class="dl-s"/>
+<text x="30" y="272" class="dt" style="fill:#5A5A5A;font-size:10px">WER · CER · keyword accuracy · confidence · yes/no flip · TTFT · TTFinal · RTF · input SNR · RMS · clipping %</text>
+</svg>
+<p class="arch-c">Audio passes through 16 configurable transform blocks, then splits to VAD/endpointing and multi-provider STT. Results feed the conversation engine and automated WER/CER evaluation, with full run history and export.</p>
+</div>
+
+<div class="pg">
+<div class="pgh"><span class="pgl">GALLERY</span></div>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p03-audio-sim/01.jpg" alt="Transform pipeline config" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Transform pipeline config</span></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p03-audio-sim/02.jpg" alt="STT comparison results" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">STT comparison results</span></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p03-audio-sim/03.jpg" alt="VAD state visualization" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">VAD state visualization</span></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p03-audio-sim/04.jpg" alt="WER/CER evaluation report" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">WER/CER evaluation report</span></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p03-audio-sim/05.jpg" alt="Parameter sweep builder" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Parameter sweep builder</span></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p03-audio-sim/06.jpg" alt="Preset library" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Preset library</span></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p03-audio-sim/07.jpg" alt="Audio waveform before/after" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Audio waveform before/after</span></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p03-audio-sim/08.jpg" alt="Conversation simulation timeline" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Conversation simulation timeline</span></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p03-audio-sim/09.jpg" alt="Endpointing analysis" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Endpointing analysis</span></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p03-audio-sim/10.jpg" alt="Latency breakdown chart" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Latency breakdown chart</span></figure>
+</div>
+</div>
+
+<div class="pv">
+<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Platform walkthrough: transform → transcribe → evaluate</span></div>
+<div class="vs">
+<video controls preload="metadata" poster="media/p03-audio-sim/demo-poster.jpg" onloadedmetadata="this.parentNode.querySelector('.vp').style.display='none'">
+<source src="media/p03-audio-sim/demo.mp4" type="video/mp4">
+</video>
+<div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH<span class="vps">Add demo.mp4 to media/p03-audio-sim/</span></div></div>
+</div></div>
+
+<div class="ps"><span class="sl">TECH STACK</span><span class="si">Python</span><span class="si">Streamlit</span><span class="si">OpenAI GPT-4o</span><span class="si">Vertex AI</span><span class="si">WebRTC VAD</span><span class="si">Silero VAD</span><span class="si">ffmpeg</span><span class="si">librosa</span><span class="si">jiwer</span></div>
+</article>
+
+<article class="pj rv" id="p04-ocr">
+<div class="ps-strip">
+<span class="pn">PROJ. 04</span><span>2025 — 2026</span>
+<span class="psrc">Figmentum Robotics LLC, USA</span>
+<div class="pt"><span class="tag tag-a">ML / AI</span><span class="tag">Computer Vision</span><span class="tag">Test Infrastructure</span></div>
+</div>
+<h2 class="pjt">OCR Simulation &amp; Benchmarking Platform<span class="pjs">ChildScript — Handwriting Recognition Testing</span></h2>
+<p class="pjsum">FastAPI + React platform for evaluating OCR models on children's handwriting. 13+ OCR backends with image degradation simulation, hybrid cost-optimization chains, and statistical accuracy analysis. Currently in beta for Figmentum's handwriting pipeline.</p>
+
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p04-ocr/hero.jpg" alt="OCR Simulation &amp; Benchmarking Platform" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+
+<div class="wtd">
+<h3>What This Project Does</h3>
+<p>The Figmentum robot teaches children to spell and do math by looking at what they write on paper using a camera. But children's handwriting is inconsistent: some letters are barely formed, spacing is uneven, and the camera angle and lighting are never perfect. I needed to figure out which OCR (Optical Character Recognition) model reads messy handwriting best, and under what conditions each model breaks down. So I built this benchmarking platform.</p>
+<p>The platform has a React frontend and a FastAPI backend with over 40 API endpoints. I can upload a handwriting image, then simulate real-world degradation: poor lighting, camera tilt, smudges, glare, watermarks, and perspective distortion. The image is sent to 13+ different OCR models, from fast and cheap ones like GPT-4o-mini to expensive reasoning models like o3. The platform compares their outputs with detailed statistics: confusion matrices, word-level error breakdowns, and model agreement scores.</p>
+<p>One feature I am particularly proud of is the hybrid model chain. Instead of always using the most expensive model, the system first tries a cheap model. If that model's confidence score is below a threshold, it automatically escalates to a more powerful model. This approach gives us nearly the same accuracy as always using the best model, but at about one-third to one-fifth of the cost. The platform also supports batch processing, scheduled regression checks, and webhook notifications for CI/CD integration.</p>
+</div>
+
+<div class="pd">
+<h3 class="sh">Key Features &amp; Technical Highlights</h3>
+<ul class="pf"><li><strong>13+ OCR backends:</strong> GPT-4o, 4o-mini, GPT-4.1 family, reasoning models (o3/o3-mini/o4-mini), Cloud Vision (Document + Handwriting), Gemini 2.5 Pro/Flash/Flash-Lite.</li><li><strong>Image degradation:</strong> lighting, glare, smudges, perspective warp, network conditions, watermarks, document boundaries, teacher marks, code switching.</li><li><strong>Statistical analysis:</strong> confusion matrices, error categorization, word-level analysis, model agreement, calibration, regression detection vs saved baselines.</li><li><strong>Hybrid model chains</strong> (cost-optimized routing): cheap first-pass → confidence check → reasoning escalation. ~3-5× cost reduction vs always-premium.</li><li><strong>Batch parallel processing</strong> with SSE streaming, webhooks for CI/CD, scheduled regression, annotation UI.</li><li><strong>Reports:</strong> HTML/CSV/JSON exports, rubric evaluation, child handwriting analysis (spacing, overwriting, incomplete letters).</li></ul>
+</div>
+
+<div class="arch">
+<div class="arch-h"><span class="arch-l">ARCHITECTURE</span><span class="arch-t">Frontend ↔ Backend ↔ 13+ OCR Providers</span></div>
+<svg viewBox="0 0 960 345" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OCR platform architecture" style="width:100%;height:auto;display:block;margin:12px 0">
+<defs><marker id="c1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#1A1A1A"/></marker></defs>
+<text x="30" y="20" class="dt-s">CLIENT</text><text x="330" y="20" class="dt-s">FASTAPI BACKEND</text><text x="700" y="20" class="dt-s">OCR PROVIDERS</text>
+<rect x="30" y="40" width="210" height="100" class="db-s"/><text x="44" y="64" class="dt-t">React + TypeScript</text><text x="44" y="84" class="dt-s">Vite · Tailwind</text><text x="44" y="106" class="dt" style="font-size:10px">· Upload + preview</text><text x="44" y="122" class="dt" style="font-size:10px">· Sweep config · Results</text>
+<rect x="280" y="40" width="350" height="180" class="db-n"/><text x="296" y="64" class="dt-t">40+ API Endpoints</text>
+<rect x="296" y="78" width="156" height="30" class="db"/><text x="306" y="98" class="dt" style="font-size:10px">/ocr/test · /batch</text>
+<rect x="462" y="78" width="156" height="30" class="db"/><text x="472" y="98" class="dt" style="font-size:10px">/chain · /ablation</text>
+<rect x="296" y="116" width="156" height="30" class="db"/><text x="306" y="136" class="dt" style="font-size:10px">/analysis · /calibrate</text>
+<rect x="462" y="116" width="156" height="30" class="db"/><text x="472" y="136" class="dt" style="font-size:10px">/regression · /latency</text>
+<rect x="296" y="154" width="156" height="30" class="db"/><text x="306" y="174" class="dt" style="font-size:10px">/preprocess · /degrade</text>
+<rect x="462" y="154" width="156" height="30" class="db"/><text x="472" y="174" class="dt" style="font-size:10px">/webhooks · /schedule</text>
+<rect x="296" y="192" width="322" height="22" class="db-s"/><text x="306" y="208" class="dt" style="font-size:9px">SQLite · Sessions · Annotations · Reports</text>
+<rect x="670" y="40" width="260" height="38" class="db-r"/><text x="684" y="58" class="dt">OpenAI GPT-4o / 4.1 family</text><text x="684" y="72" class="dt-s">4o · 4o-mini · 4.1 · nano</text>
+<rect x="670" y="86" width="260" height="30" class="db-r"/><text x="684" y="104" class="dt">Reasoning: o3 · o3-mini · o4-mini</text>
+<rect x="670" y="124" width="260" height="30" class="db-n"/><text x="684" y="142" class="dt">Gemini 2.5 Pro / Flash / Lite</text>
+<rect x="670" y="162" width="260" height="30" class="db-n"/><text x="684" y="180" class="dt">Cloud Vision (Doc + Handwriting)</text>
+<path class="dl" d="M240 90 L280 110" marker-end="url(#c1)"/><path class="dl-s" d="M630 90 L670 59" marker-end="url(#c1)"/><path class="dl-s" d="M630 120 L670 101" marker-end="url(#c1)"/><path class="dl-s" d="M630 150 L670 139" marker-end="url(#c1)"/><path class="dl-s" d="M630 170 L670 177" marker-end="url(#c1)"/>
+<text x="30" y="260" class="dt-s">HYBRID CHAIN (COST-OPTIMISED)</text><line x1="30" y1="272" x2="930" y2="272" class="dl-s"/>
+<rect x="30" y="286" width="190" height="44" class="db"/><text x="44" y="306" class="dt">1. Cheap First-Pass</text><text x="44" y="322" class="dt-s">4o-mini · flash-lite</text>
+<text x="228" y="312" class="dt" style="font-size:14px;fill:#C2410C">→</text>
+<rect x="248" y="286" width="190" height="44" class="db"/><text x="262" y="306" class="dt">2. Confidence Check</text><text x="262" y="322" class="dt-s">if &lt; threshold</text>
+<text x="446" y="312" class="dt" style="font-size:14px;fill:#C2410C">→</text>
+<rect x="466" y="286" width="190" height="44" class="db-r"/><text x="480" y="306" class="dt">3. Reasoning Model</text><text x="480" y="322" class="dt-s">o3 · o4-mini</text>
+<text x="664" y="312" class="dt" style="font-size:14px;fill:#C2410C">→</text>
+<rect x="684" y="286" width="246" height="44" class="db-a"/><text x="698" y="306" class="dt-w">Cost-optimised result</text><text x="698" y="322" class="dt-s" style="fill:rgba(250,250,246,.6)">~3-5× cheaper</text>
+</svg>
+<p class="arch-c">React frontend sends images to FastAPI backend, which routes to the cheapest viable OCR model first. If confidence is low, the request escalates to reasoning models. Results feed statistical analysis and regression detection.</p>
+</div>
+
+<div class="pg">
+<div class="pgh"><span class="pgl">GALLERY</span></div>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p04-ocr/01.jpg" alt="Image degradation preview" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Image degradation preview</span></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p04-ocr/02.jpg" alt="Model accuracy comparison" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Model accuracy comparison</span></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p04-ocr/03.jpg" alt="Confusion matrix analysis" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Confusion matrix analysis</span></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p04-ocr/04.jpg" alt="Hybrid chain cost view" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Hybrid chain cost view</span></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p04-ocr/05.jpg" alt="Batch processing dashboard" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Batch processing dashboard</span></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p04-ocr/06.jpg" alt="Annotation review UI" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Annotation review UI</span></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p04-ocr/07.jpg" alt="Word-level error analysis" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Word-level error analysis</span></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p04-ocr/08.jpg" alt="Regression detection report" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Regression detection report</span></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p04-ocr/09.jpg" alt="Image preprocessing pipeline" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Image preprocessing pipeline</span></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p04-ocr/10.jpg" alt="Statistical calibration" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Statistical calibration</span></figure>
+</div>
+</div>
+
+<div class="pv">
+<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Full test cycle: upload → degrade → benchmark → report</span></div>
+<div class="vs">
+<video controls preload="metadata" poster="media/p04-ocr/demo-poster.jpg" onloadedmetadata="this.parentNode.querySelector('.vp').style.display='none'">
+<source src="media/p04-ocr/demo.mp4" type="video/mp4">
+</video>
+<div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH<span class="vps">Add demo.mp4 to media/p04-ocr/</span></div></div>
+</div></div>
+
+<div class="ps"><span class="sl">TECH STACK</span><span class="si">Python</span><span class="si">FastAPI</span><span class="si">React</span><span class="si">TypeScript</span><span class="si">Vite</span><span class="si">Tailwind</span><span class="si">OpenAI</span><span class="si">Cloud Vision</span><span class="si">Gemini API</span><span class="si">SQLite</span></div>
+</article>
+
+<article class="pj rv" id="p05-event-planner">
+<div class="ps-strip">
+<span class="pn">PROJ. 05</span><span>2025 — 2026</span>
+<span class="psrc">WellSmart Automations · Independent Product</span>
+<div class="pt"><span class="tag tag-a">Mobile</span><span class="tag">Cloud / SaaS</span><span class="tag">Full Stack</span></div>
+</div>
+<h2 class="pjt">EventPlanners — Digital Invitation SaaS <a href="https://eventplanners.app" target="_blank" rel="noopener"><span class="lv">● LIVE</span></a><span class="pjs">Multi-Tenant Platform · Live at eventplanners.app</span></h2>
+<p class="pjsum">Multi-tenant SaaS for event invitations, RSVPs, and post-event galleries. Native Android app + dynamic web invitations + Firebase backend + Cloudflare CDN + Google Play Billing. Independently designed, developed, and deployed. Live at eventplanners.app.</p>
+
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p05-event-planner/hero.jpg" alt="EventPlanners — Digital Invitation SaaS <a href="https://eventplanners.app" target="_blank" rel="noopener"><span class="lv">● LIVE</span></a>" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+
+<div class="wtd">
+<h3>What This Project Does</h3>
+<p>I built EventPlanners because I saw how much effort people put into organizing events, from weddings to birthday parties, and how scattered the tools were. I wanted to create a single app that handles the entire lifecycle: designing beautiful digital invitations, sending them out, tracking who is coming, managing the event day, and sharing memories afterward.</p>
+<p>The Android app is built with Kotlin and Jetpack Compose following Material 3 design guidelines. Users can create customizable invitations with over 18 fonts and a template editor, and the app even uses OpenAI's API (proxied through Firebase Cloud Functions for security) to generate invitation text. Each event gets a single shareable link that dynamically changes based on where the event is in its lifecycle: before the event it shows the invitation, after someone RSVPs it shows their confirmation, and after the event it becomes a photo gallery.</p>
+<p>Behind the scenes, I built a Cloudflare CDN layer in front of Firebase Storage that dramatically cuts hosting costs. Every photo or video is served by Firebase exactly once, then Cloudflare caches it at the edge and serves all subsequent requests for free. This reduced potential Firebase egress bills by over 95%. The app also includes real-time RSVP tracking, QR code check-in for event day, a drag-and-drop seating chart, a budget tracker that exports PDF reports, a photo gallery with moderated uploads and Chromecast slideshow support, co-host management with real-time chat, and a tiered subscription model through Google Play Billing. I designed, developed, and deployed every part of this myself. It is live at <a href="https://eventplanners.app" target="_blank" rel="noopener" style="border-bottom:1px solid var(--r2);color:var(--i)">eventplanners.app</a>.</p>
+</div>
+
+<div class="pd">
+<h3 class="sh">Key Features &amp; Technical Highlights</h3>
+<ul class="pf"><li><strong>Native Android:</strong> Kotlin + Jetpack Compose + Material 3 + MVVM, offline manager, signed-URL cache, contact importer, lifecycle-aware analytics.</li><li><strong>Dynamic single-link invitations:</strong> same URL transforms between invitation / RSVP / gallery based on event lifecycle. Single HTML page with Firebase JS SDK.</li><li><strong>18+ font system,</strong> template editor, AI text generation (OpenAI via Cloud Functions proxy), font pairing suggestions.</li><li><strong>RSVP tracking,</strong> QR check-in, drag-and-drop seating, budget tracker with PDF/CSV/XLSX reports, photo gallery with moderated uploads and Chromecast slideshow.</li><li><strong>Co-host management</strong> with Firebase custom claims, real-time chat, countdown widgets, FCM push notifications, post-event thank-you cards.</li><li><strong>Cloudflare CDN</strong> at media.eventplanners.app with HMAC-signed URLs; 95%+ Firebase egress reduction at scale.</li><li><strong>Google Play Billing</strong> tiered model (Free / Starter / Pro / Business) with admin P&amp;L dashboard.</li></ul>
+</div>
+
+<div class="arch">
+<div class="arch-h"><span class="arch-l">ARCHITECTURE</span><span class="arch-t">Multi-Platform SaaS Architecture</span></div>
+<svg viewBox="0 0 960 358" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Event Planner SaaS architecture" style="width:100%;height:auto;display:block;margin:12px 0">
+<defs><marker id="d1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#1A1A1A"/></marker></defs>
+<text x="30" y="20" class="dt-s">CLIENTS</text><text x="370" y="20" class="dt-s">FIREBASE BACKEND</text><text x="720" y="20" class="dt-s">EXTERNAL</text>
+<rect x="30" y="40" width="200" height="80" class="db-s"/><text x="44" y="64" class="dt-t">Android App</text><text x="44" y="82" class="dt-s">Kotlin · Compose · M3</text><text x="44" y="100" class="dt" style="font-size:10px">MVVM · offline · cache</text>
+<rect x="30" y="136" width="200" height="70" class="db-s"/><text x="44" y="158" class="dt-t">Web Page (HTML)</text><text x="44" y="176" class="dt-s">single-link dynamic</text><text x="44" y="192" class="dt" style="font-size:10px">invite ↔ RSVP ↔ gallery</text>
+<rect x="280" y="40" width="370" height="240" class="db-n"/><text x="296" y="64" class="dt-t">Firebase Project</text>
+<rect x="296" y="80" width="164" height="34" class="db"/><text x="306" y="102" class="dt">Auth (Google + Email)</text>
+<rect x="470" y="80" width="164" height="34" class="db"/><text x="480" y="102" class="dt">FCM Notifications</text>
+<rect x="296" y="124" width="338" height="40" class="db-r"/><text x="306" y="144" class="dt">Firestore Collections</text><text x="306" y="158" class="dt-s">users · events · guests · gallery · tables</text>
+<rect x="296" y="174" width="164" height="34" class="db"/><text x="306" y="196" class="dt">Storage (media)</text>
+<rect x="470" y="174" width="164" height="34" class="db"/><text x="480" y="196" class="dt">Cloud Functions</text>
+<rect x="296" y="220" width="338" height="32" class="db-r"/><text x="306" y="242" class="dt">Custom Claims · Co-host</text>
+<text x="296" y="272" class="dt-s" style="fill:#C2410C">→ HMAC-signed media URLs · 1h TTL</text>
+<rect x="700" y="40" width="230" height="50" class="db-a"/><text x="714" y="64" class="dt-w">Cloudflare CDN</text><text x="714" y="80" class="dt-s" style="fill:rgba(250,250,246,.6)">media.eventplanners.app</text>
+<rect x="700" y="100" width="230" height="36" class="db"/><text x="714" y="122" class="dt">Google Play Billing</text>
+<rect x="700" y="146" width="230" height="36" class="db-r"/><text x="714" y="168" class="dt">OpenAI (via CF proxy)</text>
+<rect x="700" y="192" width="230" height="36" class="db"/><text x="714" y="214" class="dt">Resend (email)</text>
+<path class="dl" d="M230 80 L280 100" marker-end="url(#d1)"/><path class="dl" d="M230 171 L280 160" marker-end="url(#d1)"/>
+<path class="dl" d="M650 65 L700 65" marker-end="url(#d1)"/><path class="dl" d="M650 191 L700 165" marker-end="url(#d1)"/>
+<text x="30" y="310" class="dt-s">COST OPTIMISATION</text><line x1="30" y1="322" x2="930" y2="322" class="dl-s"/>
+<text x="30" y="342" class="dt" style="fill:#5A5A5A;font-size:10px">Firebase serves each media file ONCE → cached at Cloudflare edge → all subsequent requests free. Result: 95%+ Firebase egress reduction at scale.</text>
+</svg>
+<p class="arch-c">Native Android app and single-link web pages both communicate with Firebase backend. Cloud Functions proxy external APIs. Cloudflare CDN caches media, reducing Firebase egress by 95%+.</p>
+</div>
+
+<div class="pg">
+<div class="pgh"><span class="pgl">GALLERY</span></div>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p05-event-planner/01.jpg" alt="Invitation template editor" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Invitation template editor</span></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p05-event-planner/02.jpg" alt="RSVP tracking dashboard" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">RSVP tracking dashboard</span></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p05-event-planner/03.jpg" alt="Photo gallery + Chromecast" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Photo gallery + Chromecast</span></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p05-event-planner/04.jpg" alt="Budget tracker PDF reports" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Budget tracker PDF reports</span></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p05-event-planner/05.jpg" alt="Web invitation page" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Web invitation page</span></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p05-event-planner/06.jpg" alt="QR check-in screen" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">QR check-in screen</span></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p05-event-planner/07.jpg" alt="Seating chart drag-drop" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Seating chart drag-drop</span></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p05-event-planner/08.jpg" alt="AI text generation" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">AI text generation</span></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p05-event-planner/09.jpg" alt="Co-host management" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Co-host management</span></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p05-event-planner/10.jpg" alt="Subscription tiers" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Subscription tiers</span></figure>
+</div>
+</div>
+
+<div class="pv">
+<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">App walkthrough: create event → invite → track RSVPs</span></div>
+<div class="vs">
+<video controls preload="metadata" poster="media/p05-event-planner/demo-poster.jpg" onloadedmetadata="this.parentNode.querySelector('.vp').style.display='none'">
+<source src="media/p05-event-planner/demo.mp4" type="video/mp4">
+</video>
+<div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH<span class="vps">Add demo.mp4 to media/p05-event-planner/</span></div></div>
+</div></div>
+
+<div class="ps"><span class="sl">TECH STACK</span><span class="si">Kotlin</span><span class="si">Jetpack Compose</span><span class="si">Material 3</span><span class="si">Firebase</span><span class="si">Cloud Functions</span><span class="si">Firestore</span><span class="si">FCM</span><span class="si">Cloudflare</span><span class="si">Google Play Billing</span><span class="si">OpenAI</span></div>
+</article>
+
+<article class="pj rv" id="p06-predictive-maintenance">
+<div class="ps-strip">
+<span class="pn">PROJ. 06</span><span>2024 — 2025</span>
+<span class="psrc">Hypen Holdings (Pvt) Ltd · Horana, Sri Lanka</span>
+<div class="pt"><span class="tag tag-a">Hardware</span><span class="tag">Embedded ML</span><span class="tag">Industrial IoT</span></div>
+</div>
+<h2 class="pjt">Predictive Maintenance Hardware Platform<span class="pjs">Industrial Vibration Monitoring + ML Dashboard</span></h2>
+<p class="pjsum">End-to-end industrial vibration monitoring for two motors. Custom hardware (BYDR3016ZW-3 sensors + power-switching PCB + battery backup) on Raspberry Pi, ML fault detection, and a full FastAPI + React dashboard with adaptive baselines and bearing-fault frequency analysis.</p>
+
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p06-predictive-maintenance/hero.jpg" alt="Predictive Maintenance Hardware Platform" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+
+<div class="wtd">
+<h3>What This Project Does</h3>
+<p>At Hypen Holdings, I was tasked with building a system that could warn factory engineers before an industrial motor fails. Motor failures cause expensive unplanned downtime, and the traditional approach of scheduled maintenance either replaces parts too early (wasting money) or too late (after the damage is done). Predictive maintenance solves this by continuously monitoring the motor's health and catching the early signs of trouble.</p>
+<p>I started with the hardware: I mounted three types of sensors on each motor (a tri-axial vibration sensor called the BYDR3016ZW-3, a current sensor, and a temperature sensor) and connected them to a Raspberry Pi 4. I wrote Python code that samples these sensors at high speed, processes the data in real time, and packages it into compressed Parquet files that get uploaded to AWS S3 every minute. Because factory power can cut out at any time, I designed a custom PCB with a battery backup and high-speed power switching circuit, so the Pi keeps running and no data is lost during an outage.</p>
+<p>On the cloud side, a FastAPI server running on DigitalOcean pulls the Parquet files from S3 every five minutes, runs analytics (FFT spectrum analysis, bearing fault frequency detection, ISO 10816 vibration severity classification), and stores hourly summaries in a PostgreSQL database. The system learns what "normal" vibration looks like for each specific motor during a baseline period, then flags any deviation using a statistical threshold approach. The React web dashboard shows everything in real time: FFT plots, trend charts, bearing health indicators, and a maintenance log with a timeline view. I deployed the whole stack using Docker Compose behind Nginx.</p>
+</div>
+
+<div class="pd">
+<h3 class="sh">Key Features &amp; Technical Highlights</h3>
+<ul class="pf"><li><strong>Hardware:</strong> BYDR3016ZW-3 tri-axial vibration sensors, current and temperature sensors. PCB designed in KiCad for high-speed power switching in battery-backup module.</li><li><strong>Embedded acquisition:</strong> Python on Raspberry Pi 4, multi-threaded sampling with data-integrity logic for harsh industrial conditions.</li><li><strong>Analytics:</strong> FFT spectrum, RMS, peak, peak-to-peak, kurtosis, crest factor, skewness; bearing fault detection (BPFI, BPFO, BSF, FTF) with SNR; ISO 10816 zone classification.</li><li><strong>Adaptive baseline</strong> per machine — σ-based normal / elevated / warning / critical. Auto-calibrates during learning phase.</li><li><strong>Cloud pipeline:</strong> Raspberry Pi streams Parquet files to AWS S3 every minute. FastAPI backend on DigitalOcean server ingests from S3 every 5 minutes, computes hourly summaries, and stores in PostgreSQL.</li><li><strong>Full dashboard:</strong> React/Vite/Tailwind/Recharts SPA with JWT auth, Docker-Compose + Nginx deployment on DigitalOcean.</li><li><strong>Maintenance log</strong> with professional timeline view, color-coded types, event markers on trend charts; mobile-responsive; zoom/pan on all plots.</li></ul>
+</div>
+
+<div class="arch">
+<div class="arch-h"><span class="arch-l">ARCHITECTURE</span><span class="arch-t">Hardware → AWS S3 → DigitalOcean Dashboard</span></div>
+<svg viewBox="0 0 960 382" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Predictive maintenance system architecture" style="width:100%;height:auto;display:block;margin:12px 0">
+<defs><marker id="e1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#C2410C"/></marker></defs>
+<text x="30" y="20" class="dt-s">FIELD HARDWARE</text><text x="370" y="20" class="dt-s">CLOUD STORAGE + INGESTION</text><text x="700" y="20" class="dt-s">DASHBOARD (DIGITALOCEAN)</text>
+<rect x="30" y="40" width="280" height="260" class="db-s"/>
+<text x="44" y="64" class="dt-t">Industrial Motor Site</text><text x="44" y="82" class="dt-s">harsh environment · 24/7</text>
+<rect x="46" y="96" width="248" height="30" class="db"/><text x="58" y="116" class="dt">BYDR3016ZW-3 Tri-axial Vibration</text>
+<rect x="46" y="134" width="118" height="30" class="db"/><text x="58" y="154" class="dt" style="font-size:10px">Current Sensor</text>
+<rect x="172" y="134" width="122" height="30" class="db"/><text x="184" y="154" class="dt" style="font-size:10px">Temp Sensor</text>
+<rect x="46" y="178" width="248" height="46" class="db-n"/><text x="58" y="200" class="dt">Raspberry Pi 4 · Edge</text><text x="58" y="216" class="dt-s">DAQ · ML · parquet</text>
+<rect x="46" y="236" width="248" height="30" class="db-r"/><text x="58" y="256" class="dt">Custom PCB · Battery UPS</text>
+<text x="46" y="288" class="dt-s" style="fill:#C2410C">→ uninterrupted through power loss</text>
+<rect x="350" y="50" width="280" height="230" class="db-s"/>
+<text x="364" y="74" class="dt-t">Cloud Pipeline</text>
+<rect x="364" y="90" width="250" height="36" class="db-r"/><text x="376" y="112" class="dt">AWS S3 (Parquet)</text><text x="376" y="122" class="dt-s">uploads every minute</text>
+<rect x="364" y="136" width="250" height="36" class="db"/><text x="376" y="158" class="dt">FastAPI · APScheduler</text><text x="376" y="168" class="dt-s">pulls from S3 every 5 min</text>
+<rect x="364" y="182" width="250" height="36" class="db"/><text x="376" y="204" class="dt">PostgreSQL 16</text><text x="376" y="214" class="dt-s">hourly summaries</text>
+<rect x="364" y="228" width="250" height="36" class="db-n"/><text x="376" y="250" class="dt">Adaptive Baseline</text><text x="376" y="260" class="dt-s">σ-based classification</text>
+<rect x="670" y="50" width="260" height="230" class="db-s"/>
+<text x="684" y="74" class="dt-t">React + Vite SPA</text><text x="684" y="92" class="dt-s">Tailwind · Recharts · JWT</text>
+<rect x="684" y="106" width="230" height="30" class="db"/><text x="696" y="126" class="dt" style="font-size:10px">Overview · Mini FFT per motor</text>
+<rect x="684" y="144" width="230" height="30" class="db"/><text x="696" y="164" class="dt" style="font-size:10px">Engineering · Waveform / FFT</text>
+<rect x="684" y="182" width="230" height="30" class="db-r"/><text x="696" y="202" class="dt" style="font-size:10px">Bearing Fault Indicators</text>
+<rect x="684" y="220" width="230" height="30" class="db"/><text x="696" y="240" class="dt" style="font-size:10px">Maintenance Log · Timeline</text>
+<text x="684" y="268" class="dt-s">Docker · Nginx · DigitalOcean</text>
+<path class="dl-a" d="M310 200 L350 108" marker-end="url(#e1)"/><path class="dl-a" d="M630 200 L670 180" marker-end="url(#e1)"/>
+<text x="30" y="334" class="dt-s">ANALYTICS</text><line x1="30" y1="346" x2="930" y2="346" class="dl-s"/>
+<text x="30" y="366" class="dt" style="fill:#5A5A5A;font-size:10px">FFT · RMS · peak · kurtosis · crest factor · skewness · bearing fault (BPFI, BPFO, BSF, FTF) · SNR · ISO 10816 zone classification</text>
+</svg>
+<p class="arch-c">Sensors on Raspberry Pi acquire data; custom PCB battery-backup ensures uninterrupted operation. Parquet files stream to AWS S3; FastAPI on DigitalOcean ingests every 5 min; React dashboard shows live vibration health with adaptive baselines.</p>
+</div>
+
+<div class="pg">
+<div class="pgh"><span class="pgl">GALLERY</span></div>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p06-predictive-maintenance/01.jpg" alt="Custom PCB for battery-backup" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Custom PCB for battery-backup</span></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p06-predictive-maintenance/02.jpg" alt="Sensor installation on motor" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Sensor installation on motor</span></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p06-predictive-maintenance/03.jpg" alt="Dashboard overview mini-FFT" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Dashboard overview mini-FFT</span></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p06-predictive-maintenance/04.jpg" alt="Engineering analysis waveform" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Engineering analysis waveform</span></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p06-predictive-maintenance/05.jpg" alt="Maintenance log timeline" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Maintenance log timeline</span></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p06-predictive-maintenance/06.jpg" alt="Bearing fault indicators" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Bearing fault indicators</span></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p06-predictive-maintenance/07.jpg" alt="Trend chart with event markers" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Trend chart with event markers</span></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p06-predictive-maintenance/08.jpg" alt="Hardware enclosure" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Hardware enclosure</span></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p06-predictive-maintenance/09.jpg" alt="Parquet ingestion monitor" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Parquet ingestion monitor</span></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p06-predictive-maintenance/10.jpg" alt="ISO 10816 zone display" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">ISO 10816 zone display</span></figure>
+</div>
+</div>
+
+<div class="pv">
+<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">System demo: sensor → edge → cloud → dashboard</span></div>
+<div class="vs">
+<video controls preload="metadata" poster="media/p06-predictive-maintenance/demo-poster.jpg" onloadedmetadata="this.parentNode.querySelector('.vp').style.display='none'">
+<source src="media/p06-predictive-maintenance/demo.mp4" type="video/mp4">
+</video>
+<div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH<span class="vps">Add demo.mp4 to media/p06-predictive-maintenance/</span></div></div>
+</div></div>
+
+<div class="ps"><span class="sl">TECH STACK</span><span class="si">Raspberry Pi 4</span><span class="si">Python</span><span class="si">KiCad</span><span class="si">BYDR3016ZW-3</span><span class="si">FastAPI</span><span class="si">PostgreSQL</span><span class="si">React</span><span class="si">Vite</span><span class="si">Tailwind</span><span class="si">Recharts</span><span class="si">AWS S3</span><span class="si">DigitalOcean</span><span class="si">Docker</span><span class="si">Nginx</span></div>
+</article>
+
+<article class="pj rv" id="p07-heat-transfer">
+<div class="ps-strip">
+<span class="pn">PROJ. 07</span><span>2023</span>
+<span class="psrc">Midas Safety (Pvt) Ltd · Awissawella, Sri Lanka</span>
+<div class="pt"><span class="tag tag-a">Industrial Automation</span><span class="tag">PLC</span><span class="tag">HMI</span></div>
+</div>
+<h2 class="pjt">Heat Transfer Machine — Glove Printing Automation<span class="pjs">Production-Deployed Industrial PLC System</span></h2>
+<p class="pjsum">Production-deployed automation for printing on industrial gloves. Delta PLC with recipe-driven sequencing, HMI touchscreen, and pneumatics integration. Replaced a manual process on the Awissawella production floor.</p>
+
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p07-heat-transfer/hero.jpg" alt="Heat Transfer Machine — Glove Printing Automation" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+
+<div class="wtd">
+<h3>What This Project Does</h3>
+<p>At the Midas Safety glove factory in Awissawella, designs are printed onto industrial gloves by pressing them against a heated plate at a specific temperature for a specific duration. Before I built this system, an operator did everything manually: setting the temperature, watching a timer, pressing and releasing the pneumatic cylinders by feel. The problem was inconsistency. Some prints came out too light, others were scorched, and the defect rate was higher than it needed to be.</p>
+<p>I designed and built an automated version using a Delta PLC (Programmable Logic Controller). The core idea is recipe-based operation: an engineer defines a recipe for each glove type (specifying the exact temperature, dwell time, and pressure), and the operator simply selects the recipe on the HMI touchscreen and presses start. From there, the PLC handles everything automatically. It heats the plate to the precise setpoint using PID control (holding within half a degree), sequences the pneumatic cylinders for exactly the right press duration, then releases and advances to the next position.</p>
+<p>I also designed the electrical control panel, wired all the I/O modules, programmed the safety interlocks (the machine will not operate if the door is open or the temperature exceeds safe limits), and built an alarm management system that logs faults. The result was a measurable reduction in glove defect rate because the machine now delivers the exact same temperature and timing on every single cycle, regardless of which operator is running it. This machine has been running on the production floor since 2023.</p>
+</div>
+
+<div class="pd">
+<h3 class="sh">Key Features &amp; Technical Highlights</h3>
+<ul class="pf"><li><strong>Delta PLC program:</strong> recipe-driven cycle sequencer with configurable temperature, dwell time, and pressure. PID heater control (±0.5°C accuracy).</li><li><strong>HMI touchscreen UI:</strong> recipe selection, run/stop, temperature setpoint, process monitoring, alarm display and acknowledgment.</li><li><strong>Pneumatic integration:</strong> solenoid valve sequencing for press/release cycles, 6 bar supply, timed coordination with heater plate.</li><li><strong>Electrical panel:</strong> 24V DC I/O modules, safety interlocks (door, over-temp, E-stop), latched fault handling with alarm log.</li><li><strong>Result:</strong> consistent temp and dwell replaced operator variability, measurably reducing glove defect rate on the production floor.</li></ul>
+</div>
+
+<div class="arch">
+<div class="arch-h"><span class="arch-l">ARCHITECTURE</span><span class="arch-t">PLC Control System — Operator to Output</span></div>
+<svg viewBox="0 0 960 316" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Heat transfer machine PLC system" style="width:100%;height:auto;display:block;margin:12px 0">
+<defs><marker id="f1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#1A1A1A"/></marker><marker id="f2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#C2410C"/></marker></defs>
+<text x="30" y="20" class="dt-s">OPERATOR</text><text x="330" y="20" class="dt-s">DELTA PLC CONTROL</text><text x="700" y="20" class="dt-s">PROCESS</text>
+<rect x="30" y="40" width="210" height="70" class="db-s"/><text x="44" y="64" class="dt-t">HMI Touchscreen</text><text x="44" y="82" class="dt-s">recipe · setpoint · run/stop</text><text x="44" y="98" class="dt" style="font-size:10px">temp display · alarms</text>
+<rect x="30" y="124" width="210" height="46" class="db"/><text x="44" y="148" class="dt">Operator Controls</text><text x="44" y="162" class="dt-s">E-stop · cycle start</text>
+<rect x="290" y="40" width="340" height="190" class="db-n"/><text x="306" y="64" class="dt-t">PLC Program</text>
+<rect x="306" y="80" width="150" height="36" class="db-r"/><text x="316" y="100" class="dt" style="font-size:10px">Recipe Manager</text><text x="316" y="112" class="dt-s">temp · time · pressure</text>
+<rect x="466" y="80" width="150" height="36" class="db-r"/><text x="476" y="100" class="dt" style="font-size:10px">Cycle Sequencer</text><text x="476" y="112" class="dt-s">step-by-step ladder</text>
+<rect x="306" y="126" width="150" height="36" class="db"/><text x="316" y="146" class="dt" style="font-size:10px">PID Temp Control</text><text x="316" y="158" class="dt-s">heater · ±0.5°C</text>
+<rect x="466" y="126" width="150" height="36" class="db"/><text x="476" y="146" class="dt" style="font-size:10px">Pneumatic Seq</text><text x="476" y="158" class="dt-s">solenoid timing</text>
+<rect x="306" y="172" width="150" height="36" class="db"/><text x="316" y="192" class="dt" style="font-size:10px">Safety Interlocks</text><text x="316" y="204" class="dt-s">door · over-temp</text>
+<rect x="466" y="172" width="150" height="36" class="db"/><text x="476" y="192" class="dt" style="font-size:10px">Alarm Manager</text><text x="476" y="204" class="dt-s">latched faults</text>
+<rect x="680" y="40" width="250" height="36" class="db-r"/><text x="694" y="62" class="dt">Heater Plate (SSR)</text><text x="694" y="72" class="dt-s">thermocouple FB</text>
+<rect x="680" y="86" width="250" height="36" class="db"/><text x="694" y="108" class="dt">Pneumatic Cylinders</text><text x="694" y="118" class="dt-s">press/release · 6 bar</text>
+<rect x="680" y="132" width="250" height="36" class="db"/><text x="694" y="154" class="dt">Conveyor / Index</text>
+<rect x="680" y="182" width="250" height="46" class="db-a"/><text x="694" y="206" class="dt-w">Glove Print Output</text><text x="694" y="220" class="dt-s" style="fill:rgba(250,250,246,.6)">production-deployed</text>
+<path class="dl" d="M240 75 L290 95" marker-end="url(#f1)"/><path class="dl" d="M240 147 L290 185" marker-end="url(#f1)"/>
+<path class="dl" d="M630 98 L680 58" marker-end="url(#f1)"/><path class="dl" d="M630 150 L680 104" marker-end="url(#f1)"/>
+<path class="dl" d="M630 180 L680 150" marker-end="url(#f1)"/>
+<path class="dl-a" d="M805 168 L805 182" marker-end="url(#f2)"/>
+<text x="30" y="268" class="dt-s">OUTCOME</text><line x1="30" y1="280" x2="930" y2="280" class="dl-s"/>
+<text x="30" y="300" class="dt" style="fill:#5A5A5A;font-size:10px">Recipe-driven cycle replaced manual operation; consistent press temperature and dwell time measurably reduced glove defect rate.</text>
+</svg>
+<p class="arch-c">The operator selects a recipe via HMI; Delta PLC sequences heater plate, pneumatics, and conveyor. Safety interlocks protect against hazards. Consistent automation replaced operator variability.</p>
+</div>
+
+<div class="pg">
+<div class="pgh"><span class="pgl">GALLERY</span></div>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p07-heat-transfer/01.jpg" alt="Electrical control panel" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Electrical control panel</span></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p07-heat-transfer/02.jpg" alt="HMI touchscreen recipe" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">HMI touchscreen recipe</span></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p07-heat-transfer/03.jpg" alt="Pneumatic system" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Pneumatic system</span></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p07-heat-transfer/04.jpg" alt="PLC wiring and I/O" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">PLC wiring and I/O</span></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p07-heat-transfer/05.jpg" alt="Glove print output" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Glove print output</span></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p07-heat-transfer/06.jpg" alt="Heater plate assembly" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Heater plate assembly</span></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p07-heat-transfer/07.jpg" alt="Machine overview" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Machine overview</span></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p07-heat-transfer/08.jpg" alt="Safety interlock wiring" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Safety interlock wiring</span></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p07-heat-transfer/09.jpg" alt="Operator station" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Operator station</span></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p07-heat-transfer/10.jpg" alt="Production line context" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Production line context</span></figure>
+</div>
+</div>
+
+<div class="pv">
+<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Machine operation: recipe → heat → press → release</span></div>
+<div class="vs">
+<video controls preload="metadata" poster="media/p07-heat-transfer/demo-poster.jpg" onloadedmetadata="this.parentNode.querySelector('.vp').style.display='none'">
+<source src="media/p07-heat-transfer/demo.mp4" type="video/mp4">
+</video>
+<div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH<span class="vps">Add demo.mp4 to media/p07-heat-transfer/</span></div></div>
+</div></div>
+
+<div class="ps"><span class="sl">TECH STACK</span><span class="si">Delta PLC</span><span class="si">HMI</span><span class="si">Pneumatics</span><span class="si">SSR</span><span class="si">Thermocouple</span><span class="si">Electrical Panel</span><span class="si">24V DC I/O</span></div>
+</article>
+
+<article class="pj rv" id="p08-smart-home">
+<div class="ps-strip">
+<span class="pn">PROJ. 08</span><span>2023</span>
+<span class="psrc">University of Peradeniya</span>
+<div class="pt"><span class="tag tag-a">Embedded</span><span class="tag">IoT</span><span class="tag">PCB Design</span></div>
+</div>
+<h2 class="pjt">Smart Home Automation System (ESP32)<span class="pjs">Custom PCB + Voice Assistants + Touchscreen</span></h2>
+<p class="pjsum">Custom smart-home controller built around ESP32. PCB designed in KiCad, firmware in ESP-IDF, integrated with Google Home and Alexa, with touchscreen for local control. Works offline via local fallback.</p>
+
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p08-smart-home/hero.jpg" alt="Smart Home Automation System (ESP32)" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+
+<div class="wtd">
+<h3>What This Project Does</h3>
+<p>For my university project, I decided to build a smart home controller entirely from scratch rather than using an off-the-shelf solution like a Raspberry Pi with Home Assistant. I wanted to understand every layer: the circuit board, the firmware, the communication protocols, and the cloud integrations.</p>
+<p>I designed a custom PCB in KiCad centered around an ESP32 microcontroller. The board includes relay drivers for switching lights and appliances, inputs for a DHT temperature and humidity sensor, a PIR motion detector, and a light-dependent resistor. There is also a capacitive touchscreen connected for local control, so you can tap through different room presets ("Movie Mode" dims the lights and turns off the ceiling fan, "Sleep Mode" turns everything off except a night light) without needing your phone or voice assistant.</p>
+<p>The firmware is written in C using Espressif's ESP-IDF framework. It runs a scene engine for preset configurations, a schedule manager for time-based automation (like turning on porch lights at sunset), and an OTA updater so I can push firmware changes over WiFi without physically accessing the device. The system connects to Google Home and Amazon Alexa through MQTT for voice control. The key design decision was making it local-first: all the automation logic runs on the ESP32 itself. If the internet goes down, the touchscreen and scheduled automations keep working normally. The cloud services are nice additions, not requirements.</p>
+</div>
+
+<div class="pd">
+<h3 class="sh">Key Features &amp; Technical Highlights</h3>
+<ul class="pf"><li><strong>Custom PCB:</strong> KiCad design with ESP32, relay drivers, sensor inputs (DHT, PIR, LDR), power regulation. Single board for all I/O.</li><li><strong>ESP-IDF firmware (C):</strong> scene engine, schedule manager, OTA updater. All automation runs on-device.</li><li><strong>Voice assistant integration:</strong> Google Home + Alexa for voice control, dimming, scene activation.</li><li><strong>Touchscreen UI:</strong> capacitive touch for scenes, manual overrides, temperature readout, settings.</li><li><strong>Local-first architecture:</strong> cloud integrations additive. System works through internet outages.</li></ul>
+</div>
+
+<div class="arch">
+<div class="arch-h"><span class="arch-l">ARCHITECTURE</span><span class="arch-t">Local-First IoT Architecture</span></div>
+<svg viewBox="0 0 960 304" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Smart home ESP32 architecture" style="width:100%;height:auto;display:block;margin:12px 0">
+<defs><marker id="g1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#1A1A1A"/></marker><marker id="g2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#C2410C"/></marker></defs>
+<text x="30" y="20" class="dt-s">LOCAL CONTROL</text><text x="350" y="20" class="dt-s">ESP32 CONTROLLER (CUSTOM PCB)</text><text x="700" y="20" class="dt-s">CLOUD</text>
+<rect x="30" y="40" width="200" height="50" class="db-s"/><text x="44" y="64" class="dt-t">Touchscreen UI</text><text x="44" y="82" class="dt-s">scenes · settings · status</text>
+<rect x="30" y="150" width="200" height="50" class="db-r"/><text x="44" y="174" class="dt">Sensors / Actuators</text><text x="44" y="192" class="dt-s">relays · DHT · PIR · LDR</text>
+<rect x="290" y="40" width="340" height="180" class="db-n"/><text x="306" y="64" class="dt-t">ESP-IDF Firmware</text><text x="306" y="82" class="dt-s">custom PCB · KiCad</text>
+<rect x="306" y="96" width="150" height="30" class="db"/><text x="316" y="116" class="dt" style="font-size:10px">Scene Engine</text>
+<rect x="466" y="96" width="150" height="30" class="db"/><text x="476" y="116" class="dt" style="font-size:10px">Schedule Manager</text>
+<rect x="306" y="136" width="150" height="30" class="db"/><text x="316" y="156" class="dt" style="font-size:10px">OTA Updater</text>
+<rect x="466" y="136" width="150" height="30" class="db-r"/><text x="476" y="156" class="dt" style="font-size:10px">WiFi / MQTT</text>
+<rect x="306" y="178" width="310" height="30" class="db-s"/><text x="316" y="198" class="dt" style="font-size:10px">GPIO · PWM · ADC · I²C · relay drivers</text>
+<rect x="690" y="40" width="230" height="36" class="db"/><text x="704" y="62" class="dt">Google Home</text>
+<rect x="690" y="86" width="230" height="36" class="db"/><text x="704" y="108" class="dt">Amazon Alexa</text>
+<rect x="690" y="132" width="230" height="36" class="db-s"/><text x="704" y="154" class="dt">MQTT Broker</text>
+<rect x="690" y="178" width="230" height="36" class="db-s"/><text x="704" y="200" class="dt">Mobile App (remote)</text>
+<path class="dl" d="M230 65 L290 110" marker-end="url(#g1)"/><path class="dl" d="M230 175 L290 178" marker-end="url(#g1)"/>
+<path class="dl" d="M630 110 L690 58" marker-end="url(#g1)"/><path class="dl" d="M630 130 L690 104" marker-end="url(#g1)"/>
+<path class="dl-a" d="M630 155 L690 150" marker-end="url(#g2)"/><path class="dl" d="M630 178 L690 196" marker-end="url(#g1)"/>
+<text x="30" y="256" class="dt-s">DESIGN PRINCIPLE</text><line x1="30" y1="268" x2="930" y2="268" class="dl-s"/>
+<text x="30" y="288" class="dt" style="fill:#5A5A5A;font-size:10px">Local-first: all automation on-device via ESP-IDF. Cloud is additive. Touchscreen + schedules work through internet outages. Custom PCB designed in KiCad.</text>
+</svg>
+<p class="arch-c">All automation runs on the ESP32. Cloud integrations (Google Home, Alexa, MQTT) are additive. System continues working through internet outages via touchscreen and local schedule engine.</p>
+</div>
+
+<div class="pg">
+<div class="pgh"><span class="pgl">GALLERY</span></div>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p08-smart-home/01.jpg" alt="Custom PCB layout KiCad" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Custom PCB layout KiCad</span></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p08-smart-home/02.jpg" alt="Assembled PCB with ESP32" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Assembled PCB with ESP32</span></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p08-smart-home/03.jpg" alt="Touchscreen UI scenes" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Touchscreen UI scenes</span></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p08-smart-home/04.jpg" alt="Google Home integration" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Google Home integration</span></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p08-smart-home/05.jpg" alt="Sensor wiring enclosure" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Sensor wiring enclosure</span></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p08-smart-home/06.jpg" alt="3D render of PCB" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">3D render of PCB</span></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p08-smart-home/07.jpg" alt="Relay driver testing" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Relay driver testing</span></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p08-smart-home/08.jpg" alt="OTA update process" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">OTA update process</span></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p08-smart-home/09.jpg" alt="Scene configuration" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Scene configuration</span></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p08-smart-home/10.jpg" alt="Installed in home" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Installed in home</span></figure>
+</div>
+</div>
+
+<div class="pv">
+<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Demo: voice + touch + automated scenes</span></div>
+<div class="vs">
+<video controls preload="metadata" poster="media/p08-smart-home/demo-poster.jpg" onloadedmetadata="this.parentNode.querySelector('.vp').style.display='none'">
+<source src="media/p08-smart-home/demo.mp4" type="video/mp4">
+</video>
+<div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH<span class="vps">Add demo.mp4 to media/p08-smart-home/</span></div></div>
+</div></div>
+
+<div class="ps"><span class="sl">TECH STACK</span><span class="si">ESP32</span><span class="si">ESP-IDF (C)</span><span class="si">KiCad</span><span class="si">Google Home</span><span class="si">Alexa</span><span class="si">MQTT</span><span class="si">Touchscreen</span><span class="si">Relays</span><span class="si">DHT</span><span class="si">PIR</span></div>
+</article>
+</div></div></section>
+<section id="skills"><div class="co">
+<div class="shd rv"><div class="shm"><span class="ix">§ 03 / Capabilities</span><span class="ru"></span></div>
+<div><span class="eb">Technical Skills</span><h2 style="margin-top:12px">Tools and platforms I work with daily.</h2></div></div>
+<div class="hg"><aside></aside><div class="sg rv" style="--d:80ms"><div class="sr"><h4>Programming</h4><div class="skl"><span>Python</span><span>C</span><span>C++</span><span>Kotlin</span><span>ESP-IDF</span><span>Bash</span><span>JavaScript</span><span>TypeScript</span></div></div>
+<div class="sr"><h4>Hardware &amp; PCB</h4><div class="skl"><span>Altium Designer</span><span>KiCad</span><span>EasyEDA</span><span>Schematic Capture</span><span>Hardware Bring-up</span><span>Failure Analysis</span><span>JTAG</span><span>Oscilloscope / DMM</span><span>Soldering</span><span>Control Panel Design</span></div></div>
+<div class="sr"><h4>Embedded</h4><div class="skl"><span>Raspberry Pi 4 / 5</span><span>ESP32</span><span>Arduino Mega 2560</span><span>Jetson AGX</span><span>I²C</span><span>SPI</span><span>UART</span><span>Modbus</span><span>ADC</span></div></div>
+<div class="sr"><h4>Sensors &amp; DAQ</h4><div class="skl"><span>Vibration</span><span>Current</span><span>Temperature</span><span>LiDAR</span><span>IMX500 AI Cameras</span><span>Real-Time DAQ</span><span>Calibration</span><span>Signal Processing</span></div></div>
+<div class="sr"><h4>ML &amp; AI</h4><div class="skl"><span>Anomaly Detection</span><span>Fault Detection</span><span>Edge Deployment</span><span>LLM + STT + TTS</span><span>OpenAI / Vertex AI</span><span>Computer Vision</span><span>OCR</span><span>WER / CER</span></div></div>
+<div class="sr"><h4>Robotics</h4><div class="skl"><span>Model Predictive Control</span><span>PID</span><span>State Machines</span><span>LiDAR Mapping</span><span>Path Planning</span><span>Sensor Fusion</span><span>Autonomous Nav</span></div></div>
+<div class="sr"><h4>Cloud &amp; Data</h4><div class="skl"><span>AWS S3</span><span>Parquet</span><span>Firebase Firestore</span><span>Auth / Storage</span><span>Cloud Functions</span><span>Cloudflare CDN</span><span>PostgreSQL</span><span>Streamlit</span></div></div>
+<div class="sr"><h4>Mobile &amp; Frontend</h4><div class="skl"><span>Kotlin</span><span>Jetpack Compose</span><span>Material 3</span><span>MVVM</span><span>Google Play Billing</span><span>React</span><span>Vite</span><span>Tailwind</span></div></div>
+<div class="sr"><h4>Industrial</h4><div class="skl"><span>Siemens PLC</span><span>Delta PLC</span><span>HMI Design</span><span>Pneumatics</span><span>Transformer Fundamentals</span><span>Battery Backup</span><span>Power Switching</span></div></div>
+<div class="sr"><h4>Design &amp; Simulation</h4><div class="skl"><span>SolidWorks</span><span>SolidWorks Electrical</span><span>AutoCAD</span><span>Proteus</span></div></div>
+</div></div>
+</div></section>
+<section id="education"><div class="co">
+<div class="shd rv"><div class="shm"><span class="ix">§ 04 / Education</span><span class="ru"></span></div>
+<div><span class="eb">Education &amp; Activities</span><h2 style="margin-top:12px">Formal training, certifications, and extracurricular achievements.</h2></div></div>
+<div class="hg"><aside></aside><div class="rv" style="--d:80ms">
+<div class="el">
+<div class="ei"><div class="ed">MSc, Electronic and Electrical Engineering<span class="ein"> — Anglia Ruskin University, UK</span></div><div class="ey">2025 — 2026</div></div>
+<div class="ei"><div class="ed">BSc Eng. (Hons), Electrical and Electronic Engineering<span class="ein"> — University of Peradeniya, Sri Lanka</span></div><div class="ey">2020 — 2024</div></div>
+<div class="ei"><div class="ed">CIMA Foundation Level<span class="ein"> — Wisdom Business Academy, Colombo</span></div><div class="ey">2018</div></div>
+<div class="ei"><div class="ed">Secondary Education (GCE A/L &amp; O/L)<span class="ein"> — St. Peter's College, Colombo 04</span></div><div class="ey">2005 — 2018</div></div>
+<div class="ei"><div class="ed">Programming for Everybody (Python)<span class="ein"> — University of Michigan (online)</span></div><div class="ey">2020</div></div>
+<div class="ei"><div class="ed">C for Everyone: Programming Fundamentals<span class="ein"> — University of California (online)</span></div><div class="ey">2020</div></div>
+<div class="ei"><div class="ed">Diploma in Western Music<span class="ein"> — Trinity College London Examinations</span></div><div class="ey">Completed 2018</div></div>
+</div>
+
+<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:36px;padding-bottom:10px;border-bottom:1px solid var(--l)">Professional Memberships</h4>
+<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
+<span>Associate Member, Institute of Engineers Sri Lanka (IESL)</span>
+</div>
+
+<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:32px;padding-bottom:10px;border-bottom:1px solid var(--l)">Athletics — St. Peter's College, Colombo 04 (2009 — 2018)</h4>
+<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
+<span>School Games Captain (2016 — 2017)</span>
+<span>Under 15 Zonal Divisions Champion</span>
+<span>Under 16, Under 18 Junior Nationals Finalist</span>
+<span>Under 15, Under 17, Under 19 All Island Finalist</span>
+<span>Under 16 All Island Relay Carnival Champions</span>
+</div>
+
+<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:32px;padding-bottom:10px;border-bottom:1px solid var(--l)">Athletics — University of Peradeniya (2020 — 2024)</h4>
+<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
+<span>Member of the University Athletics Team</span>
+</div>
+
+<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:32px;padding-bottom:10px;border-bottom:1px solid var(--l)">Rugby — St. Peter's College, Colombo 04 (2010 — 2016)</h4>
+<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
+<span>Under 14, Under 16 Western Province Champions</span>
+</div>
+
+<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:32px;padding-bottom:10px;border-bottom:1px solid var(--l)">Western Music (2005 — 2018)</h4>
+<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
+<span>Diploma in Western Music — Trinity College London Examinations</span>
+</div></div></div></div></section>
+<section id="contact" class="ct"><div class="co">
+<div class="shd rv"><div class="shm"><span class="ix">§ 05 / Get in Touch</span><span class="ru"></span></div>
+<div><span class="eb">Contact</span><h2 style="margin-top:12px">Let's connect.</h2></div></div>
+<div class="cg">
+<div class="cc rv">
+<a href="mailto:WismithaPeiris123@gmail.com"><span class="lb">Email</span><span class="vl">WismithaPeiris123@gmail.com</span><span class="ar">→</span></a>
+<a href="tel:+94764628832"><span class="lb">Phone</span><span class="vl">+94 76 462 8832</span><span class="ar">→</span></a>
+<a href="https://www.linkedin.com/in/wismitha-peiris-669464239" target="_blank" rel="noopener"><span class="lb">LinkedIn</span><span class="vl">wismitha-peiris-669464239</span><span class="ar">→</span></a>
+<a href="https://github.com/WismithaPeiris" target="_blank" rel="noopener"><span class="lb">GitHub</span><span class="vl">@WismithaPeiris</span><span class="ar">→</span></a>
+<a href="#top" style="border-bottom:none"><span class="lb">Location</span><span class="vl">Moratuwa, Sri Lanka</span><span class="ar"></span></a>
+</div>
+<aside class="ca rv" style="--d:120ms">
+<p>Thank you for visiting my portfolio. If you would like to discuss a project, collaboration, or opportunity, feel free to reach out through any of the channels listed here.</p>
+<div class="rc"><div class="rt">Resume</div><p class="rd">Professional resume with full project list, technical skills, and experience.</p>
+<a href="Wismitha_Peiris_Resume.pdf" target="_blank" rel="noopener">Download Resume PDF ↓</a>
+</div>
+<div class="rc" style="margin-top:14px"><div class="rt">References</div><p class="rd">Professional references available on request.</p>
+<a href="Wismitha_Peiris_References.pdf" target="_blank" rel="noopener">Download References PDF ↓</a>
+</div></aside></div></div></section>
+<footer class="ft"><div class="fi-inner">
+<div>© 2026 Wismitha Peiris</div>
+</div></footer>
+<!-- LIGHTBOX GALLERY VIEWER -->
+<div class="lb-overlay" id="lb">
+<div class="lb-close" id="lb-close"></div>
+<div class="lb-nav prev" id="lb-prev">‹</div>
+<div class="lb-nav next" id="lb-next">›</div>
+<div class="lb-img-wrap"><img id="lb-img" src="" alt=""></div>
+<div class="lb-caption" id="lb-cap"></div>
+<div class="lb-counter" id="lb-counter"></div>
+</div>
+
+<script>
+// Reveal on scroll
+const rv=document.querySelectorAll('.rv');
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+rv.forEach(el=>io.observe(el));
+
+// Nav scroll state
+const nv=document.getElementById('nav');
+window.addEventListener('scroll',()=>{nv.classList.toggle('sc',window.scrollY>12)},{passive:true});
+
+// Active nav link
+const ss=document.querySelectorAll('section[id]');
+const nl=document.querySelectorAll('.nl a[data-link]');
+const sa=()=>{const y=window.scrollY+120;let c=null;ss.forEach(s=>{if(s.offsetTop<=y)c=s.id});nl.forEach(a=>a.classList.toggle('ac',a.getAttribute('href')==='#'+c))};
+window.addEventListener('scroll',sa,{passive:true});sa();
+
+// Smooth scroll for all internal links
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}
+  });
+});
+
+// Hide gallery section if ALL images failed to load (no images at all)
+document.querySelectorAll('.pg').forEach(gallery=>{
+  const items=gallery.querySelectorAll('.gi');
+  let loaded=0;
+  let checked=0;
+  items.forEach(gi=>{
+    const img=gi.querySelector('img');
+    if(!img) return;
+    const check=()=>{
+      checked++;
+      if(checked===items.length && loaded===0){
+        gallery.style.display='none';
+      }
+    };
+    img.addEventListener('load',()=>{loaded++;checked++;});
+    img.addEventListener('error',()=>{check()});
+    if(img.complete){
+      if(img.naturalWidth>0) loaded++;
+      check();
+    }
+  });
+});
+
+// Hide video section entirely if no demo.mp4 file exists
+document.querySelectorAll('.vs video source').forEach(src=>{
+  src.addEventListener('error',()=>{
+    const videoSection=src.closest('.pv');
+    if(videoSection) videoSection.style.display='none';
+  });
+});
+document.querySelectorAll('.vs video').forEach(v=>{
+  v.addEventListener('error',()=>{
+    const videoSection=v.closest('.pv');
+    if(videoSection) videoSection.style.display='none';
+  });
+  setTimeout(()=>{
+    if(v.networkState===3 || v.readyState===0){
+      const videoSection=v.closest('.pv');
+      if(videoSection && !v.duration) videoSection.style.display='none';
+    }
+  },3000);
+});
+
+// ═══════════════════════════════════════════════════════
+// LIGHTBOX GALLERY VIEWER
+// ═══════════════════════════════════════════════════════
+(function(){
+  const overlay=document.getElementById('lb');
+  const lbImg=document.getElementById('lb-img');
+  const lbCap=document.getElementById('lb-cap');
+  const lbCounter=document.getElementById('lb-counter');
+  const lbClose=document.getElementById('lb-close');
+  const lbPrev=document.getElementById('lb-prev');
+  const lbNext=document.getElementById('lb-next');
+
+  let currentImages=[];
+  let currentIndex=0;
+
+  function show(images,index){
+    currentImages=images;
+    currentIndex=index;
+    update();
+    overlay.classList.add('active');
+    // Small delay for transition
+    requestAnimationFrame(()=>{overlay.classList.add('show')});
+    document.body.style.overflow='hidden';
+    // Hide nav if only 1 image
+    lbPrev.style.display=images.length>1?'flex':'none';
+    lbNext.style.display=images.length>1?'flex':'none';
+    lbCounter.style.display=images.length>1?'block':'none';
+  }
+
+  function update(){
+    const item=currentImages[currentIndex];
+    lbImg.classList.add('loading');
+    lbImg.onload=()=>{lbImg.classList.remove('loading')};
+    lbImg.src=item.src;
+    lbImg.alt=item.alt;
+    lbCap.textContent=item.cap;
+    lbCounter.textContent=(currentIndex+1)+' / '+currentImages.length;
+  }
+
+  function close(){
+    overlay.classList.remove('show');
+    setTimeout(()=>{
+      overlay.classList.remove('active');
+      document.body.style.overflow='';
+    },300);
+  }
+
+  function prev(){
+    currentIndex=(currentIndex-1+currentImages.length)%currentImages.length;
+    update();
+  }
+
+  function next(){
+    currentIndex=(currentIndex+1)%currentImages.length;
+    update();
+  }
+
+  lbClose.addEventListener('click',close);
+  lbPrev.addEventListener('click',prev);
+  lbNext.addEventListener('click',next);
+  overlay.addEventListener('click',e=>{
+    if(e.target===overlay) close();
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown',e=>{
+    if(!overlay.classList.contains('active')) return;
+    if(e.key==='Escape') close();
+    if(e.key==='ArrowLeft') prev();
+    if(e.key==='ArrowRight') next();
+  });
+
+  // Touch swipe support
+  let touchStartX=0;
+  overlay.addEventListener('touchstart',e=>{touchStartX=e.changedTouches[0].screenX},{passive:true});
+  overlay.addEventListener('touchend',e=>{
+    const diff=e.changedTouches[0].screenX-touchStartX;
+    if(Math.abs(diff)>50){
+      if(diff>0) prev(); else next();
+    }
+  },{passive:true});
+
+  // Attach click handlers to all gallery images
+  document.querySelectorAll('.gg').forEach(gallery=>{
+    const figures=gallery.querySelectorAll('.gi');
+    figures.forEach((fig,idx)=>{
+      fig.addEventListener('click',()=>{
+        // Collect all VISIBLE images in this gallery
+        const visibleFigs=Array.from(gallery.querySelectorAll('.gi')).filter(f=>f.style.display!=='none');
+        const images=visibleFigs.map(f=>{
+          const img=f.querySelector('img');
+          const cap=f.querySelector('.gc');
+          return{
+            src:img?img.src:'',
+            alt:img?img.alt:'',
+            cap:cap?cap.textContent:''
+          };
+        }).filter(i=>i.src);
+        const visibleIdx=visibleFigs.indexOf(fig);
+        if(images.length>0) show(images,Math.max(0,visibleIdx));
+      });
+    });
+  });
+
+  // Also make hero images clickable
+  document.querySelectorAll('.ph').forEach(hero=>{
+    const img=hero.querySelector('img');
+    if(!img) return;
+    hero.style.cursor='pointer';
+    hero.addEventListener('click',()=>{
+      if(img.style.display==='none') return;
+      show([{src:img.src,alt:img.alt,cap:'Project hero image'}],0);
+    });
+  });
+})();
+</script>
+</body></html>
