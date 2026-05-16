@@ -97,7 +97,7 @@ section+section{border-top:1px solid var(--l)}
 .pjt{margin-bottom:16px}
 .pjs{display:block;font-style:italic;color:var(--n);font-variation-settings:"opsz" 144,"SOFT" 100;font-size:clamp(18px,2.2vw,26px);font-weight:400;margin-top:6px}
 .lv{font-family:var(--fm);font-size:11px;font-weight:500;letter-spacing:.06em;color:var(--g);text-transform:uppercase;background:rgba(45,122,62,.1);padding:3px 8px;border-radius:2px;vertical-align:middle;font-style:normal;margin-left:8px}
-.pjsum{font-family:var(--fd);font-weight:300;font-size:clamp(17px,1.8vw,20px);line-height:1.5;color:var(--i2);letter-spacing:-.012em;font-variation-settings:"opsz" 100,"SOFT" 30;max-width:70ch;margin-bottom:36px}
+.pjsum{font-family:var(--fd);font-weight:300;font-size:clamp(18px,2vw,22px);line-height:1.52;color:var(--i2);letter-spacing:-.012em;font-variation-settings:"opsz" 100,"SOFT" 30;max-width:72ch;margin-bottom:40px}
 
 /* HERO IMAGE */
 .ph{margin:0 0 clamp(36px,5vw,56px);background:var(--p2);border:1px solid var(--l);position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:3px}
@@ -107,16 +107,16 @@ section+section{border-top:1px solid var(--l)}
 .ph.missing::after{content:attr(data-slot);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--fm);font-size:13px;color:var(--s2);letter-spacing:.16em;background:var(--p);padding:8px 14px;border:1px solid var(--l);border-radius:2px}
 
 /* WHAT THIS PROJECT DOES (simple explanation) */
-.wtd{margin:0 0 36px;padding:28px 32px;background:var(--pw);border-left:3px solid var(--r2);border-radius:0 3px 3px 0}
-.wtd h3{font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--r2);font-variation-settings:normal;margin-bottom:14px}
-.wtd p{font-size:16px;line-height:1.65;color:var(--i2);max-width:70ch;margin-bottom:.8em}
+.wtd{margin:0 0 40px;padding:32px 36px;background:var(--pw);border-left:4px solid var(--r2);border-radius:0 4px 4px 0;box-shadow:0 2px 12px rgba(31,58,95,.04)}
+.wtd h3{font-family:var(--fd);font-size:20px;font-weight:400;letter-spacing:-.01em;color:var(--i);font-variation-settings:'opsz' 100;margin-bottom:16px}
+.wtd p{font-size:16.5px;line-height:1.72;color:var(--i2);max-width:70ch;margin-bottom:1em}
 .wtd p:last-child{margin-bottom:0}
 
 /* FEATURES */
 .pd{margin-bottom:clamp(40px,5vw,64px)}
 .sh{font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--r2);font-variation-settings:normal;padding-bottom:8px;border-bottom:1px solid var(--l);margin-bottom:16px}
-.pf{list-style:none;display:grid;gap:11px;margin:18px 0 12px}
-.pf li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.55;color:var(--i2);max-width:78ch}
+.pf{list-style:none;display:grid;gap:14px;margin:20px 0 16px}
+.pf li{position:relative;padding-left:24px;font-size:16px;line-height:1.62;color:var(--i2);max-width:78ch}
 .pf li::before{content:'';position:absolute;left:0;top:11px;width:12px;height:1px;background:var(--r2)}
 .pf li strong{color:var(--i)}
 
@@ -148,12 +148,12 @@ section+section{border-top:1px solid var(--l)}
 .gg{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
 @media(min-width:700px){.gg{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1000px){.gg{grid-template-columns:repeat(5,1fr)}}
-.gi{position:relative;background:var(--p2);border:1px solid var(--l);border-radius:3px;overflow:hidden;aspect-ratio:4/3;transition:all .2s}
+.gi{position:relative;background:var(--p2);border:1px solid var(--l);border-radius:3px;overflow:hidden;aspect-ratio:4/3;transition:all .3s cubic-bezier(.2,.8,.2,1)}
 .gi:hover{border-color:var(--i2);transform:translateY(-2px);box-shadow:0 8px 20px -8px rgba(31,58,95,.16)}
 .gi img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
 .gi:hover img{transform:scale(1.02)}
-.gc{position:absolute;left:0;right:0;bottom:0;padding:10px 12px;background:linear-gradient(transparent,rgba(26,26,26,.78));color:var(--p);font-family:var(--fm);font-size:10.5px;letter-spacing:.04em;line-height:1.4;opacity:0;transform:translateY(6px);transition:all .25s}
-.gi:hover .gc{opacity:1;transform:translateY(0)}
+.gc{display:none}
+
 
 /* VIDEO */
 .pv{margin:48px 0}
@@ -233,11 +233,100 @@ section+section{border-top:1px solid var(--l)}
 .lb-nav.prev{left:20px}.lb-nav.next{right:20px}
 .lb-counter{position:fixed;bottom:28px;left:50%;transform:translateX(-50%);font-family:var(--fm);font-size:12px;color:rgba(250,250,246,.5);letter-spacing:.1em;z-index:10000}
 .gi{cursor:pointer}
+/* Back to top button */
+.btt{position:fixed;bottom:28px;right:28px;width:44px;height:44px;background:var(--i);color:var(--p);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:999;opacity:0;transform:translateY(12px);transition:all .3s ease;box-shadow:0 4px 16px rgba(0,0,0,.2);border:1px solid rgba(250,250,246,.1)}
+.btt.show{opacity:1;transform:translateY(0)}
+.btt:hover{background:var(--r2);transform:translateY(-2px);box-shadow:0 6px 20px rgba(178,58,40,.3)}
+.btt svg{width:18px;height:18px}
+
+/* ═══ ENHANCED VISUAL POLISH ═══ */
+
+/* Animated gradient text on hero name */
+.hr h1 .la{background:linear-gradient(135deg,var(--n) 0%,#3B6BA5 40%,var(--r2) 70%,var(--n) 100%);background-size:300% 300%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:nameShift 8s ease-in-out infinite}
+@keyframes nameShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+/* Subtle glow on hero stats numbers */
+.st .sn{transition:color .3s ease}.st:hover .sn{color:var(--r2)}
+
+/* Project cards — lift + left accent on hover */
+.ic::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--r2);border-radius:2px 0 0 2px;transform:scaleY(0);transition:transform .25s ease;transform-origin:bottom}
+.ic:hover::before{transform:scaleY(1)}
+
+/* Project article — subtle left accent line on scroll */
+.pj{border-left:3px solid transparent;padding-left:clamp(0px,1vw,16px);transition:border-color .4s ease}
+.pj:hover{border-left-color:var(--r2)}
+
+/* Tag chips — subtle hover lift */
+.tag{transition:all .2s ease}.tag:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(31,58,95,.12)}
+.tag-a:hover{box-shadow:0 3px 8px rgba(178,58,40,.18)}
+
+/* Stack chips — accent hover */
+.si{transition:all .2s ease}.si:hover{background:var(--i);color:var(--p);border-color:var(--i);transform:translateY(-1px)}
+
+/* Architecture diagram — subtle shadow */
+.arch{transition:box-shadow .3s ease}.arch:hover{box-shadow:0 8px 32px rgba(31,58,95,.1)}
+
+/* Gallery image — improved hover with scale + shadow */
+.gi{transition:all .3s cubic-bezier(.2,.8,.2,1)}
+.gi:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(31,58,95,.18)}
+
+/* Hero image — zoom on hover */
+.ph{transition:box-shadow .3s ease}.ph:hover{box-shadow:0 8px 32px rgba(31,58,95,.12)}
+.ph img{transition:transform .6s cubic-bezier(.2,.8,.2,1)}.ph:hover img{transform:scale(1.03)}
+
+/* What This Does — subtle hover accent */
+.wtd{transition:border-color .3s ease,box-shadow .3s ease}.wtd:hover{border-left-color:var(--n);box-shadow:0 4px 16px rgba(31,58,95,.06)}
+
+/* Nav links — underline slide effect */
+.nl a::after{content:'';position:absolute;bottom:0;left:50%;width:0;height:1px;background:var(--r2);transition:width .25s ease,left .25s ease}
+.nl a:hover::after{width:100%;left:0}
+.nl a.ac::after{width:100%;left:0}
+
+/* Contact channel links — gradient accent on hover */
+.cc a{transition:padding .2s ease,background .2s ease}.cc a:hover{background:rgba(244,162,97,.05)}
+
+/* Resume download card — glow on hover */
+.rc{transition:all .3s ease}.rc:hover{border-color:rgba(250,250,246,.35);box-shadow:0 4px 20px rgba(244,162,97,.15)}
+
+/* Smooth section entrance — stagger children */
+.pf li{opacity:0;transform:translateX(-8px);transition:opacity .5s ease,transform .5s ease}
+.rv.in .pf li{opacity:1;transform:translateX(0)}
+.rv.in .pf li:nth-child(1){transition-delay:.05s}
+.rv.in .pf li:nth-child(2){transition-delay:.1s}
+.rv.in .pf li:nth-child(3){transition-delay:.15s}
+.rv.in .pf li:nth-child(4){transition-delay:.2s}
+.rv.in .pf li:nth-child(5){transition-delay:.25s}
+.rv.in .pf li:nth-child(6){transition-delay:.3s}
+.rv.in .pf li:nth-child(7){transition-delay:.35s}
+.rv.in .pf li:nth-child(8){transition-delay:.4s}
+.rv.in .pf li:nth-child(9){transition-delay:.45s}
+.rv.in .pf li:nth-child(10){transition-delay:.5s}
+
+/* Scroll progress indicator at top of page */
+.scroll-progress{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--n),var(--r2));z-index:9999;width:0%;transition:none;pointer-events:none}
+
+/* Better CTA buttons — subtle gradient */
+.bp{background:linear-gradient(135deg,var(--i) 0%,var(--n) 100%)}
+.bp:hover{background:linear-gradient(135deg,var(--n) 0%,var(--r2) 100%);transform:translateY(-2px);box-shadow:0 6px 20px rgba(31,58,95,.25)}
+
+/* Ghost button hover glow */
+.bg:hover{box-shadow:0 4px 14px rgba(31,58,95,.1)}
+
+/* Project number badge style */
+.pn{background:rgba(178,58,40,.06);padding:2px 8px;border-radius:2px}
+
+/* Eyebrow label decorative dash */
+.eb::before{content:'';display:inline-block;width:18px;height:2px;background:var(--r2);margin-right:10px;vertical-align:middle}
+
 .pv .vp{pointer-events:none}
+.pv{display:none}
+.pv.confirmed{display:block}
+
 </style>
 </head>
 <body>
 
+<div class="scroll-progress" id="scroll-progress"></div>
 <nav class="nv" id="nav"><div class="ni">
 <a href="#top" class="nb"><span class="dt"></span>Wismitha Peiris</a>
 <div class="nl">
@@ -254,7 +343,7 @@ section+section{border-top:1px solid var(--l)}
 <div>
 <p class="ht rv" style="--d:60ms"><span style="color:var(--r2)">●</span> ELECTRONIC &amp; EMBEDDED ENGINEER <span style="color:var(--l2);margin:0 10px">/</span> PCB · ROBOTICS · ML</p>
 <h1 class="rv" style="--d:120ms"><span class="fi">Wismitha</span><span class="la">Peiris.</span></h1>
-<p class="ld hi rv" style="--d:200ms">I design and build complete systems across hardware, software, and everything in between. My work covers autonomous robotics with computer vision and LiDAR, industrial predictive maintenance with custom PCBs and ML, speech and handwriting recognition platforms, PLC-based factory automation, IoT devices with custom circuit boards, and a full Android SaaS product live on Google Play.</p>
+<p class="ld hi rv" style="--d:200ms">I design and build complete engineering systems from concept to deployment. Currently building an AI-powered educational robot at Figmentum Robotics, with prior work spanning industrial predictive maintenance with custom PCBs and ML, production PLC automation, autonomous robotics with computer vision and LiDAR, IoT devices with custom circuit boards, and a full Android SaaS product independently shipped to Google Play.</p>
 <div class="cr rv" style="--d:280ms">
 <a class="bt bp" href="#projects">View Selected Work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 <a class="bt bg" href="Wismitha_Peiris_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
@@ -267,21 +356,21 @@ section+section{border-top:1px solid var(--l)}
 <div class="st"><div class="sn">2</div><div class="sa">Beta platforms</div></div>
 </div></div></div></div></header>
 <section id="about"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">§ 01 / Introduction</span><span class="ru"></span></div>
+<div class="shd rv"><div class="shm"><span class="ix">Introduction</span><span class="ru"></span></div>
 <div><span class="eb">About</span><h2 style="margin-top:12px">A practical builder, working full stack from the metal up.</h2></div></div>
 <div class="hg"><aside></aside><div class="ab rv" style="--d:80ms">
-<p>I am an Electrical and Electronic Engineer with a hands-on approach to building real systems that work in the real world. Over the past four years, I have worked across a wide range of engineering disciplines, from designing circuit boards and programming industrial PLCs to building machine learning models and shipping mobile applications.</p>
+<p>I am an Electrical and Electronic Engineer with four years of professional experience, currently working as a Prototype Engineer at <strong>Figmentum Robotics LLC</strong> (USA, remote), where I am building a children&#8217;s educational robot from the ground up. This is the project I am most deeply invested in right now: I built the complete conversational AI pipeline (real-time LLM + speech-to-text + text-to-speech with emotion-aware voice synthesis), designed camera-based handwriting recognition for interactive math and spelling games, engineered a projector-based display with software keystone correction, and integrated wake-word detection, voice activity detection, quiz games, and pronunciation assessment into a single responsive system that keeps young children engaged.</p>
 
-<p>On the hardware side, I have designed custom PCBs in KiCad for power switching and battery backup systems, programmed industrial vibration, current, and temperature sensors for high-speed data acquisition on Raspberry Pi, and built electrical control panels with PLC programming for factory automation. I have also designed and built a smart home controller from scratch using an ESP32 microcontroller with a custom PCB, integrating it with Google Home and Alexa.</p>
+<p>Alongside the robot, I built two production-grade testing platforms for Figmentum. The <strong>Audio Simulation Platform</strong> lets the team test STT accuracy under 16 types of real-world audio degradation (noise, reverb, echo, codec artifacts) across multiple providers including GPT-4o and Gemini 2.5, with automated WER/CER evaluation. The <strong>OCR Benchmarking Platform</strong> evaluates 13+ OCR models on children&#8217;s handwriting with image degradation simulation and a hybrid cost-optimized routing chain that cuts inference costs by 3-5x. Both platforms are currently in beta and used daily by the team.</p>
 
-<p>On the software and AI side, I built a complete autonomous vehicle platform on Raspberry Pi 5 with dual AI cameras, LiDAR-based obstacle avoidance, PID steering control, and a real-time web dashboard. For Figmentum Robotics in the USA, I developed two production-grade testing platforms: one for evaluating speech-to-text accuracy across multiple providers under simulated real-world audio conditions, and another for benchmarking OCR models on children's handwriting with 13+ AI backends and cost-optimized routing chains.</p>
+<p>I also independently designed, developed, and shipped <a href="https://eventplanners.app" target="_blank" rel="noopener" style="border-bottom:1px solid var(--r2);color:var(--i)"><strong>EventPlanners</strong></a>, a full-featured Android SaaS application live on the Google Play Store. Built entirely by myself using Kotlin, Jetpack Compose, and Firebase, it handles digital invitations with 18+ fonts and a template editor, real-time RSVP tracking, QR check-in, drag-and-drop seating charts, budget tracking with PDF reports, photo galleries with Chromecast slideshow, AI-powered text generation, co-host management, and a tiered subscription model through Google Play Billing. I also built a Cloudflare CDN layer that reduced Firebase hosting costs by over 95%.</p>
 
-<p>I also independently designed, developed, and deployed <a href="https://eventplanners.app" target="_blank" rel="noopener" style="border-bottom:1px solid var(--r2);color:var(--i)">EventPlanners</a>, a full-featured Android event management SaaS application built with Kotlin, Jetpack Compose, and Firebase, currently live on the Google Play Store with a tiered subscription model.</p>
+<p>Before Figmentum, I worked at <strong>Hypen Holdings</strong> where I owned the full predictive maintenance hardware platform: I programmed industrial vibration, current, and temperature sensors on Raspberry Pi, designed a custom PCB in KiCad for battery backup with high-speed power switching, trained ML fault-detection models on time-series data, and built an AWS S3 data pipeline feeding a React web dashboard with adaptive baselines and bearing-fault analysis. At <strong>Midas Safety</strong>, I programmed a Delta PLC and designed the HMI and electrical panel for a heat-transfer machine that automated glove printing on the factory floor, and built a secondary control panel that reduced defect rates. At <strong>LTL Transformers</strong>, I conducted R&amp;D on amorphous-core transformer materials to reduce energy losses in distribution transformers.</p>
 
-<p>I hold a BSc Hons in Electrical and Electronic Engineering from the University of Peradeniya, Sri Lanka, and I am currently pursuing an MSc in Electronic and Electrical Engineering at Anglia Ruskin University in the United Kingdom. What I enjoy most is taking a project from the initial idea all the way to a working, deployed system, whether that means soldering a circuit board, training an ML model, or writing the frontend code.</p>
+<p>On the academic and personal side, I built an <strong>autonomous vehicle platform</strong> on Raspberry Pi 5 with dual AI cameras, LiDAR, PID steering, an 8-state finite state machine, and a real-time web dashboard (10,600+ lines of Python). At the University of Peradeniya, I designed an <strong>object avoidance robot</strong> using Model Predictive Control on Jetson AGX with LiDAR mapping, a <strong>smart home controller</strong> with a custom ESP32 PCB and ESP-IDF firmware integrated with Google Home and Alexa, and a <strong>vending machine prototype</strong> using Arduino Mega2560. I hold a BSc Hons in Electrical and Electronic Engineering from the University of Peradeniya, and I am currently pursuing an MSc at Anglia Ruskin University, UK.</p>
 </div></div></div></section>
 <section id="projects"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">§ 02 / Selected Work</span><span class="ru"></span></div>
+<div class="shd rv"><div class="shm"><span class="ix">Selected Work</span><span class="ru"></span></div>
 <div><span class="eb">Projects</span><h2 style="margin-top:12px">Eight projects, each with architecture & gallery.</h2>
 <div class="pi"><a href="#p01-autonomous-vehicle" class="ic"><span class="icn">PROJ. 01</span><span class="ict">Autonomous Vehicle Platform</span><span class="icy">April 2026 — May 2026</span><span class="ica">↗</span></a>
 <a href="#p02-children-robot" class="ic"><span class="icn">PROJ. 02</span><span class="ict">Children-Interaction Robot</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
@@ -364,16 +453,16 @@ section+section{border-top:1px solid var(--l)}
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
 <div class="gg">
-<figure class="gi" data-slot="IMAGE 01"><img src="media/p01-autonomous-vehicle/01.jpg" alt="Hardware assembly with sensors" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Hardware assembly with sensors</span></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p01-autonomous-vehicle/02.jpg" alt="Dashboard UI dual camera feeds" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Dashboard UI dual camera feeds</span></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p01-autonomous-vehicle/03.jpg" alt="Lane detection binary view" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Lane detection binary view</span></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p01-autonomous-vehicle/04.jpg" alt="LiDAR obstacle visualization" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">LiDAR obstacle visualization</span></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p01-autonomous-vehicle/05.jpg" alt="PID calibration screen" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">PID calibration screen</span></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p01-autonomous-vehicle/06.jpg" alt="Sensor wiring detail" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Sensor wiring detail</span></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p01-autonomous-vehicle/07.jpg" alt="FSM state display" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">FSM state display</span></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p01-autonomous-vehicle/08.jpg" alt="Bird-eye camera view" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Bird-eye camera view</span></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p01-autonomous-vehicle/09.jpg" alt="Emergency braking test" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Emergency braking test</span></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p01-autonomous-vehicle/10.jpg" alt="Night driving test" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Night driving test</span></figure>
+<figure class="gi" data-slot="IMAGE 01"><img src="media/p01-autonomous-vehicle/01.jpg" alt="Hardware assembly with sensors" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p01-autonomous-vehicle/02.jpg" alt="Dashboard UI dual camera feeds" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p01-autonomous-vehicle/03.jpg" alt="Lane detection binary view" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p01-autonomous-vehicle/04.jpg" alt="LiDAR obstacle visualization" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p01-autonomous-vehicle/05.jpg" alt="PID calibration screen" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p01-autonomous-vehicle/06.jpg" alt="Sensor wiring detail" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p01-autonomous-vehicle/07.jpg" alt="FSM state display" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p01-autonomous-vehicle/08.jpg" alt="Bird-eye camera view" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p01-autonomous-vehicle/09.jpg" alt="Emergency braking test" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p01-autonomous-vehicle/10.jpg" alt="Night driving test" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
 </div></div>
 <div class="pv">
 <div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Full autonomous driving demo on test track</span></div>
@@ -481,16 +570,16 @@ section+section{border-top:1px solid var(--l)}
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
 <div class="gg">
-<figure class="gi" data-slot="IMAGE 01"><img src="media/p02-children-robot/01.jpg" alt="Robot prototype with projector and camera" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Robot prototype with projector and camera</span></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p02-children-robot/02.jpg" alt="Math game projected on surface" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Math game projected on surface</span></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p02-children-robot/03.jpg" alt="Spelling bee results display" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Spelling bee results display</span></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p02-children-robot/04.jpg" alt="OAK-D camera capturing handwriting" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">OAK-D camera capturing handwriting</span></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p02-children-robot/05.jpg" alt="Quiz game score display" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Quiz game score display</span></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p02-children-robot/06.jpg" alt="Projector keystone correction" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Projector keystone correction</span></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p02-children-robot/07.jpg" alt="Child interacting with robot" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Child interacting with robot</span></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p02-children-robot/08.jpg" alt="Pronunciation game feedback" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Pronunciation game feedback</span></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p02-children-robot/09.jpg" alt="Hardware setup overview" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Hardware setup overview</span></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p02-children-robot/10.jpg" alt="Tracing projector mode" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Tracing projector mode</span></figure>
+<figure class="gi" data-slot="IMAGE 01"><img src="media/p02-children-robot/01.jpg" alt="Robot prototype with projector and camera" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p02-children-robot/02.jpg" alt="Math game projected on surface" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p02-children-robot/03.jpg" alt="Spelling bee results display" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p02-children-robot/04.jpg" alt="OAK-D camera capturing handwriting" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p02-children-robot/05.jpg" alt="Quiz game score display" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p02-children-robot/06.jpg" alt="Projector keystone correction" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p02-children-robot/07.jpg" alt="Child interacting with robot" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p02-children-robot/08.jpg" alt="Pronunciation game feedback" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p02-children-robot/09.jpg" alt="Hardware setup overview" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p02-children-robot/10.jpg" alt="Tracing projector mode" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
 </div></div>
 
 <div class="pv">
@@ -553,16 +642,16 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p03-audio-sim/01.jpg" alt="Transform pipeline config" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Transform pipeline config</span></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p03-audio-sim/02.jpg" alt="STT comparison results" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">STT comparison results</span></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p03-audio-sim/03.jpg" alt="VAD state visualization" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">VAD state visualization</span></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p03-audio-sim/04.jpg" alt="WER/CER evaluation report" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">WER/CER evaluation report</span></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p03-audio-sim/05.jpg" alt="Parameter sweep builder" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Parameter sweep builder</span></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p03-audio-sim/06.jpg" alt="Preset library" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Preset library</span></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p03-audio-sim/07.jpg" alt="Audio waveform before/after" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Audio waveform before/after</span></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p03-audio-sim/08.jpg" alt="Conversation simulation timeline" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Conversation simulation timeline</span></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p03-audio-sim/09.jpg" alt="Endpointing analysis" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Endpointing analysis</span></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p03-audio-sim/10.jpg" alt="Latency breakdown chart" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Latency breakdown chart</span></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p03-audio-sim/01.jpg" alt="Transform pipeline config" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p03-audio-sim/02.jpg" alt="STT comparison results" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p03-audio-sim/03.jpg" alt="VAD state visualization" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p03-audio-sim/04.jpg" alt="WER/CER evaluation report" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p03-audio-sim/05.jpg" alt="Parameter sweep builder" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p03-audio-sim/06.jpg" alt="Preset library" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p03-audio-sim/07.jpg" alt="Audio waveform before/after" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p03-audio-sim/08.jpg" alt="Conversation simulation timeline" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p03-audio-sim/09.jpg" alt="Endpointing analysis" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p03-audio-sim/10.jpg" alt="Latency breakdown chart" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -634,16 +723,16 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p04-ocr/01.jpg" alt="Image degradation preview" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Image degradation preview</span></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p04-ocr/02.jpg" alt="Model accuracy comparison" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Model accuracy comparison</span></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p04-ocr/03.jpg" alt="Confusion matrix analysis" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Confusion matrix analysis</span></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p04-ocr/04.jpg" alt="Hybrid chain cost view" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Hybrid chain cost view</span></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p04-ocr/05.jpg" alt="Batch processing dashboard" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Batch processing dashboard</span></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p04-ocr/06.jpg" alt="Annotation review UI" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Annotation review UI</span></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p04-ocr/07.jpg" alt="Word-level error analysis" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Word-level error analysis</span></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p04-ocr/08.jpg" alt="Regression detection report" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Regression detection report</span></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p04-ocr/09.jpg" alt="Image preprocessing pipeline" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Image preprocessing pipeline</span></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p04-ocr/10.jpg" alt="Statistical calibration" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Statistical calibration</span></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p04-ocr/01.jpg" alt="Image degradation preview" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p04-ocr/02.jpg" alt="Model accuracy comparison" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p04-ocr/03.jpg" alt="Confusion matrix analysis" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p04-ocr/04.jpg" alt="Hybrid chain cost view" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p04-ocr/05.jpg" alt="Batch processing dashboard" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p04-ocr/06.jpg" alt="Annotation review UI" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p04-ocr/07.jpg" alt="Word-level error analysis" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p04-ocr/08.jpg" alt="Regression detection report" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p04-ocr/09.jpg" alt="Image preprocessing pipeline" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p04-ocr/10.jpg" alt="Statistical calibration" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -711,16 +800,16 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p05-event-planner/01.jpg" alt="Invitation template editor" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Invitation template editor</span></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p05-event-planner/02.jpg" alt="RSVP tracking dashboard" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">RSVP tracking dashboard</span></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p05-event-planner/03.jpg" alt="Photo gallery + Chromecast" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Photo gallery + Chromecast</span></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p05-event-planner/04.jpg" alt="Budget tracker PDF reports" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Budget tracker PDF reports</span></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p05-event-planner/05.jpg" alt="Web invitation page" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Web invitation page</span></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p05-event-planner/06.jpg" alt="QR check-in screen" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">QR check-in screen</span></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p05-event-planner/07.jpg" alt="Seating chart drag-drop" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Seating chart drag-drop</span></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p05-event-planner/08.jpg" alt="AI text generation" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">AI text generation</span></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p05-event-planner/09.jpg" alt="Co-host management" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Co-host management</span></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p05-event-planner/10.jpg" alt="Subscription tiers" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Subscription tiers</span></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p05-event-planner/01.jpg" alt="Invitation template editor" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p05-event-planner/02.jpg" alt="RSVP tracking dashboard" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p05-event-planner/03.jpg" alt="Photo gallery + Chromecast" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p05-event-planner/04.jpg" alt="Budget tracker PDF reports" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p05-event-planner/05.jpg" alt="Web invitation page" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p05-event-planner/06.jpg" alt="QR check-in screen" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p05-event-planner/07.jpg" alt="Seating chart drag-drop" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p05-event-planner/08.jpg" alt="AI text generation" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p05-event-planner/09.jpg" alt="Co-host management" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p05-event-planner/10.jpg" alt="Subscription tiers" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -794,16 +883,16 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p06-predictive-maintenance/01.jpg" alt="Custom PCB for battery-backup" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Custom PCB for battery-backup</span></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p06-predictive-maintenance/02.jpg" alt="Sensor installation on motor" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Sensor installation on motor</span></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p06-predictive-maintenance/03.jpg" alt="Dashboard overview mini-FFT" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Dashboard overview mini-FFT</span></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p06-predictive-maintenance/04.jpg" alt="Engineering analysis waveform" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Engineering analysis waveform</span></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p06-predictive-maintenance/05.jpg" alt="Maintenance log timeline" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Maintenance log timeline</span></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p06-predictive-maintenance/06.jpg" alt="Bearing fault indicators" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Bearing fault indicators</span></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p06-predictive-maintenance/07.jpg" alt="Trend chart with event markers" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Trend chart with event markers</span></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p06-predictive-maintenance/08.jpg" alt="Hardware enclosure" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Hardware enclosure</span></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p06-predictive-maintenance/09.jpg" alt="Parquet ingestion monitor" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Parquet ingestion monitor</span></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p06-predictive-maintenance/10.jpg" alt="ISO 10816 zone display" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">ISO 10816 zone display</span></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p06-predictive-maintenance/01.jpg" alt="Custom PCB for battery-backup" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p06-predictive-maintenance/02.jpg" alt="Sensor installation on motor" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p06-predictive-maintenance/03.jpg" alt="Dashboard overview mini-FFT" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p06-predictive-maintenance/04.jpg" alt="Engineering analysis waveform" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p06-predictive-maintenance/05.jpg" alt="Maintenance log timeline" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p06-predictive-maintenance/06.jpg" alt="Bearing fault indicators" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p06-predictive-maintenance/07.jpg" alt="Trend chart with event markers" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p06-predictive-maintenance/08.jpg" alt="Hardware enclosure" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p06-predictive-maintenance/09.jpg" alt="Parquet ingestion monitor" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p06-predictive-maintenance/10.jpg" alt="ISO 10816 zone display" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -872,16 +961,16 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p07-heat-transfer/01.jpg" alt="Electrical control panel" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Electrical control panel</span></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p07-heat-transfer/02.jpg" alt="HMI touchscreen recipe" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">HMI touchscreen recipe</span></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p07-heat-transfer/03.jpg" alt="Pneumatic system" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Pneumatic system</span></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p07-heat-transfer/04.jpg" alt="PLC wiring and I/O" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">PLC wiring and I/O</span></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p07-heat-transfer/05.jpg" alt="Glove print output" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Glove print output</span></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p07-heat-transfer/06.jpg" alt="Heater plate assembly" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Heater plate assembly</span></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p07-heat-transfer/07.jpg" alt="Machine overview" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Machine overview</span></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p07-heat-transfer/08.jpg" alt="Safety interlock wiring" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Safety interlock wiring</span></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p07-heat-transfer/09.jpg" alt="Operator station" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Operator station</span></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p07-heat-transfer/10.jpg" alt="Production line context" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Production line context</span></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p07-heat-transfer/01.jpg" alt="Electrical control panel" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p07-heat-transfer/02.jpg" alt="HMI touchscreen recipe" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p07-heat-transfer/03.jpg" alt="Pneumatic system" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p07-heat-transfer/04.jpg" alt="PLC wiring and I/O" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p07-heat-transfer/05.jpg" alt="Glove print output" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p07-heat-transfer/06.jpg" alt="Heater plate assembly" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p07-heat-transfer/07.jpg" alt="Machine overview" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p07-heat-transfer/08.jpg" alt="Safety interlock wiring" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p07-heat-transfer/09.jpg" alt="Operator station" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p07-heat-transfer/10.jpg" alt="Production line context" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -948,16 +1037,16 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p08-smart-home/01.jpg" alt="Custom PCB layout KiCad" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Custom PCB layout KiCad</span></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p08-smart-home/02.jpg" alt="Assembled PCB with ESP32" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Assembled PCB with ESP32</span></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p08-smart-home/03.jpg" alt="Touchscreen UI scenes" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Touchscreen UI scenes</span></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p08-smart-home/04.jpg" alt="Google Home integration" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Google Home integration</span></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p08-smart-home/05.jpg" alt="Sensor wiring enclosure" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Sensor wiring enclosure</span></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p08-smart-home/06.jpg" alt="3D render of PCB" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">3D render of PCB</span></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p08-smart-home/07.jpg" alt="Relay driver testing" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Relay driver testing</span></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p08-smart-home/08.jpg" alt="OTA update process" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">OTA update process</span></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p08-smart-home/09.jpg" alt="Scene configuration" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Scene configuration</span></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p08-smart-home/10.jpg" alt="Installed in home" loading="lazy" onerror="this.parentNode.style.display='none'"><span class="gc">Installed in home</span></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p08-smart-home/01.jpg" alt="Custom PCB layout KiCad" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p08-smart-home/02.jpg" alt="Assembled PCB with ESP32" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p08-smart-home/03.jpg" alt="Touchscreen UI scenes" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p08-smart-home/04.jpg" alt="Google Home integration" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p08-smart-home/05.jpg" alt="Sensor wiring enclosure" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p08-smart-home/06.jpg" alt="3D render of PCB" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p08-smart-home/07.jpg" alt="Relay driver testing" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p08-smart-home/08.jpg" alt="OTA update process" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p08-smart-home/09.jpg" alt="Scene configuration" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p08-smart-home/10.jpg" alt="Installed in home" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -974,27 +1063,28 @@ section+section{border-top:1px solid var(--l)}
 </article>
 </div></div></section>
 <section id="skills"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">§ 03 / Capabilities</span><span class="ru"></span></div>
+<div class="shd rv"><div class="shm"><span class="ix">Capabilities</span><span class="ru"></span></div>
 <div><span class="eb">Technical Skills</span><h2 style="margin-top:12px">Tools and platforms I work with daily.</h2></div></div>
 <div class="hg"><aside></aside><div class="sg rv" style="--d:80ms"><div class="sr"><h4>Programming</h4><div class="skl"><span>Python</span><span>C</span><span>C++</span><span>Kotlin</span><span>ESP-IDF</span><span>Bash</span><span>JavaScript</span><span>TypeScript</span></div></div>
 <div class="sr"><h4>Hardware &amp; PCB</h4><div class="skl"><span>Altium Designer</span><span>KiCad</span><span>EasyEDA</span><span>Schematic Capture</span><span>Hardware Bring-up</span><span>Failure Analysis</span><span>JTAG</span><span>Oscilloscope / DMM</span><span>Soldering</span><span>Control Panel Design</span></div></div>
 <div class="sr"><h4>Embedded</h4><div class="skl"><span>Raspberry Pi 4 / 5</span><span>ESP32</span><span>Arduino Mega 2560</span><span>Jetson AGX</span><span>I²C</span><span>SPI</span><span>UART</span><span>Modbus</span><span>ADC</span></div></div>
 <div class="sr"><h4>Sensors &amp; DAQ</h4><div class="skl"><span>Vibration</span><span>Current</span><span>Temperature</span><span>LiDAR</span><span>IMX500 AI Cameras</span><span>Real-Time DAQ</span><span>Calibration</span><span>Signal Processing</span></div></div>
-<div class="sr"><h4>ML &amp; AI</h4><div class="skl"><span>Anomaly Detection</span><span>Fault Detection</span><span>Edge Deployment</span><span>LLM + STT + TTS</span><span>OpenAI / Vertex AI</span><span>Computer Vision</span><span>OCR</span><span>WER / CER</span></div></div>
+<div class="sr"><h4>ML &amp; AI</h4><div class="skl"><span>Anomaly Detection</span><span>Fault Detection</span><span>Edge Deployment</span><span>LLM + STT + TTS</span><span>OpenAI / Vertex AI</span><span>Computer Vision</span><span>OpenCV</span><span>OCR</span><span>WER / CER</span></div></div>
 <div class="sr"><h4>Robotics</h4><div class="skl"><span>Model Predictive Control</span><span>PID</span><span>State Machines</span><span>LiDAR Mapping</span><span>Path Planning</span><span>Sensor Fusion</span><span>Autonomous Nav</span></div></div>
-<div class="sr"><h4>Cloud &amp; Data</h4><div class="skl"><span>AWS S3</span><span>Parquet</span><span>Firebase Firestore</span><span>Auth / Storage</span><span>Cloud Functions</span><span>Cloudflare CDN</span><span>PostgreSQL</span><span>Streamlit</span></div></div>
-<div class="sr"><h4>Mobile &amp; Frontend</h4><div class="skl"><span>Kotlin</span><span>Jetpack Compose</span><span>Material 3</span><span>MVVM</span><span>Google Play Billing</span><span>React</span><span>Vite</span><span>Tailwind</span></div></div>
+<div class="sr"><h4>Cloud &amp; Data</h4><div class="skl"><span>AWS S3</span><span>Parquet</span><span>Firebase Firestore</span><span>Auth / Storage</span><span>Cloud Functions</span><span>Cloudflare CDN</span><span>PostgreSQL</span><span>Docker</span><span>Nginx</span><span>Streamlit</span></div></div>
+<div class="sr"><h4>Mobile &amp; Frontend</h4><div class="skl"><span>Kotlin</span><span>Jetpack Compose</span><span>Material 3</span><span>MVVM</span><span>Google Play Billing</span><span>React</span><span>FastAPI</span><span>Vite</span><span>Tailwind</span></div></div>
 <div class="sr"><h4>Industrial</h4><div class="skl"><span>Siemens PLC</span><span>Delta PLC</span><span>HMI Design</span><span>Pneumatics</span><span>Transformer Fundamentals</span><span>Battery Backup</span><span>Power Switching</span></div></div>
 <div class="sr"><h4>Design &amp; Simulation</h4><div class="skl"><span>SolidWorks</span><span>SolidWorks Electrical</span><span>AutoCAD</span><span>Proteus</span></div></div>
 </div></div>
 </div></section>
 <section id="education"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">§ 04 / Education</span><span class="ru"></span></div>
+<div class="shd rv"><div class="shm"><span class="ix">Education</span><span class="ru"></span></div>
 <div><span class="eb">Education &amp; Activities</span><h2 style="margin-top:12px">Formal training, certifications, and extracurricular achievements.</h2></div></div>
 <div class="hg"><aside></aside><div class="rv" style="--d:80ms">
 <div class="el">
 <div class="ei"><div class="ed">MSc, Electronic and Electrical Engineering<span class="ein"> — Anglia Ruskin University, UK</span></div><div class="ey">2025 — 2026</div></div>
 <div class="ei"><div class="ed">BSc Eng. (Hons), Electrical and Electronic Engineering<span class="ein"> — University of Peradeniya, Sri Lanka</span></div><div class="ey">2020 — 2024</div></div>
+<div class="ei"><div class="ed">CIMA Foundation Level<span class="ein"> — Wisdom Business Academy, Colombo</span></div><div class="ey">2018</div></div>
 <div class="ei"><div class="ed">Secondary Education (GCE A/L &amp; O/L)<span class="ein"> — St. Peter's College, Colombo 04</span></div><div class="ey">2005 — 2018</div></div>
 <div class="ei"><div class="ed">Programming for Everybody (Python)<span class="ein"> — University of Michigan (online)</span></div><div class="ey">2020</div></div>
 <div class="ei"><div class="ed">C for Everyone: Programming Fundamentals<span class="ein"> — University of California (online)</span></div><div class="ey">2020</div></div>
@@ -1030,7 +1120,7 @@ section+section{border-top:1px solid var(--l)}
 <span>Diploma in Western Music — Trinity College London Examinations</span>
 </div></div></div></div></section>
 <section id="contact" class="ct"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">§ 05 / Get in Touch</span><span class="ru"></span></div>
+<div class="shd rv"><div class="shm"><span class="ix">Get in Touch</span><span class="ru"></span></div>
 <div><span class="eb">Contact</span><h2 style="margin-top:12px">Let's connect.</h2></div></div>
 <div class="cg">
 <div class="cc rv">
@@ -1045,6 +1135,7 @@ section+section{border-top:1px solid var(--l)}
 <div class="rc"><div class="rt">Resume</div><p class="rd">Professional resume with full project list, technical skills, and experience.</p>
 <a href="Wismitha_Peiris_Resume.pdf" target="_blank" rel="noopener">Download Resume PDF ↓</a>
 </div></aside></div></div></section>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
 <footer class="ft"><div class="fi-inner">
 <div>© 2026 Wismitha Peiris</div>
 </div></footer>
@@ -1074,6 +1165,14 @@ const nl=document.querySelectorAll('.nl a[data-link]');
 const sa=()=>{const y=window.scrollY+120;let c=null;ss.forEach(s=>{if(s.offsetTop<=y)c=s.id});nl.forEach(a=>a.classList.toggle('ac',a.getAttribute('href')==='#'+c))};
 window.addEventListener('scroll',sa,{passive:true});sa();
 
+// Scroll progress bar
+const sp=document.getElementById('scroll-progress');
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement.scrollHeight-window.innerHeight;
+  sp.style.width=(window.scrollY/h*100)+'%';
+  document.getElementById('btt').classList.toggle('show',window.scrollY>600);
+},{passive:true});
+
 // Smooth scroll for all internal links
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
   a.addEventListener('click',e=>{
@@ -1082,54 +1181,55 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
   });
 });
 
-// Hide gallery section if ALL images failed to load (no images at all)
+// Gallery: visible by default. Missing images hide themselves.
+// If ALL images fail, hide the entire gallery section.
 document.querySelectorAll('.pg').forEach(gallery=>{
-  const items=gallery.querySelectorAll('.gi');
-  let loaded=0;
-  let checked=0;
+  const items=Array.from(gallery.querySelectorAll('.gi'));
+  if(!items.length){gallery.style.display='none';return;}
+  let total=items.length, failed=0, done=0;
+
+  const check=()=>{
+    done++;
+    if(done===total && failed===total) gallery.style.display='none';
+  };
+
   items.forEach(gi=>{
     const img=gi.querySelector('img');
-    if(!img) return;
-    const check=()=>{
-      checked++;
-      if(checked===items.length && loaded===0){
-        gallery.style.display='none';
-      }
-    };
-    img.addEventListener('load',()=>{loaded++;checked++;});
-    img.addEventListener('error',()=>{check()});
+    if(!img){failed++;check();return;}
     if(img.complete){
-      if(img.naturalWidth>0) loaded++;
-      check();
+      if(img.naturalWidth>0){check();}
+      else{gi.style.display='none';failed++;check();}
+    } else {
+      img.addEventListener('load',()=>{check();},{once:true});
+      img.addEventListener('error',()=>{gi.style.display='none';failed++;check();},{once:true});
     }
   });
 });
 
-// Video handling: show player when video exists, hide section when it does not
+// ═══ MEDIA LOADING — reliable, no flicker ═══
+// Videos: hidden by default, shown only when file confirmed to exist
 document.querySelectorAll('.pv').forEach(section=>{
   const video=section.querySelector('video');
-  if(!video) return;
+  const source=video?video.querySelector('source'):null;
+  if(!video||!source) return;
+  const url=source.getAttribute('src');
+  if(!url) return;
 
-  // Video loaded successfully — hide placeholder, show player
+  // Try loading — if metadata arrives, file exists
+  video.preload='metadata';
   video.addEventListener('loadedmetadata',()=>{
+    section.classList.add('confirmed');
     const placeholder=section.querySelector('.vp');
     if(placeholder) placeholder.style.display='none';
-  });
+  },{once:true});
 
-  // Video source failed — file does not exist, hide entire section
-  const source=video.querySelector('source');
-  if(source){
-    source.addEventListener('error',()=>{
-      section.style.display='none';
-    });
-  }
+  // If source errors, file does not exist — section stays hidden
+  source.addEventListener('error',()=>{
+    section.classList.remove('confirmed');
+  },{once:true});
 
-  // Also catch errors on the video element itself
-  video.addEventListener('error',()=>{
-    if(!video.duration){
-      section.style.display='none';
-    }
-  });
+  // Force the browser to start checking
+  video.load();
 });
 
 // ═══════════════════════════════════════════════════════
@@ -1167,7 +1267,7 @@ document.querySelectorAll('.pv').forEach(section=>{
     lbImg.onload=()=>{lbImg.classList.remove('loading')};
     lbImg.src=item.src;
     lbImg.alt=item.alt;
-    lbCap.textContent=item.cap;
+    lbCap.textContent=item.cap;lbCap.style.display=item.cap?'block':'none';
     lbCounter.textContent=(currentIndex+1)+' / '+currentImages.length;
   }
 
@@ -1223,7 +1323,7 @@ document.querySelectorAll('.pv').forEach(section=>{
         const visibleFigs=Array.from(gallery.querySelectorAll('.gi')).filter(f=>f.style.display!=='none');
         const images=visibleFigs.map(f=>{
           const img=f.querySelector('img');
-          const cap=f.querySelector('.gc');
+          const cap=null;
           return{
             src:img?img.src:'',
             alt:img?img.alt:'',
