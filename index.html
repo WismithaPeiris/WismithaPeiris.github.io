@@ -3,8 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Wismitha Peiris — Electronic and Embedded Engineer portfolio with 7 detailed project case studies.">
-<title>Wismitha Peiris — Electronic &amp; Embedded Engineer</title>
+<meta name="description" content="Wismitha Peiris — Electronic & Embedded Engineer. 8 detailed project case studies with architecture diagrams, galleries, and video.">
+<meta name="author" content="Wismitha Peiris">
+<meta name="theme-color" content="#1F3A5F">
+<meta property="og:title" content="Wismitha Peiris — Electronic & Embedded Engineer">
+<meta property="og:description" content="PCB Design, Embedded ML, Robotics, Computer Vision, Mobile & Cloud. 8 projects with architecture diagrams and demos.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wismithapeiris.github.io/">
+<title>Wismitha Peiris — Electronic & Embedded Engineer</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%231F3A5F'/%3E%3Ctext x='50' y='66' text-anchor='middle' font-family='Georgia,serif' font-size='52' font-weight='700' fill='%23FAFAF6'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -322,68 +328,218 @@ section+section{border-top:1px solid var(--l)}
 .pv{display:none}
 .pv.confirmed{display:block}
 
+
+
+/* ═══ TAB NAVIGATION ═══ */
+.tab-nav{position:sticky;top:0;z-index:200;background:rgba(250,250,246,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--l);padding:0}
+.tab-nav-inner{max-width:var(--cw);margin:0 auto;display:flex;justify-content:center;gap:0;padding:0 var(--gx);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tab-nav-inner::-webkit-scrollbar{display:none}
+.tab-btn{font-family:var(--fb);font-size:14.5px;font-weight:500;color:var(--s);padding:18px clamp(12px,2vw,28px);border:none;background:none;cursor:pointer;position:relative;white-space:nowrap;transition:color .2s ease;letter-spacing:.01em}
+.tab-btn:hover{color:var(--i)}
+.tab-btn.active{color:var(--n)}
+.tab-btn.active::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2.5px;background:var(--n);border-radius:2px 2px 0 0}
+@media(max-width:600px){.tab-btn{font-size:13px;padding:14px 10px}}
+
+/* Tab content visibility */
+.tab-page{display:none;animation:fadeUp .4s ease}
+.tab-page.active{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* ═══ HOME PAGE ═══ */
+.home{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(60px,10vw,120px) var(--gx) clamp(40px,6vw,80px);min-height:80vh;justify-content:center}
+.home-photo{width:clamp(160px,22vw,220px);height:clamp(160px,22vw,220px);border-radius:50%;overflow:hidden;margin-bottom:32px;border:4px solid var(--p2);box-shadow:0 8px 32px rgba(31,58,95,.12);background:var(--p2)}
+.home-photo img{width:100%;height:100%;object-fit:cover}
+.home-photo.empty{display:flex;align-items:center;justify-content:center}
+.home-photo.empty::after{content:'Add profile.jpg';font-family:var(--fm);font-size:11px;color:var(--s2);letter-spacing:.08em}
+.home-name{font-family:var(--fd);font-size:clamp(36px,6vw,56px);font-weight:400;color:var(--i);letter-spacing:-.03em;margin-bottom:8px;font-variation-settings:"opsz" 144,"SOFT" 30}
+.home-typing{font-family:var(--fm);font-size:clamp(14px,2vw,18px);color:var(--n);min-height:28px;margin-bottom:24px;letter-spacing:.02em}
+.home-typing .cursor{display:inline-block;width:2px;height:1.1em;background:var(--n);margin-left:2px;animation:blink 1s step-end infinite;vertical-align:text-bottom}
+@keyframes blink{50%{opacity:0}}
+.home-bio{font-size:16.5px;line-height:1.65;color:var(--s);max-width:56ch;margin-bottom:16px}
+.home-expand{font-family:var(--fm);font-size:12.5px;color:var(--r2);cursor:pointer;border:none;background:none;padding:6px 14px;border-radius:20px;border:1px solid rgba(178,58,40,.2);transition:all .2s;margin-bottom:32px;letter-spacing:.04em}
+.home-expand:hover{background:rgba(178,58,40,.06);border-color:var(--r2)}
+.home-detail{display:none;max-width:64ch;text-align:left;margin-bottom:32px;padding:28px 32px;background:var(--pw);border-radius:8px;border:1px solid var(--l)}
+.home-detail.open{display:block;animation:fadeUp .3s ease}
+.home-detail p{font-size:15.5px;line-height:1.68;color:var(--i2);margin-bottom:.8em}
+.home-detail p:last-child{margin-bottom:0}
+.home-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-bottom:40px}
+.home-link{display:inline-flex;align-items:center;gap:8px;font-family:var(--fm);font-size:13px;color:var(--i2);padding:10px 18px;border:1px solid var(--l);border-radius:24px;transition:all .2s;letter-spacing:.02em}
+.home-link:hover{border-color:var(--n);color:var(--n);transform:translateY(-1px);box-shadow:0 4px 12px rgba(31,58,95,.1)}
+.home-link svg{width:16px;height:16px}
+.home-tech{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;opacity:.5;margin-top:20px}
+.home-tech span{font-family:var(--fm);font-size:11.5px;color:var(--s2);letter-spacing:.04em}
+.home-stats{display:flex;flex-wrap:wrap;gap:32px;justify-content:center;margin-top:36px;padding-top:28px;border-top:1px solid var(--l)}
+.home-stat .num{font-family:var(--fd);font-size:clamp(28px,4vw,40px);font-weight:400;color:var(--i);line-height:1;font-variation-settings:"opsz" 144,"SOFT" 0}
+.home-stat .lbl{font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--s);margin-top:4px}
+
+/* ═══ EXPERIENCE TIMELINE ═══ */
+.timeline{position:relative;padding-left:40px;margin-top:32px}
+.timeline::before{content:'';position:absolute;left:14px;top:0;bottom:0;width:2px;background:var(--l)}
+.tl-item{position:relative;padding-bottom:48px}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{position:absolute;left:-33px;top:6px;width:12px;height:12px;background:var(--n);border-radius:50%;border:3px solid var(--p);box-shadow:0 0 0 2px var(--n)}
+.tl-date{font-family:var(--fm);font-size:12.5px;color:var(--r2);letter-spacing:.06em;margin-bottom:8px}
+.tl-card{background:var(--pw);border:1px solid var(--l);border-radius:6px;padding:24px 28px;transition:all .2s}
+.tl-card:hover{border-color:var(--n);box-shadow:0 4px 16px rgba(31,58,95,.08)}
+.tl-card h3{font-family:var(--fd);font-size:20px;font-weight:500;color:var(--i);margin-bottom:4px;font-variation-settings:"opsz" 100}
+.tl-card .company{font-family:var(--fb);font-size:14.5px;color:var(--n);font-weight:500;margin-bottom:4px}
+.tl-card .location{font-size:13.5px;color:var(--s);margin-bottom:14px}
+.tl-card p,.tl-card li{font-size:14.5px;line-height:1.6;color:var(--i2)}
+.tl-card ul{list-style:none;padding:0;display:grid;gap:8px}
+.tl-card li{padding-left:18px;position:relative}
+.tl-card li::before{content:'';position:absolute;left:0;top:10px;width:8px;height:1px;background:var(--r2)}
+.tl-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.tl-tag{font-family:var(--fm);font-size:11px;padding:3px 10px;border:1px solid var(--l);border-radius:12px;color:var(--i2);letter-spacing:.02em}
+
+/* ═══ PAGE HEADER ═══ */
+.page-hdr{text-align:center;padding:clamp(48px,6vw,80px) var(--gx) clamp(24px,3vw,40px)}
+.page-hdr h2{font-family:var(--fd);font-size:clamp(30px,4.5vw,48px);font-weight:400;color:var(--i);letter-spacing:-.025em;font-variation-settings:"opsz" 144,"SOFT" 30;margin-bottom:10px}
+.page-hdr p{font-size:16px;color:var(--s);max-width:50ch;margin:0 auto}
+
+/* ═══ SECTION CARD ═══ */
+.sec-card{max-width:var(--cw);margin:0 auto clamp(32px,4vw,48px);padding:clamp(28px,3vw,40px);background:var(--pw);border:1px solid var(--l);border-radius:8px}
+.sec-card h3{font-family:var(--fd);font-size:22px;font-weight:500;color:var(--i);margin-bottom:24px;display:flex;align-items:center;gap:12px;font-variation-settings:"opsz" 100}
+.sec-card h3 .icon{width:32px;height:32px;background:var(--n);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--p);font-size:16px;flex-shrink:0}
+
+/* ═══ CONTACT PAGE ═══ */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:16px;max-width:480px;margin:0 auto}
+.contact-item{display:flex;align-items:center;gap:16px;padding:20px 24px;background:var(--pw);border:1px solid var(--l);border-radius:8px;transition:all .2s;font-size:15px;color:var(--i2)}
+.contact-item:hover{border-color:var(--n);transform:translateY(-2px);box-shadow:0 4px 16px rgba(31,58,95,.1);color:var(--n)}
+.contact-item .ci-icon{width:40px;height:40px;background:rgba(31,58,95,.06);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px}
+.contact-item .ci-label{font-family:var(--fm);font-size:11px;color:var(--s2);letter-spacing:.08em;text-transform:uppercase}
+.contact-item .ci-value{font-size:15px;color:var(--i)}
+
+/* Resume download in contact */
+.dl-card{max-width:480px;margin:32px auto 0;padding:24px;background:var(--pw);border:1px solid var(--l);border-radius:8px;text-align:center}
+.dl-card a{display:inline-flex;align-items:center;gap:8px;font-family:var(--fm);font-size:13px;color:var(--p);background:var(--n);padding:12px 24px;border-radius:6px;transition:all .2s;letter-spacing:.04em}
+.dl-card a:hover{background:var(--r2);transform:translateY(-1px);box-shadow:0 4px 12px rgba(178,58,40,.2);color:var(--p)}
 </style>
 </head>
 <body>
 
-<div class="scroll-progress" id="scroll-progress"></div>
-<nav class="nv" id="nav"><div class="ni">
-<a href="#top" class="nb"><span class="dt"></span>Wismitha Peiris</a>
-<div class="nl">
-<a href="#about" data-link>About</a>
-<a href="#projects" data-link>Projects</a>
-<a href="#skills" data-link>Skills</a>
-<a href="#education" data-link>Education</a>
-<a href="#contact" data-link>Contact</a>
+<nav class="tab-nav">
+<div class="tab-nav-inner">
+<button class="tab-btn active" data-tab="home">Home</button>
+<button class="tab-btn" data-tab="experience">Experience</button>
+<button class="tab-btn" data-tab="projects">Projects</button>
+<button class="tab-btn" data-tab="skills">Skills</button>
+<button class="tab-btn" data-tab="education">Education</button>
+<button class="tab-btn" data-tab="contact">Contact</button>
 </div>
-</div></nav>
-<header id="top" class="hr"><div class="co">
-<div class="hg">
-<aside class="hm rv"><span class="lb">Portfolio · 2026</span><span class="lb" style="margin-top:14px">Based in</span><span style="font-family:var(--fm);font-size:12.5px;color:var(--i2)">Moratuwa, Sri Lanka</span></aside>
-<div>
-<p class="ht rv" style="--d:60ms"><span style="color:var(--r2)">●</span> ELECTRONIC &amp; EMBEDDED ENGINEER <span style="color:var(--l2);margin:0 10px">/</span> PCB · ROBOTICS · ML</p>
-<h1 class="rv" style="--d:120ms"><span class="fi">Wismitha</span><span class="la">Peiris.</span></h1>
-<p class="ld hi rv" style="--d:200ms">I design and build complete engineering systems from concept to deployment. Currently building an AI-powered educational robot at Figmentum Robotics, with prior work spanning industrial predictive maintenance with custom PCBs and ML, production PLC automation, autonomous robotics with computer vision and LiDAR, IoT devices with custom circuit boards, and a full Android SaaS product independently shipped to Google Play.</p>
-<div class="cr rv" style="--d:280ms">
-<a class="bt bp" href="#projects">View Selected Work <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a class="bt bg" href="Wismitha_Peiris_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
-<a class="bt bg" href="#contact">Get in Touch</a>
+</nav>
+
+<div class="tab-page active" id="tab-home">
+<div class="home">
+<div class="home-photo" id="home-photo">
+<img src="profile.jpg" alt="Wismitha Peiris" onerror="if(!this.dataset.retry){this.dataset.retry=1;this.src='profile.jpeg'}else{this.parentNode.classList.add('empty');this.style.display='none'}">
 </div>
-<div class="hs rv" style="--d:360ms">
-<div class="st"><div class="sn">8</div><div class="sa">Case studies</div></div>
-<div class="st"><div class="sn">4</div><div class="sa">Years professional</div></div>
-<div class="st"><div class="sn">1</div><div class="sa">Live SaaS product</div></div>
-<div class="st"><div class="sn">2</div><div class="sa">Beta platforms</div></div>
-</div></div></div></div></header>
-<section id="about"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">Introduction</span><span class="ru"></span></div>
-<div><span class="eb">About</span><h2 style="margin-top:12px">A practical builder, working full stack from the metal up.</h2></div></div>
-<div class="hg"><aside></aside><div class="ab rv" style="--d:80ms">
-<p>I am an Electrical and Electronic Engineer with four years of professional experience, currently working as a Prototype Engineer at <strong>Figmentum Robotics LLC</strong> (USA, remote), where I am building a children&#8217;s educational robot from the ground up. This is the project I am most deeply invested in right now: I built the complete conversational AI pipeline (real-time LLM + speech-to-text + text-to-speech with emotion-aware voice synthesis), designed camera-based handwriting recognition for interactive math and spelling games, engineered a projector-based display with software keystone correction, and integrated wake-word detection, voice activity detection, quiz games, and pronunciation assessment into a single responsive system that keeps young children engaged.</p>
-
-<p>Alongside the robot, I built two production-grade testing platforms for Figmentum. The <strong>Audio Simulation Platform</strong> lets the team test STT accuracy under 16 types of real-world audio degradation (noise, reverb, echo, codec artifacts) across multiple providers including GPT-4o and Gemini 2.5, with automated WER/CER evaluation. The <strong>OCR Benchmarking Platform</strong> evaluates 13+ OCR models on children&#8217;s handwriting with image degradation simulation and a hybrid cost-optimized routing chain that cuts inference costs by 3-5x. Both platforms are currently in beta and used daily by the team.</p>
-
-<p>I also independently designed, developed, and shipped <a href="https://eventplanners.app" target="_blank" rel="noopener" style="border-bottom:1px solid var(--r2);color:var(--i)"><strong>EventPlanners</strong></a>, a full-featured Android SaaS application live on the Google Play Store. Built entirely by myself using Kotlin, Jetpack Compose, and Firebase, it handles digital invitations with 18+ fonts and a template editor, real-time RSVP tracking, QR check-in, drag-and-drop seating charts, budget tracking with PDF reports, photo galleries with Chromecast slideshow, AI-powered text generation, co-host management, and a tiered subscription model through Google Play Billing. I also built a Cloudflare CDN layer that reduced Firebase hosting costs by over 95%.</p>
-
-<p>Before Figmentum, I worked at <strong>Hypen Holdings</strong> where I owned the full predictive maintenance hardware platform: I programmed industrial vibration, current, and temperature sensors on Raspberry Pi, designed a custom PCB in KiCad for battery backup with high-speed power switching, trained ML fault-detection models on time-series data, and built an AWS S3 data pipeline feeding a React web dashboard with adaptive baselines and bearing-fault analysis. At <strong>Midas Safety</strong>, I programmed a Delta PLC and designed the HMI and electrical panel for a heat-transfer machine that automated glove printing on the factory floor, and built a secondary control panel that reduced defect rates. At <strong>LTL Transformers</strong>, I conducted R&amp;D on amorphous-core transformer materials to reduce energy losses in distribution transformers.</p>
-
-<p>On the academic and personal side, I built an <strong>autonomous vehicle platform</strong> on Raspberry Pi 5 with dual AI cameras, LiDAR, PID steering, an 8-state finite state machine, and a real-time web dashboard (10,600+ lines of Python). At the University of Peradeniya, I designed an <strong>object avoidance robot</strong> using Model Predictive Control on Jetson AGX with LiDAR mapping, a <strong>smart home controller</strong> with a custom ESP32 PCB and ESP-IDF firmware integrated with Google Home and Alexa, and a <strong>vending machine prototype</strong> using Arduino Mega2560. I hold a BSc Hons in Electrical and Electronic Engineering from the University of Peradeniya, and I am currently pursuing an MSc at Anglia Ruskin University, UK.</p>
-</div></div></div></section>
-<section id="projects"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">Selected Work</span><span class="ru"></span></div>
-<div><span class="eb">Projects</span><h2 style="margin-top:12px">Eight projects, each with architecture & gallery.</h2>
-<div class="pi"><a href="#p01-autonomous-vehicle" class="ic"><span class="icn">PROJ. 01</span><span class="ict">Autonomous Vehicle Platform</span><span class="icy">April 2026 — May 2026</span><span class="ica">↗</span></a>
-<a href="#p02-children-robot" class="ic"><span class="icn">PROJ. 02</span><span class="ict">Children-Interaction Robot</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
-<a href="#p03-audio-sim" class="ic"><span class="icn">PROJ. 03</span><span class="ict">Audio Simulation &amp; STT Testing</span><span class="icy">2026</span><span class="ica">↗</span></a>
-<a href="#p04-ocr" class="ic"><span class="icn">PROJ. 04</span><span class="ict">OCR Simulation &amp; Benchmarking</span><span class="icy">2026</span><span class="ica">↗</span></a>
-<a href="#p05-event-planner" class="ic"><span class="icn">PROJ. 05</span><span class="ict">EventPlanners — Digital Invitation SaaS</span><span class="icy">2024 — 2026</span><span class="ica">↗</span></a>
-<a href="#p06-predictive-maintenance" class="ic"><span class="icn">PROJ. 06</span><span class="ict">Predictive Maintenance Platform</span><span class="icy">2024 — 2026</span><span class="ica">↗</span></a>
-<a href="#p07-heat-transfer" class="ic"><span class="icn">PROJ. 07</span><span class="ict">Heat Transfer Machine</span><span class="icy">2023</span><span class="ica">↗</span></a>
-<a href="#p08-smart-home" class="ic"><span class="icn">PROJ. 08</span><span class="ict">Smart Home System (ESP32)</span><span class="icy">2023</span><span class="ica">↗</span></a>
+<h1 class="home-name">Wismitha Peiris</h1>
+<div class="home-typing"><span id="typing-text"></span><span class="cursor"></span></div>
+<p class="home-bio">Electronic and Embedded Engineer currently building an AI-powered educational robot at Figmentum Robotics. I design and build complete systems from concept to deployment, spanning PCB design, embedded ML, robotics, industrial automation, and full-stack mobile applications.</p>
+<button class="home-expand" id="about-toggle" onclick="document.getElementById('about-detail').classList.toggle('open');this.textContent=this.textContent==='Read More About Me'?'Show Less':'Read More About Me'">Read More About Me</button>
+<div class="home-detail" id="about-detail">
+<p>I am currently working as a Prototype Engineer at <strong>Figmentum Robotics LLC</strong> (USA, remote), where I built the complete conversational AI pipeline for a children's educational robot: real-time LLM + speech-to-text + text-to-speech with emotion-aware voice synthesis, camera-based handwriting recognition for interactive math and spelling games, a projector-based display with software keystone correction, wake-word detection, quiz games, and pronunciation assessment.</p>
+<p>Alongside the robot, I built two production-grade testing platforms: an <strong>Audio Simulation Platform</strong> that tests STT accuracy under 16 types of audio degradation across multiple providers (GPT-4o, Gemini 2.5), and an <strong>OCR Benchmarking Platform</strong> that evaluates 13+ OCR models on children's handwriting with hybrid cost-optimized routing chains.</p>
+<p>I also independently designed, developed, and shipped <strong>EventPlanners</strong> (eventplanners.app), a full Android SaaS application live on Google Play. Before Figmentum, I owned the full predictive maintenance hardware platform at Hypen Holdings (custom PCB, industrial sensors, ML, AWS pipeline, React dashboard), and automated glove printing at Midas Safety using Delta PLC and pneumatics.</p>
+<p>On the academic side, I built an autonomous vehicle platform on Raspberry Pi 5 with dual AI cameras and LiDAR, an object avoidance robot with MPC on Jetson AGX, and a smart home controller with a custom ESP32 PCB. I hold a BSc Hons in EEE from the University of Peradeniya and am pursuing an MSc at Anglia Ruskin University, UK.</p>
 </div>
-</div></div>
-<div class="pjl">
+<div class="home-links">
+<a class="home-link" href="mailto:wismithapeiris123@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Email</a>
+<a class="home-link" href="https://www.linkedin.com/in/wismitha-peiris" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>LinkedIn</a>
+<a class="home-link" href="https://github.com/WismithaPeiris" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
+<a class="home-link" href="https://eventplanners.app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>Live App</a>
+</div>
+<div class="home-stats">
+<div class="home-stat"><div class="num">8</div><div class="lbl">Projects</div></div>
+<div class="home-stat"><div class="num">4</div><div class="lbl">Years Professional</div></div>
+<div class="home-stat"><div class="num">1</div><div class="lbl">Live SaaS Product</div></div>
+<div class="home-stat"><div class="num">2</div><div class="lbl">Beta Platforms</div></div>
+</div>
+<div class="home-tech">
+<span>Python</span><span>·</span><span>C/C++</span><span>·</span><span>Kotlin</span><span>·</span><span>KiCad</span><span>·</span><span>Raspberry Pi</span><span>·</span><span>ESP32</span><span>·</span><span>OpenCV</span><span>·</span><span>React</span><span>·</span><span>Firebase</span><span>·</span><span>AWS</span><span>·</span><span>Docker</span><span>·</span><span>PLC</span>
+</div>
+</div>
+</div>
 
+<div class="tab-page" id="tab-experience">
+<div class="page-hdr"><h2>Work Experience</h2><p>Professional roles in electronic engineering, embedded AI, and industrial automation</p></div>
+<div class="sec-card" style="max-width:860px;margin-left:auto;margin-right:auto">
+<h3><span class="icon">💼</span>Career Timeline</h3>
+<div class="timeline">
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-date">Sep 2025 — Present</div>
+<div class="tl-card">
+<h3>Prototype Engineer</h3>
+<div class="company">Figmentum Robotics LLC</div>
+<div class="location">USA · Remote</div>
+<ul>
+<li>Built ultra-low-latency LLM + STT + TTS conversational pipeline in Python with emotion-aware speech synthesis, wake-word detection, and voice activity detection</li>
+<li>Developed vision-based educational games: handwriting recognition for spelling and written math with step-by-step LLM tutoring via OAK-D camera + GPT-4.1 OCR</li>
+<li>Engineered projector-based interactive display with software keystone correction, quiz games, and pronunciation assessment using Azure Speech SDK</li>
+<li>Built Audio Simulation Platform (16 audio transforms, multi-provider STT benchmarking, automated WER/CER) and OCR Benchmarking Platform (13+ backends, hybrid cost-optimized chains)</li>
+<li>Evaluated edge controllers and accelerators for on-device LLM and vision deployment</li>
+</ul>
+<div class="tl-tags"><span class="tl-tag">Python</span><span class="tl-tag">OpenAI GPT-4o</span><span class="tl-tag">ElevenLabs</span><span class="tl-tag">OAK-D</span><span class="tl-tag">OpenCV</span><span class="tl-tag">Streamlit</span><span class="tl-tag">FastAPI</span><span class="tl-tag">React</span></div>
+</div>
+</div>
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-date">Nov 2024 — Aug 2025</div>
+<div class="tl-card">
+<h3>Electronic Project Engineer</h3>
+<div class="company">Hypen Holdings (Pvt) Ltd</div>
+<div class="location">Horana, Sri Lanka</div>
+<ul>
+<li>Programmed industrial vibration, current, and temperature sensors for high-speed real-time data acquisition on Raspberry Pi 4</li>
+<li>Designed system architecture: sensor interfacing → edge processing → ML inference → AWS cloud storage → React dashboard</li>
+<li>Designed PCB (schematic to layout in KiCad) for custom battery-backup module with high-speed power switching</li>
+<li>Trained ML anomaly/fault-detection models on time-series sensor data with FFT analysis and bearing fault detection</li>
+<li>Implemented AWS S3 pipeline using Parquet for cost-efficient storage; built React/Vite/Tailwind dashboard</li>
+</ul>
+<div class="tl-tags"><span class="tl-tag">Raspberry Pi</span><span class="tl-tag">KiCad</span><span class="tl-tag">Python</span><span class="tl-tag">ML</span><span class="tl-tag">AWS S3</span><span class="tl-tag">React</span><span class="tl-tag">Docker</span></div>
+</div>
+</div>
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-date">Jul 2023 — Oct 2023</div>
+<div class="tl-card">
+<h3>Trainee Robotics & Automation Engineer</h3>
+<div class="company">Midas Safety (Pvt) Ltd</div>
+<div class="location">Biyagama & Awissawella, Sri Lanka</div>
+<ul>
+<li>Designed and built a production heat-transfer machine for glove printing: Delta PLC, HMI UI, electrical panel, pneumatics</li>
+<li>Designed secondary control panel that measurably reduced glove defect rate</li>
+<li>Conducted plant-wide electrical panel survey identifying non-compliant conditions</li>
+</ul>
+<div class="tl-tags"><span class="tl-tag">Delta PLC</span><span class="tl-tag">HMI</span><span class="tl-tag">Pneumatics</span><span class="tl-tag">Panel Design</span></div>
+</div>
+</div>
+
+<div class="tl-item">
+<div class="tl-dot"></div>
+<div class="tl-date">May 2022 — Aug 2022</div>
+<div class="tl-card">
+<h3>Trainee Electrical Engineer</h3>
+<div class="company">LTL Transformers (Pvt) Ltd</div>
+<div class="location">Moratuwa, Sri Lanka</div>
+<ul>
+<li>Conducted amorphous-core transformer R&D project, evaluating core materials to reduce energy losses in distribution transformers</li>
+</ul>
+<div class="tl-tags"><span class="tl-tag">Transformers</span><span class="tl-tag">R&D</span><span class="tl-tag">Materials Science</span></div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="tab-page" id="tab-projects">
+<div class="page-hdr"><h2>Project Portfolio</h2><p>Eight projects across hardware, embedded ML, robotics, and product</p></div>
+<div class="co">
 <article class="pj rv" id="p01-autonomous-vehicle">
 <div class="ps-strip">
 <span class="pn">PROJ. 01</span><span>April 2026 — May 2026</span>
@@ -476,8 +632,6 @@ section+section{border-top:1px solid var(--l)}
 <span class="si">Python</span><span class="si">Raspberry Pi 5</span><span class="si">IMX500</span><span class="si">TF Luna LiDAR</span><span class="si">OpenCV</span><span class="si">NumPy</span><span class="si">Flask</span><span class="si">Socket.IO</span><span class="si">simple-pid</span><span class="si">transitions FSM</span><span class="si">pigpio</span>
 </div>
 </article>
-
-
 <article class="pj rv" id="p02-children-robot">
 <div class="ps-strip">
 <span class="pn">PROJ. 02</span><span>2025 — 2026</span>
@@ -595,7 +749,6 @@ section+section{border-top:1px solid var(--l)}
 <span class="si">Python</span><span class="si">OpenAI GPT-4o</span><span class="si">GPT-4.1-mini</span><span class="si">ElevenLabs TTS</span><span class="si">Picovoice Porcupine</span><span class="si">WebRTC VAD</span><span class="si">OAK-D Camera</span><span class="si">DepthAI</span><span class="si">OpenCV</span><span class="si">Azure Speech SDK</span><span class="si">Projector UI</span><span class="si">sounddevice</span>
 </div>
 </article>
-
 <article class="pj rv" id="p03-audio-sim">
 <div class="ps-strip">
 <span class="pn">PROJ. 03</span><span>2026</span>
@@ -666,7 +819,6 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="ps"><span class="sl">TECH STACK</span><span class="si">Python</span><span class="si">Streamlit</span><span class="si">OpenAI GPT-4o</span><span class="si">Vertex AI</span><span class="si">WebRTC VAD</span><span class="si">Silero VAD</span><span class="si">ffmpeg</span><span class="si">librosa</span><span class="si">jiwer</span></div>
 </article>
-
 <article class="pj rv" id="p04-ocr">
 <div class="ps-strip">
 <span class="pn">PROJ. 04</span><span>2026</span>
@@ -747,7 +899,6 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="ps"><span class="sl">TECH STACK</span><span class="si">Python</span><span class="si">FastAPI</span><span class="si">React</span><span class="si">TypeScript</span><span class="si">Vite</span><span class="si">Tailwind</span><span class="si">OpenAI</span><span class="si">Cloud Vision</span><span class="si">Gemini API</span><span class="si">SQLite</span></div>
 </article>
-
 <article class="pj rv" id="p05-event-planner">
 <div class="ps-strip">
 <span class="pn">PROJ. 05</span><span>2024 — 2026</span>
@@ -824,7 +975,6 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="ps"><span class="sl">TECH STACK</span><span class="si">Kotlin</span><span class="si">Jetpack Compose</span><span class="si">Material 3</span><span class="si">Firebase</span><span class="si">Cloud Functions</span><span class="si">Firestore</span><span class="si">FCM</span><span class="si">Cloudflare</span><span class="si">Google Play Billing</span><span class="si">OpenAI</span></div>
 </article>
-
 <article class="pj rv" id="p06-predictive-maintenance">
 <div class="ps-strip">
 <span class="pn">PROJ. 06</span><span>2024 — 2026</span>
@@ -907,7 +1057,6 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="ps"><span class="sl">TECH STACK</span><span class="si">Raspberry Pi 4</span><span class="si">Python</span><span class="si">KiCad</span><span class="si">FastAPI</span><span class="si">PostgreSQL</span><span class="si">React</span><span class="si">Vite</span><span class="si">Tailwind</span><span class="si">Recharts</span><span class="si">AWS S3</span><span class="si">DigitalOcean</span><span class="si">Docker</span><span class="si">Nginx</span></div>
 </article>
-
 <article class="pj rv" id="p07-heat-transfer">
 <div class="ps-strip">
 <span class="pn">PROJ. 07</span><span>2023</span>
@@ -985,7 +1134,6 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="ps"><span class="sl">TECH STACK</span><span class="si">Delta PLC</span><span class="si">HMI</span><span class="si">Pneumatics</span><span class="si">SSR</span><span class="si">Thermocouple</span><span class="si">Electrical Panel</span><span class="si">24V DC I/O</span></div>
 </article>
-
 <article class="pj rv" id="p08-smart-home">
 <div class="ps-strip">
 <span class="pn">PROJ. 08</span><span>2023</span>
@@ -1061,84 +1209,105 @@ section+section{border-top:1px solid var(--l)}
 
 <div class="ps"><span class="sl">TECH STACK</span><span class="si">ESP32</span><span class="si">ESP-IDF (C)</span><span class="si">KiCad</span><span class="si">Google Home</span><span class="si">Alexa</span><span class="si">MQTT</span><span class="si">Touchscreen</span><span class="si">Relays</span><span class="si">DHT</span><span class="si">PIR</span></div>
 </article>
-</div></div></section>
-<section id="skills"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">Capabilities</span><span class="ru"></span></div>
-<div><span class="eb">Technical Skills</span><h2 style="margin-top:12px">Tools and platforms I work with daily.</h2></div></div>
-<div class="hg"><aside></aside><div class="sg rv" style="--d:80ms"><div class="sr"><h4>Programming</h4><div class="skl"><span>Python</span><span>C</span><span>C++</span><span>Kotlin</span><span>ESP-IDF</span><span>Bash</span><span>JavaScript</span><span>TypeScript</span></div></div>
-<div class="sr"><h4>Hardware &amp; PCB</h4><div class="skl"><span>Altium Designer</span><span>KiCad</span><span>EasyEDA</span><span>Schematic Capture</span><span>Hardware Bring-up</span><span>Failure Analysis</span><span>JTAG</span><span>Oscilloscope / DMM</span><span>Soldering</span><span>Control Panel Design</span></div></div>
-<div class="sr"><h4>Embedded</h4><div class="skl"><span>Raspberry Pi 4 / 5</span><span>ESP32</span><span>Arduino Mega 2560</span><span>Jetson AGX</span><span>I²C</span><span>SPI</span><span>UART</span><span>Modbus</span><span>ADC</span></div></div>
-<div class="sr"><h4>Sensors &amp; DAQ</h4><div class="skl"><span>Vibration</span><span>Current</span><span>Temperature</span><span>LiDAR</span><span>IMX500 AI Cameras</span><span>Real-Time DAQ</span><span>Calibration</span><span>Signal Processing</span></div></div>
-<div class="sr"><h4>ML &amp; AI</h4><div class="skl"><span>Anomaly Detection</span><span>Fault Detection</span><span>Edge Deployment</span><span>LLM + STT + TTS</span><span>OpenAI / Vertex AI</span><span>Computer Vision</span><span>OpenCV</span><span>OCR</span><span>WER / CER</span></div></div>
-<div class="sr"><h4>Robotics</h4><div class="skl"><span>Model Predictive Control</span><span>PID</span><span>State Machines</span><span>LiDAR Mapping</span><span>Path Planning</span><span>Sensor Fusion</span><span>Autonomous Nav</span></div></div>
-<div class="sr"><h4>Cloud &amp; Data</h4><div class="skl"><span>AWS S3</span><span>Parquet</span><span>Firebase Firestore</span><span>Auth / Storage</span><span>Cloud Functions</span><span>Cloudflare CDN</span><span>PostgreSQL</span><span>Docker</span><span>Nginx</span><span>Streamlit</span></div></div>
-<div class="sr"><h4>Mobile &amp; Frontend</h4><div class="skl"><span>Kotlin</span><span>Jetpack Compose</span><span>Material 3</span><span>MVVM</span><span>Google Play Billing</span><span>React</span><span>FastAPI</span><span>Vite</span><span>Tailwind</span></div></div>
-<div class="sr"><h4>Industrial</h4><div class="skl"><span>Siemens PLC</span><span>Delta PLC</span><span>HMI Design</span><span>Pneumatics</span><span>Transformer Fundamentals</span><span>Battery Backup</span><span>Power Switching</span></div></div>
-<div class="sr"><h4>Design &amp; Simulation</h4><div class="skl"><span>SolidWorks</span><span>SolidWorks Electrical</span><span>AutoCAD</span><span>Proteus</span></div></div>
 </div></div>
-</div></section>
-<section id="education"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">Education</span><span class="ru"></span></div>
-<div><span class="eb">Education &amp; Activities</span><h2 style="margin-top:12px">Formal training, certifications, and extracurricular achievements.</h2></div></div>
-<div class="hg"><aside></aside><div class="rv" style="--d:80ms">
-<div class="el">
-<div class="ei"><div class="ed">MSc, Electronic and Electrical Engineering<span class="ein"> — Anglia Ruskin University, UK</span></div><div class="ey">2025 — 2026</div></div>
-<div class="ei"><div class="ed">BSc Eng. (Hons), Electrical and Electronic Engineering<span class="ein"> — University of Peradeniya, Sri Lanka</span></div><div class="ey">2020 — 2024</div></div>
-<div class="ei"><div class="ed">CIMA Foundation Level<span class="ein"> — Wisdom Business Academy, Colombo</span></div><div class="ey">2018</div></div>
-<div class="ei"><div class="ed">Secondary Education (GCE A/L &amp; O/L)<span class="ein"> — St. Peter's College, Colombo 04</span></div><div class="ey">2005 — 2018</div></div>
-<div class="ei"><div class="ed">Programming for Everybody (Python)<span class="ein"> — University of Michigan (online)</span></div><div class="ey">2020</div></div>
-<div class="ei"><div class="ed">C for Everyone: Programming Fundamentals<span class="ein"> — University of California (online)</span></div><div class="ey">2020</div></div>
-<div class="ei"><div class="ed">Diploma in Western Music<span class="ein"> — Trinity College London Examinations</span></div><div class="ey">Completed 2018</div></div>
+
+<div class="tab-page" id="tab-skills">
+<div class="page-hdr"><h2>Technical Skills</h2><p>Tools and platforms I work with daily</p></div>
+<div class="sec-card" style="max-width:960px;margin-left:auto;margin-right:auto">
+<h3><span class="icon">🛠</span>Skill Set</h3>
+<div class="sg"><div class="sr"><h4>Programming</h4><div class="skl"><span>Python</span><span>C</span><span>C++</span><span>Kotlin</span><span>ESP-IDF</span><span>Bash</span><span>JavaScript</span><span>TypeScript</span></div></div>
+<div class="sr"><h4>Hardware & PCB</h4><div class="skl"><span>Altium Designer</span><span>KiCad</span><span>EasyEDA</span><span>Schematic Capture</span><span>Hardware Bring-up</span><span>Failure Analysis</span><span>JTAG</span><span>Oscilloscope / DMM</span><span>Soldering</span><span>Control Panel Design</span></div></div>
+<div class="sr"><h4>Embedded</h4><div class="skl"><span>Raspberry Pi 4 / 5</span><span>ESP32</span><span>Arduino Mega 2560</span><span>Jetson AGX</span><span>I²C</span><span>SPI</span><span>UART</span><span>Modbus</span><span>ADC</span></div></div>
+<div class="sr"><h4>Sensors & DAQ</h4><div class="skl"><span>Vibration</span><span>Current</span><span>Temperature</span><span>LiDAR</span><span>IMX500 AI Cameras</span><span>Real-Time DAQ</span><span>Calibration</span><span>Signal Processing</span></div></div>
+<div class="sr"><h4>ML & AI</h4><div class="skl"><span>Anomaly Detection</span><span>Fault Detection</span><span>Edge Deployment</span><span>LLM + STT + TTS</span><span>OpenAI / Vertex AI</span><span>Computer Vision</span><span>OpenCV</span><span>OCR</span><span>WER / CER</span></div></div>
+<div class="sr"><h4>Robotics & Controls</h4><div class="skl"><span>Model Predictive Control</span><span>PID</span><span>State Machines</span><span>LiDAR Mapping</span><span>Path Planning</span><span>Sensor Fusion</span><span>Autonomous Nav</span></div></div>
+<div class="sr"><h4>Cloud & Data</h4><div class="skl"><span>AWS S3</span><span>Parquet</span><span>Firebase Firestore</span><span>Auth / Storage</span><span>Cloud Functions</span><span>Cloudflare CDN</span><span>PostgreSQL</span><span>Docker</span><span>Nginx</span><span>Streamlit</span></div></div>
+<div class="sr"><h4>Mobile & Frontend</h4><div class="skl"><span>Kotlin</span><span>Jetpack Compose</span><span>Material 3</span><span>MVVM</span><span>Google Play Billing</span><span>React</span><span>FastAPI</span><span>Vite</span><span>Tailwind</span></div></div>
+<div class="sr"><h4>Industrial</h4><div class="skl"><span>Siemens PLC</span><span>Delta PLC</span><span>HMI Design</span><span>Pneumatics</span><span>Transformer Fundamentals</span><span>Battery Backup</span><span>Power Switching</span></div></div>
+<div class="sr"><h4>Design & Simulation</h4><div class="skl"><span>SolidWorks</span><span>SolidWorks Electrical</span><span>AutoCAD</span><span>Proteus</span></div></div>
+</div>
+</div>
 </div>
 
-<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:36px;padding-bottom:10px;border-bottom:1px solid var(--l)">Professional Memberships</h4>
-<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
-<span>Associate Member, Institute of Engineers Sri Lanka (IESL)</span>
+<div class="tab-page" id="tab-education">
+<div class="page-hdr"><h2>Education & Activities</h2><p>Academic background, certifications, and extracurricular achievements</p></div>
+
+<div class="sec-card" style="max-width:860px;margin-left:auto;margin-right:auto">
+<h3><span class="icon">🎓</span>Academic Journey</h3>
+<div class="timeline">
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2025 — 2026 · Ongoing</div>
+<div class="tl-card"><h3>MSc, Electronic and Electrical Engineering</h3><div class="company">Anglia Ruskin University, UK</div></div></div>
+
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2020 — 2024</div>
+<div class="tl-card"><h3>BSc Eng. (Hons), Electrical and Electronic Engineering</h3><div class="company">University of Peradeniya, Sri Lanka</div></div></div>
+
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2005 — 2018</div>
+<div class="tl-card"><h3>Secondary Education (GCE A/L & O/L)</h3><div class="company">St. Peter's College, Colombo 04</div></div></div>
+</div>
 </div>
 
-<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:32px;padding-bottom:10px;border-bottom:1px solid var(--l)">Athletics — St. Peter's College, Colombo 04 (2009 — 2018)</h4>
-<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
-<span>School Games Captain (2016 — 2017)</span>
-<span>Under 15 Zonal Divisions Champion</span>
-<span>Under 16, Under 18 Junior Nationals Finalist</span>
-<span>Under 15, Under 17, Under 19 All Island Finalist</span>
-<span>Under 16 All Island Relay Carnival Champions</span>
+<div class="sec-card" style="max-width:860px;margin-left:auto;margin-right:auto">
+<h3><span class="icon">📜</span>Certifications</h3>
+<div class="timeline">
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2020</div>
+<div class="tl-card"><h3>Programming for Everybody (Python)</h3><div class="company">University of Michigan (online)</div></div></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2020</div>
+<div class="tl-card"><h3>C for Everyone: Programming Fundamentals</h3><div class="company">University of California (online)</div></div></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Completed 2018</div>
+<div class="tl-card"><h3>Diploma in Western Music</h3><div class="company">Trinity College London Examinations</div></div></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2018</div>
+<div class="tl-card"><h3>CIMA Foundation Level</h3><div class="company">Wisdom Business Academy, Colombo</div></div></div>
+</div>
 </div>
 
-<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:32px;padding-bottom:10px;border-bottom:1px solid var(--l)">Athletics — University of Peradeniya (2020 — 2024)</h4>
-<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
-<span>Member of the University Athletics Team</span>
+<div class="sec-card" style="max-width:860px;margin-left:auto;margin-right:auto">
+<h3><span class="icon">🏅</span>Activities & Achievements</h3>
+<div class="timeline">
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Membership</div>
+<div class="tl-card"><h3>Associate Member</h3><div class="company">Institute of Engineers Sri Lanka (IESL)</div></div></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2020 — 2024</div>
+<div class="tl-card"><h3>University Athletics Team</h3><div class="company">University of Peradeniya</div></div></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2009 — 2018</div>
+<div class="tl-card"><h3>Athletics — St. Peter's College</h3><div class="company">School Games Captain (2016–2017) · Zonal Champion · Junior Nationals Finalist · All Island Finalist · Relay Carnival Champions</div></div></div>
+<div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2010 — 2016</div>
+<div class="tl-card"><h3>Rugby — St. Peter's College</h3><div class="company">Under 14, Under 16 Western Province Champions</div></div></div>
+</div>
+</div>
 </div>
 
-<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:32px;padding-bottom:10px;border-bottom:1px solid var(--l)">Rugby — St. Peter's College, Colombo 04 (2010 — 2016)</h4>
-<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
-<span>Under 14, Under 16 Western Province Champions</span>
+<div class="tab-page" id="tab-contact">
+<div class="page-hdr"><h2>Get in Touch</h2><p>Feel free to reach out for collaborations, opportunities, or just a chat</p></div>
+<div class="contact-grid" style="padding:0 var(--gx)">
+<a class="contact-item" href="mailto:wismithapeiris123@gmail.com">
+<div class="ci-icon">✉️</div>
+<div><div class="ci-label">Email</div><div class="ci-value">wismithapeiris123@gmail.com</div></div>
+</a>
+<a class="contact-item" href="tel:+94764628832">
+<div class="ci-icon">📞</div>
+<div><div class="ci-label">Phone</div><div class="ci-value">+94 76 462 8832</div></div>
+</a>
+<a class="contact-item" href="https://www.linkedin.com/in/wismitha-peiris" target="_blank" rel="noopener">
+<div class="ci-icon">💼</div>
+<div><div class="ci-label">LinkedIn</div><div class="ci-value">wismitha-peiris</div></div>
+</a>
+<a class="contact-item" href="https://github.com/WismithaPeiris" target="_blank" rel="noopener">
+<div class="ci-icon">💻</div>
+<div><div class="ci-label">GitHub</div><div class="ci-value">@WismithaPeiris</div></div>
+</a>
+</div>
+<div style="max-width:480px;margin:32px auto 0;padding:0 var(--gx)">
+<div style="padding:28px;background:var(--pw);border:1px solid var(--l);border-radius:8px;text-align:center">
+<p style="font-size:15px;color:var(--s);margin-bottom:16px">Professional resume with full project list, technical skills, and experience.</p>
+<a href="Wismitha_Peiris_Resume.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--fm);font-size:13px;color:var(--p);background:var(--n);padding:12px 24px;border-radius:6px;transition:all .2s;letter-spacing:.04em;text-decoration:none">Download Resume PDF ↓</a>
+</div>
+</div>
 </div>
 
-<h4 style="font-family:var(--fm);font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--r2);margin-top:32px;padding-bottom:10px;border-bottom:1px solid var(--l)">Western Music (2005 — 2018)</h4>
-<div class="ex" style="margin-top:14px;border-top:none;padding-top:0">
-<span>Diploma in Western Music — Trinity College London Examinations</span>
-</div></div></div></div></section>
-<section id="contact" class="ct"><div class="co">
-<div class="shd rv"><div class="shm"><span class="ix">Get in Touch</span><span class="ru"></span></div>
-<div><span class="eb">Contact</span><h2 style="margin-top:12px">Let's connect.</h2></div></div>
-<div class="cg">
-<div class="cc rv">
-<a href="mailto:WismithaPeiris123@gmail.com"><span class="lb">Email</span><span class="vl">wismithapeiris123@gmail.com</span><span class="ar">→</span></a>
-<a href="tel:+94764628832"><span class="lb">Phone</span><span class="vl">+94 76 462 8832</span><span class="ar">→</span></a>
-<a href="https://www.linkedin.com/in/wismitha-peiris" target="_blank" rel="noopener"><span class="lb">LinkedIn</span><span class="vl">wismitha-peiris</span><span class="ar">→</span></a>
-<a href="https://github.com/WismithaPeiris" target="_blank" rel="noopener"><span class="lb">GitHub</span><span class="vl">@WismithaPeiris</span><span class="ar">→</span></a>
-<a href="#top" style="border-bottom:none"><span class="lb">Location</span><span class="vl">Moratuwa, Sri Lanka</span><span class="ar"></span></a>
-</div>
-<aside class="ca rv" style="--d:120ms">
-<p>Thank you for visiting my portfolio. If you would like to discuss a project, collaboration, or opportunity, feel free to reach out through any of the channels listed here.</p>
-<div class="rc"><div class="rt">Resume</div><p class="rd">Professional resume with full project list, technical skills, and experience.</p>
-<a href="Wismitha_Peiris_Resume.pdf" target="_blank" rel="noopener">Download Resume PDF ↓</a>
-</div></aside></div></div></section>
-<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-<footer class="ft"><div class="fi-inner">
-<div>© 2026 Wismitha Peiris</div>
-</div></footer>
+<footer style="text-align:center;padding:40px var(--gx);font-family:var(--fm);font-size:11.5px;color:var(--s2);letter-spacing:.04em;border-top:1px solid var(--l);margin-top:48px">
+© 2026 Wismitha Peiris
+</footer>
+
+
 <!-- LIGHTBOX GALLERY VIEWER -->
 <div class="lb-overlay" id="lb">
 <div class="lb-close" id="lb-close"></div>
@@ -1148,89 +1317,78 @@ section+section{border-top:1px solid var(--l)}
 <div class="lb-caption" id="lb-cap"></div>
 <div class="lb-counter" id="lb-counter"></div>
 </div>
-
 <script>
-// Reveal on scroll
-const rv=document.querySelectorAll('.rv');
-const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
-rv.forEach(el=>io.observe(el));
-
-// Nav scroll state
-const nv=document.getElementById('nav');
-window.addEventListener('scroll',()=>{nv.classList.toggle('sc',window.scrollY>12)},{passive:true});
-
-// Active nav link
-const ss=document.querySelectorAll('section[id]');
-const nl=document.querySelectorAll('.nl a[data-link]');
-const sa=()=>{const y=window.scrollY+120;let c=null;ss.forEach(s=>{if(s.offsetTop<=y)c=s.id});nl.forEach(a=>a.classList.toggle('ac',a.getAttribute('href')==='#'+c))};
-window.addEventListener('scroll',sa,{passive:true});sa();
-
-// Scroll progress bar
-const sp=document.getElementById('scroll-progress');
-window.addEventListener('scroll',()=>{
-  const h=document.documentElement.scrollHeight-window.innerHeight;
-  sp.style.width=(window.scrollY/h*100)+'%';
-  document.getElementById('btt').classList.toggle('show',window.scrollY>600);
-},{passive:true});
-
-// Smooth scroll for all internal links
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    const t=document.querySelector(a.getAttribute('href'));
-    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}
+// ═══ TAB NAVIGATION ═══
+const tabs=document.querySelectorAll('.tab-btn');
+const pages=document.querySelectorAll('.tab-page');
+tabs.forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    tabs.forEach(t=>t.classList.remove('active'));
+    pages.forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+    window.scrollTo({top:0,behavior:'smooth'});
   });
 });
 
-// Gallery: visible by default. Missing images hide themselves.
-// If ALL images fail, hide the entire gallery section.
+// ═══ TYPING ANIMATION ═══
+const phrases=['PCB Design','Embedded ML','Robotics & AI','Computer Vision','PLC Automation','Mobile Apps','Autonomous Vehicles','Industrial IoT'];
+let pi=0,ci=0,deleting=false;
+const typingEl=document.getElementById('typing-text');
+function typeLoop(){
+  const phrase=phrases[pi];
+  if(!deleting){
+    typingEl.textContent=phrase.substring(0,ci+1);
+    ci++;
+    if(ci===phrase.length){deleting=true;setTimeout(typeLoop,2000);return;}
+    setTimeout(typeLoop,80);
+  }else{
+    typingEl.textContent=phrase.substring(0,ci-1);
+    ci--;
+    if(ci===0){deleting=false;pi=(pi+1)%phrases.length;setTimeout(typeLoop,400);return;}
+    setTimeout(typeLoop,40);
+  }
+}
+typeLoop();
+
+// ═══ GALLERY — missing images hide, entire gallery hides if all fail ═══
 document.querySelectorAll('.pg').forEach(gallery=>{
   const items=Array.from(gallery.querySelectorAll('.gi'));
   if(!items.length){gallery.style.display='none';return;}
-  let total=items.length, failed=0, done=0;
-
-  const check=()=>{
-    done++;
-    if(done===total && failed===total) gallery.style.display='none';
-  };
-
+  let total=items.length,failed=0,done=0;
+  const check=()=>{done++;if(done===total&&failed===total)gallery.style.display='none';};
   items.forEach(gi=>{
     const img=gi.querySelector('img');
     if(!img){failed++;check();return;}
     if(img.complete){
       if(img.naturalWidth>0){check();}
       else{gi.style.display='none';failed++;check();}
-    } else {
+    }else{
       img.addEventListener('load',()=>{check();},{once:true});
       img.addEventListener('error',()=>{gi.style.display='none';failed++;check();},{once:true});
     }
   });
 });
 
-// ═══ MEDIA LOADING — reliable, no flicker ═══
-// Videos: hidden by default, shown only when file confirmed to exist
+// ═══ VIDEO — hidden by default, shown when file loads ═══
 document.querySelectorAll('.pv').forEach(section=>{
   const video=section.querySelector('video');
   const source=video?video.querySelector('source'):null;
-  if(!video||!source) return;
-  const url=source.getAttribute('src');
-  if(!url) return;
-
-  // Try loading — if metadata arrives, file exists
+  if(!video||!source)return;
   video.preload='metadata';
   video.addEventListener('loadedmetadata',()=>{
     section.classList.add('confirmed');
-    const placeholder=section.querySelector('.vp');
-    if(placeholder) placeholder.style.display='none';
+    const ph=section.querySelector('.vp');
+    if(ph)ph.style.display='none';
   },{once:true});
-
-  // If source errors, file does not exist — section stays hidden
-  source.addEventListener('error',()=>{
-    section.classList.remove('confirmed');
-  },{once:true});
-
-  // Force the browser to start checking
+  source.addEventListener('error',()=>{section.classList.remove('confirmed');},{once:true});
   video.load();
 });
+
+// ═══ REVEAL ANIMATION ═══
+const rv=document.querySelectorAll('.rv');
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+rv.forEach(el=>io.observe(el));
 
 // ═══════════════════════════════════════════════════════
 // LIGHTBOX GALLERY VIEWER
@@ -1348,4 +1506,5 @@ document.querySelectorAll('.pv').forEach(section=>{
   });
 })();
 </script>
-</body></html>
+</body>
+</html>
