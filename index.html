@@ -540,6 +540,16 @@ section+section{border-top:1px solid var(--l)}
 <div class="tab-page" id="tab-projects">
 <div class="page-hdr"><h2>Project Portfolio</h2><p>Eight projects across hardware, embedded ML, robotics, and product</p></div>
 <div class="co">
+<div class="pi" style="margin-bottom:clamp(40px,5vw,64px)">
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p01-autonomous-vehicle');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 01</span><span class="ict">Autonomous Vehicle Platform</span><span class="icy">2026</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p02-children-robot');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 02</span><span class="ict">Children-Interaction Robot</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p03-audio-sim');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 03</span><span class="ict">Audio Simulation & STT Testing</span><span class="icy">2026</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p04-ocr');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 04</span><span class="ict">OCR Benchmarking Platform</span><span class="icy">2026</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p05-event-planner');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 05</span><span class="ict">EventPlanners — Digital Invitation SaaS</span><span class="icy">2024 — 2026</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p06-predictive-maintenance');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 06</span><span class="ict">Predictive Maintenance Platform</span><span class="icy">2024 — 2026</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p07-heat-transfer');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 07</span><span class="ict">Heat Transfer Machine</span><span class="icy">2023</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p08-smart-home');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 08</span><span class="ict">Smart Home System (ESP32)</span><span class="icy">2023</span><span class="ica">↗</span></a>
+</div>
 <article class="pj rv" id="p01-autonomous-vehicle">
 <div class="ps-strip">
 <span class="pn">PROJ. 01</span><span>April 2026 — May 2026</span>
@@ -1242,7 +1252,7 @@ section+section{border-top:1px solid var(--l)}
 <div class="tl-card"><h3>BSc Eng. (Hons), Electrical and Electronic Engineering</h3><div class="company">University of Peradeniya, Sri Lanka</div></div></div>
 
 <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2005 — 2018</div>
-<div class="tl-card"><h3>Secondary Education (GCE A/L & O/L)</h3><div class="company">St. Peter's College, Colombo 04</div></div></div>
+<div class="tl-card"><h3>Secondary Education (GCE A/L & O/L)</h3><div class="company">St. Peter's College, Colombo 04</div><p style="font-size:14px;color:#2C2C2C;margin-top:12px;line-height:1.6"><strong>G.C.E. Advanced Level (Mathematics Stream):</strong> 2A's, 1B<br><strong>G.C.E. Ordinary Level:</strong> 9A's</p></div></div>
 </div>
 </div>
 
@@ -1332,7 +1342,7 @@ tabs.forEach(btn=>{
 });
 
 // ═══ TYPING ANIMATION ═══
-const phrases=['Embedded ML','Robotics & AI','Computer Vision','Android Mobile Apps','Autonomous Vehicles','Industrial IoT', 'PCB Design', 'PLC Automation'];
+const phrases=['Embedded Systems Engineer','Robotics & AI Developer','PCB & Hardware Designer','Computer Vision Engineer','Android Developer','Industrial Automation Engineer','IoT & Smart Systems Builder','Full Stack Product Builder'];
 let pi=0,ci=0,deleting=false;
 const typingEl=document.getElementById('typing-text');
 function typeLoop(){
