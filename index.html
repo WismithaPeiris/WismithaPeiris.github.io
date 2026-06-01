@@ -154,8 +154,7 @@ section+section{border-top:1px solid var(--l)}
 .gg{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
 @media(min-width:700px){.gg{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1000px){.gg{grid-template-columns:repeat(5,1fr)}}
-.gi{position:relative;background:var(--p2);border:1px solid var(--l);border-radius:3px;overflow:hidden;aspect-ratio:4/3;transition:all .3s cubic-bezier(.2,.8,.2,1);display:none}
-.gi.loaded{display:block}
+.gi{position:relative;background:var(--p2);border:1px solid var(--l);border-radius:3px;overflow:hidden;aspect-ratio:4/3;transition:all .3s cubic-bezier(.2,.8,.2,1)}
 .gi:hover{border-color:var(--i2);transform:translateY(-2px);box-shadow:0 8px 20px -8px rgba(31,58,95,.16)}
 .gi img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
 .gi:hover img{transform:scale(1.02)}
@@ -1468,21 +1467,18 @@ function typeLoop(){
 }
 typeLoop();
 
-// ═══ GALLERY — items hidden by default, shown only when image loads ═══
+// ═══ GALLERY — images show instantly, missing ones hide via onerror ═══
+// onerror on each <img> hides its parent .gi card
+// After all checked, if zero images loaded, hide the gallery section
 document.querySelectorAll('.pg').forEach(gallery=>{
   const items=Array.from(gallery.querySelectorAll('.gi'));
   if(!items.length){gallery.style.display='none';return;}
-  let total=items.length,failed=0,done=0;
-  const check=()=>{done++;if(done===total&&failed===total)gallery.style.display='none';};
+  let total=items.length,failed=0;
   items.forEach(gi=>{
     const img=gi.querySelector('img');
-    if(!img){failed++;check();return;}
-    if(img.complete){
-      if(img.naturalWidth>0){gi.classList.add('loaded');check();}
-      else{failed++;check();}
-    }else{
-      img.addEventListener('load',()=>{gi.classList.add('loaded');check();},{once:true});
-      img.addEventListener('error',()=>{failed++;check();},{once:true});
+    if(!img){gi.style.display='none';failed++;if(failed===total)gallery.style.display='none';return;}
+    if(img.complete && img.naturalWidth===0){
+      gi.style.display='none';failed++;if(failed===total)gallery.style.display='none';
     }
   });
 });
