@@ -326,7 +326,8 @@ section+section{border-top:1px solid var(--l)}
 
 .pv .vp{pointer-events:none}
 .pv{display:none}
-.pv.confirmed{display:block}
+
+
 
 
 
@@ -1380,19 +1381,35 @@ document.querySelectorAll('.pg').forEach(gallery=>{
   });
 });
 
-// ═══ VIDEO — hidden by default, shown when file loads ═══
+// ═══ VIDEO — hidden by default, shown only if file exists ═══
 document.querySelectorAll('.pv').forEach(section=>{
   const video=section.querySelector('video');
   const source=video?video.querySelector('source'):null;
   if(!video||!source)return;
-  video.preload='metadata';
-  video.addEventListener('loadedmetadata',()=>{
-    section.classList.add('confirmed');
-    const ph=section.querySelector('.vp');
-    if(ph)ph.style.display='none';
-  },{once:true});
-  source.addEventListener('error',()=>{section.classList.remove('confirmed');},{once:true});
-  video.load();
+  const url=source.getAttribute('src');
+  if(!url)return;
+
+  // Quick check if file exists (HEAD request, no download)
+  fetch(url,{method:'HEAD'}).then(r=>{
+    if(r.ok){
+      // File exists — show section immediately with play button
+      section.style.display='block';
+      // When video metadata loads, replace play button with actual player
+      video.addEventListener('loadedmetadata',()=>{
+        const ph=section.querySelector('.vp');
+        if(ph)ph.style.display='none';
+      },{once:true});
+    }
+    // If not ok (404) — section stays hidden, nothing shows
+  }).catch(()=>{
+    // fetch failed (local file://) — try loading video directly
+    video.addEventListener('loadedmetadata',()=>{
+      section.style.display='block';
+      const ph=section.querySelector('.vp');
+      if(ph)ph.style.display='none';
+    },{once:true});
+    source.addEventListener('error',()=>{},{once:true});
+  });
 });
 
 // ═══ REVEAL ANIMATION ═══
