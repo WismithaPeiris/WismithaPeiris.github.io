@@ -528,13 +528,14 @@ body.dark .arch-c{color:#8A8A92}
 </div>
 <h1 class="home-name">Wismitha Peiris</h1>
 <div class="home-typing"><span id="typing-text"></span><span class="cursor"></span></div>
-<p class="home-bio">Electronic and Embedded Engineer currently building an AI-powered educational robot at Figmentum Robotics. I design and build complete systems from concept to deployment, spanning PCB design, embedded ML, robotics, industrial automation, and full-stack mobile applications.</p>
+<p class="home-bio">Electronic and Embedded Engineer building the real time conversational AI behind a children’s educational robot at Figmentum Robotics, with speech to text, language models and text to speech tuned for ultra low latency on H100 and H200 GPU servers. I carry products the whole way from idea to production: PCB design, embedded ML, robotics, computer vision, industrial automation, and a full Android SaaS I designed, built and shipped alone, live today on Google Play.</p>
 <button class="home-expand" id="about-toggle" onclick="document.getElementById('about-detail').classList.toggle('open');this.textContent=this.textContent==='Read More About Me'?'Show Less':'Read More About Me'">Read More About Me</button>
 <div class="home-detail" id="about-detail">
-<p>I am currently working as a Prototype Engineer at <strong>Figmentum Robotics LLC</strong> (USA, remote), where I built the complete conversational AI pipeline for a children's educational robot: real-time LLM + speech-to-text + text-to-speech with emotion-aware voice synthesis, camera-based handwriting recognition for interactive math and spelling games, a projector-based display with software keystone correction, wake-word detection, quiz games, and pronunciation assessment.</p>
-<p>Alongside the robot, I built two production-grade testing platforms: an <strong>Audio Simulation Platform</strong> that tests STT accuracy under 16 types of audio degradation across multiple providers (GPT-4o, Gemini 2.5), and an <strong>OCR Benchmarking Platform</strong> that evaluates 13+ OCR models on children's handwriting with hybrid cost-optimized routing chains.</p>
-<p>I also independently designed, developed, and shipped <strong>EventPlanners</strong> (eventplanners.app), a full Android SaaS application live on Google Play. Before Figmentum, I owned the full predictive maintenance hardware platform at Hypen Holdings (custom PCB, industrial sensors, ML, AWS pipeline, React dashboard), and automated glove printing at Midas Safety using Delta PLC and pneumatics.</p>
-<p>On the academic side, I built an autonomous vehicle platform on Raspberry Pi 5 with dual AI cameras and LiDAR, an object avoidance robot with MPC on Jetson AGX, and a smart home controller with a custom ESP32 PCB. I hold a BSc Hons in EEE from the University of Peradeniya and am pursuing an MSc at Anglia Ruskin University, UK.</p>
+<p>I am currently a Prototype Engineer at <strong>Figmentum Robotics LLC</strong> (USA, remote), where I completely built the conversational AI of a children’s educational robot. I built the original pipeline of wake word detection, speech to text, an LLM and emotion aware text to speech, together with camera based handwriting recognition, attractive projected math and spelling games, and pronunciation scoring. When real testing showed that voice activity detection sometimes cost 2 to 5 seconds per answer, I redesigned the system as a push to talk platform: a Raspberry Pi 5 streaming the child’s voice over one warm WebSocket to H100 and H200 GPU servers rented from JarvisLabs.ai, running carefully researched open speech, language and voice models, tuned around one number: button release to first sound.</p>
+<p>To make every model choice provable, I built the company’s <strong>test bench validation platform</strong>: an STT tab that validates speech to text models against ground truth across seven strict sections and produces professional PDF reports, and a vision tab that benchmarks more than 25 handwriting OCR models, from cloud APIs to open models served on a rented H100 GPU, fed by a Raspberry Pi capture station I engineered for perfectly repeatable dataset photos.</p>
+<p>I also independently designed, built and shipped <strong>EventPlanners</strong> (eventplanners.app), a complete event SaaS live on Google Play, with WhatsApp first invitation delivery, dynamic web invitations, post event thank you cards and a Cloudflare CDN layer that cut hosting egress by over 95%. Before Figmentum, I built the full predictive maintenance platform at Hypen Holdings end to end, from the custom PCB and industrial sensors to the ML pipeline on AWS and the React dashboard, and I automated glove printing at Midas Safety with a Delta PLC machine that has been running in production since 2023.</p>
+<p>On the academic side, I built an autonomous vehicle platform on Raspberry Pi 5 with dual AI cameras and LiDAR, an object avoidance robot with MPC on a Jetson AGX, and a smart home controller on a custom ESP32 PCB. I hold a BSc Hons in Electrical and Electronic Engineering from the University of Peradeniya and am pursuing an MSc at Anglia Ruskin University, UK.</p>
+<p>What all of it adds up to is simple: I learn whatever the problem demands, I measure instead of guessing, and I ship. If your product needs to sense, think and act in the real world, from the circuit board to the GPU server, I can build it end to end.</p>
 </div>
 <div class="home-links">
 <a class="home-link" href="mailto:wismithapeiris123@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Email</a>
@@ -546,7 +547,7 @@ body.dark .arch-c{color:#8A8A92}
 <div class="home-stat"><div class="num">8</div><div class="lbl">Projects</div></div>
 <div class="home-stat"><div class="num">4</div><div class="lbl">Years Professional</div></div>
 <div class="home-stat"><div class="num">1</div><div class="lbl">Live SaaS Product</div></div>
-<div class="home-stat"><div class="num">2</div><div class="lbl">Beta Platforms</div></div>
+<div class="home-stat"><div class="num">2</div><div class="lbl">AI Test Platforms</div></div>
 </div>
 <div class="home-tech">
 <span>Python</span><span>·</span><span>C/C++</span><span>·</span><span>Kotlin</span><span>·</span><span>KiCad</span><span>·</span><span>Raspberry Pi</span><span>·</span><span>ESP32</span><span>·</span><span>OpenCV</span><span>·</span><span>React</span><span>·</span><span>Firebase</span><span>·</span><span>AWS</span><span>·</span><span>Docker</span><span>·</span><span>PLC</span>
@@ -635,10 +636,10 @@ body.dark .arch-c{color:#8A8A92}
 <div class="co">
 <div class="pi" style="margin-bottom:clamp(40px,5vw,64px)">
 <a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p01-autonomous-vehicle');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 01</span><span class="ict">Autonomous Vehicle Platform</span><span class="icy">2026</span><span class="ica">↗</span></a>
-<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p02-children-robot');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 02</span><span class="ict">Children-Interaction Robot</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
-<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p03-audio-sim');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 03</span><span class="ict">Audio Simulation & STT Testing</span><span class="icy">2026</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p02-children-robot');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 02</span><span class="ict">Children Interaction Robot</span><span class="icy">2025 — 2026</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p03-audio-sim');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 03</span><span class="ict">STT Test Bench & Validation</span><span class="icy">2026</span><span class="ica">↗</span></a>
 <a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p04-ocr');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 04</span><span class="ict">OCR Benchmarking Platform</span><span class="icy">2026</span><span class="ica">↗</span></a>
-<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p05-event-planner');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 05</span><span class="ict">EventPlanners — Digital Invitation SaaS</span><span class="icy">2024 — 2026</span><span class="ica">↗</span></a>
+<a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p05-event-planner');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 05</span><span class="ict">EventPlanners Digital Invitation SaaS</span><span class="icy">2024 — 2026</span><span class="ica">↗</span></a>
 <a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p06-predictive-maintenance');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 06</span><span class="ict">Predictive Maintenance Platform</span><span class="icy">2024 — 2026</span><span class="ica">↗</span></a>
 <a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p07-heat-transfer');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 07</span><span class="ict">Heat Transfer Machine</span><span class="icy">2023</span><span class="ica">↗</span></a>
 <a class="ic" style="cursor:pointer" onclick="var el=document.getElementById('p08-smart-home');window.scrollTo({top:el.offsetTop-70,behavior:'smooth'})"><span class="icn">PROJ. 08</span><span class="ict">Smart Home System (ESP32)</span><span class="icy">2023</span><span class="ica">↗</span></a>
@@ -652,13 +653,14 @@ body.dark .arch-c{color:#8A8A92}
 <h2 class="pjt">Autonomous Vehicle Platform<span class="pjs">Vision, LiDAR &amp; Real-Time Web Dashboard</span></h2>
 <p class="pjsum">End-to-end software platform for a 4-wheel autonomous car on Raspberry Pi 5. Combines dual IMX500 AI cameras, TF Luna LiDAR for distance-based braking, MG996 servo steering, and L298N motor control with a modular Python architecture and real-time web dashboard.</p>
 
-<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p01-autonomous-vehicle/hero.jpg" alt="Autonomous car prototype" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p01-autonomous-vehicle/hero.jpg" alt="Autonomous car prototype" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 
 <div class="wtd">
 <h3>What This Project Does</h3>
 <p>I wanted to build a small car that could drive itself around a track without any human input. So I put together a Raspberry Pi 5 as the brain, mounted two Sony IMX500 AI cameras on it (one looking forward for lane detection and obstacle spotting, one looking down for a bird's-eye perspective that helps with smooth steering), added a TF Luna laser distance sensor for measuring how far away things are, and wired up a servo motor for steering and a DC motor for driving.</p>
 <p>The software side is where most of the work went. I wrote a modular Python codebase with separate modules for perception (processing what the cameras and LiDAR see), planning (deciding what to do next using an 8-state finite state machine), and control (actually turning the wheels using a PID controller that I tuned by hand). The car can follow lanes, detect obstacles, change lanes to go around them, slow down behind a slower object, and emergency-brake if something appears too close. There is also a full web dashboard built with Flask and Socket.IO where I can watch both camera feeds live, see telemetry data, tune the lane detection parameters in real time, and hit an emergency stop button if needed.</p>
-<p>I also built a simulator mode so I could test the state machine and control logic on my laptop without needing the physical car, which saved a lot of development time. The entire codebase is around 10,600 lines of Python, organized into clean modules that I could work on independently.</p>
+<p>I also built a simulator mode so I could test the state machine and control logic on my laptop without needing the physical car, which saved a lot of development time. The entire codebase is written in Python and organized into clean modules that I could work on independently.</p>
+<div class="ps"><span class="sl">SKILLS COVERED</span><span class="si">Autonomous Driving State Machines</span><span class="si">Computer Vision Lane Detection (OpenCV)</span><span class="si">Sensor Fusion (Cameras, LiDAR, Odometry)</span><span class="si">PID Control &amp; Tuning</span><span class="si">Raspberry Pi 5 &amp; Motor Control (Servo, L298N)</span><span class="si">LiDAR Integration (TF Luna)</span><span class="si">Real Time Web Dashboards (Flask, Socket.IO)</span><span class="si">Simulation &amp; Hardware Free Testing</span><span class="si">Modular Python Architecture</span><span class="si">Embedded Reliability (Watchdog, SQLite Logging)</span></div>
 </div>
 
 <div class="pd">
@@ -671,7 +673,7 @@ body.dark .arch-c{color:#8A8A92}
 <li><strong>Sensor fusion</strong> combining LiDAR distance, wheel encoder odometry, and dual camera feeds into a unified world model that the planning FSM consumes each cycle.</li>
 <li><strong>Flask + Socket.IO dashboard</strong> with dual MJPEG camera feeds, live telemetry (speed, steering angle, state, distance), live ROI/threshold tuning sliders, latency monitoring, and a big red emergency stop button.</li>
 <li><strong>Built-in simulator</strong> for hardware-free testing; SQLite event logging; battery voltage monitor; watchdog timer (500 ms timeout auto-stops motors if main loop freezes); YAML config with hot-reload.</li>
-<li><strong>Modular architecture:</strong> perception/ planning/ control/ learning/ dashboard/ simulation/ calibration/ utils/ — 10,600+ lines of Python, cleanly separated by responsibility.</li>
+<li><strong>Modular architecture:</strong> perception/ planning/ control/ learning/ dashboard/ simulation/ calibration/ utils/ — written in Python and cleanly separated by responsibility.</li>
 </ul>
 </div>
 
@@ -712,16 +714,16 @@ body.dark .arch-c{color:#8A8A92}
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
 <div class="gg">
-<figure class="gi" data-slot="IMAGE 01"><img src="media/p01-autonomous-vehicle/01.jpg" alt="Hardware assembly with sensors" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p01-autonomous-vehicle/02.jpg" alt="Dashboard UI dual camera feeds" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p01-autonomous-vehicle/03.jpg" alt="Lane detection binary view" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p01-autonomous-vehicle/04.jpg" alt="LiDAR obstacle visualization" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p01-autonomous-vehicle/05.jpg" alt="PID calibration screen" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p01-autonomous-vehicle/06.jpg" alt="Sensor wiring detail" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p01-autonomous-vehicle/07.jpg" alt="FSM state display" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p01-autonomous-vehicle/08.jpg" alt="Bird-eye camera view" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p01-autonomous-vehicle/09.jpg" alt="Emergency braking test" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p01-autonomous-vehicle/10.jpg" alt="Night driving test" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 01"><img src="media/p01-autonomous-vehicle/01.jpg" alt="Hardware assembly with sensors" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p01-autonomous-vehicle/02.jpg" alt="Dashboard UI dual camera feeds" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p01-autonomous-vehicle/03.jpg" alt="Lane detection binary view" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p01-autonomous-vehicle/04.jpg" alt="LiDAR obstacle visualization" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p01-autonomous-vehicle/05.jpg" alt="PID calibration screen" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p01-autonomous-vehicle/06.jpg" alt="Sensor wiring detail" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p01-autonomous-vehicle/07.jpg" alt="FSM state display" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p01-autonomous-vehicle/08.jpg" alt="Bird-eye camera view" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p01-autonomous-vehicle/09.jpg" alt="Emergency braking test" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p01-autonomous-vehicle/10.jpg" alt="Night driving test" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 </div></div>
 <div class="pv">
 <div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Full autonomous driving demo on test track</span></div>
@@ -731,9 +733,6 @@ body.dark .arch-c{color:#8A8A92}
 </video>
 <div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH</div></div>
 </div></div>
-<div class="ps"><span class="sl">TECH STACK</span>
-<span class="si">Python</span><span class="si">Raspberry Pi 5</span><span class="si">IMX500</span><span class="si">TF Luna LiDAR</span><span class="si">OpenCV</span><span class="si">NumPy</span><span class="si">Flask</span><span class="si">Socket.IO</span><span class="si">simple-pid</span><span class="si">transitions FSM</span><span class="si">pigpio</span>
-</div>
 </article>
 <article class="pj rv" id="p02-children-robot">
 <div class="ps-strip">
@@ -741,32 +740,34 @@ body.dark .arch-c{color:#8A8A92}
 <span class="psrc">Figmentum Robotics LLC, USA</span>
 <div class="pt"><span class="tag tag-a">Robotics</span><span class="tag">Embedded AI</span><span class="tag">HCI</span><span class="tag">Computer Vision</span></div>
 </div>
-<h2 class="pjt">Children-Interaction Robot<span class="pjs">Real-Time Multi-language AI with Vision, Games &amp; Projector UI</span></h2>
-<p class="pjsum">A conversational learning robot for children that listens, talks, sees what they write, and teaches through interactive games. Combines wake-word detection, real-time LLM conversation with emotion-aware speech, camera-based handwriting recognition, and a projector-based interactive display.</p>
+<h2 class="pjt">Children Interaction Robot<span class="pjs">From API Voice Pipelines to a Push to Talk Platform on Rented H100 and H200 GPU Servers</span></h2>
+<p class="pjsum">The complete conversational brain of Figmentum's educational robot for children. It began with API driven voice pipelines and interactive learning games, then evolved into a push to talk platform where a Raspberry Pi 5 streams the child's voice to H100 and H200 GPU servers rented from JarvisLabs.ai, running carefully researched speech to text, language and text to speech models, engineered end to end for ultra low latency.</p>
+
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p02-children-robot/hero.jpg" alt="Children Interaction Robot" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 
 
 
 <div class="wtd">
 <h3>What This Project Does</h3>
-<p>I built this robot as a prototype engineer for Figmentum Robotics, a company developing educational robots for children. The idea is simple: a robot that a child can talk to naturally, play learning games with, and get real-time feedback on their handwriting and spelling. The challenge was making all of this feel instant and natural, because children lose interest in seconds if there is a delay.</p>
-<p>When a child says "Hey Buddy" (the custom wake word I configured using Picovoice Porcupine), the robot starts listening. Their speech is captured through a microphone, processed with voice activity detection to know exactly when they stop talking, and then transcribed using OpenAI's API. The system figures out what the child wants: a conversation, a math game, a spelling bee, a quiz, or a pronunciation exercise. For general conversation, the text goes to GPT-4o-mini which generates a child-friendly response with emotion tags (happy, excited, confused, sad), and ElevenLabs converts that response to natural-sounding speech with matching emotional tone.</p>
-<p>The games are where it gets interesting. In the math game, the robot projects a math problem onto a surface using an HDMI projector with software keystone correction. The child solves it on paper, and when they hold their paper under the OAK-D depth camera, the system automatically detects the page (using edge detection and stability checking), captures it, and sends the image to GPT-4.1-mini for OCR. The LLM then evaluates whether the answer is correct and gives step-by-step feedback. The spelling game works in two modes: the child can either spell words out loud (checked via speech-to-text) or write them on paper (checked via camera OCR). There is also a quiz game covering geography, history, and science, and a pronunciation game that uses Azure Speech SDK to score how well the child pronounces words and sentences.</p>
-<p>The entire interaction flow runs as a pipeline: wake word detection disables during games, a filler sound plays while the LLM is thinking so the child does not hear silence, and the projector display updates in real time to show questions, results, scores, and feedback. I optimized every stage for minimum latency because even a one-second delay makes the interaction feel broken for a young child.</p>
+<p>I am the prototype engineer behind the conversational side of Figmentum's educational robot for children, and this project tells the full story of how it was built. The first version ran on cloud APIs: the child says the wake word, the robot listens, sends the speech to OpenAI for transcription, thinks with GPT, and answers through ElevenLabs voices with matching emotions. Around that pipeline I built the learning games on a Windows laptop using API models such as GPT and Gemini, which let me prove very early that both the audio path and the camera OCR path worked: a math game where the robot projects a problem and reads the child's written answer through the OAK D camera, a spelling game with spoken and written modes, quizzes, and pronunciation scoring.</p>
+<p>Testing with real children exposed the weakness of that design. The wake word pipeline depends on voice activity detection to guess when the child has finished speaking, and children pause, think and restart in ways no silence threshold can predict. Sometimes the robot waited an extra 2 to 5 seconds before answering, and for a young child that delay breaks the magic completely.</p>
+<p>So I designed and built the PTT platform, a push to talk system that removes the guessing entirely: the child holds a button to talk and releases it to send. The Raspberry Pi 5 became a thin user end device carrying only the button, the microphone and the speaker, while all the heavy models moved to H100 and H200 GPU servers rented from JarvisLabs.ai, choosing the regions closest to us so network latency stays as low as possible. Each robot keeps one warm encrypted WebSocket open to the server. While the button is held, audio streams up in real time; the moment it is released, the server runs speech to text, a streaming language model and text to speech back to back on localhost, and streams the transcript, the answer text and the spoken voice straight back. The robot starts speaking as soon as the first audio chunk arrives, and the one number the entire system is tuned around is button release to first sound.</p>
+<p>The platform is also a research instrument. I studied the open models best suited to children, selected the strongest ones for accuracy and latency, and wired every one of them into the server, so the dashboard can swap the model at each stage per turn and compare combinations: Parakeet TDT, the Canary family, Kid Whisper and Kyutai for speech to text; Qwen3 VL, Llama 3.1, GPT OSS 20B, Phi 4 Mini and Mistral NeMo for the language model; Chatterbox Turbo, Kokoro, Maya1, Dia, Orpheus and Piper for the voice. Because everything runs on the rented servers instead of public APIs, the children's voice data is never sent to any third party, a child specific system prompt shapes every answer, and an optional guard model checks each clause before it is spoken. The result is a repeatable way to find the fastest, most accurate and safest model combination for the final robot.</p>
+<div class="ps"><span class="sl">SKILLS COVERED</span><span class="si">Real Time AI Pipelines (STT, LLM, TTS)</span><span class="si">Wake Word &amp; VAD (Porcupine, WebRTC)</span><span class="si">Push to Talk System Design</span><span class="si">WebSocket Audio Streaming</span><span class="si">Ultra Low Latency Engineering</span><span class="si">Open Model Serving (vLLM, NVIDIA NeMo)</span><span class="si">GPU Server Deployment (Docker, nginx, TLS)</span><span class="si">Raspberry Pi 5 Hardware Integration (GPIO, ReSpeaker)</span><span class="si">AI API Integration (OpenAI, Gemini, ElevenLabs)</span><span class="si">Camera OCR &amp; Page Detection (OAK D)</span><span class="si">Projector UI &amp; Keystone Correction</span><span class="si">Child Safety &amp; Privacy Design</span><span class="si">Python &amp; FastAPI</span></div>
 </div>
 
 <div class="pd">
 <h3 class="sh">Key Features &amp; Technical Highlights</h3>
 <ul class="pf">
-<li><strong>Wake word detection:</strong> Picovoice Porcupine with custom "Hey Buddy" keyword, running continuously at low latency. Automatically disables during active game sessions to prevent false triggers.</li>
-<li><strong>Conversational AI pipeline:</strong> Microphone → WebRTC VAD (voice activity detection with configurable silence threshold, energy baseline, and pre/post-roll) → OpenAI Whisper transcription → GPT-4o-mini with emotion tagging → ElevenLabs TTS with emotion-matched voice settings (stability, similarity boost tuned per emotion).</li>
-<li><strong>Math game:</strong> LLM generates age-appropriate math problems, projector displays the question, child solves on paper, OAK-D camera auto-detects the page (edge detection + stability + motion check for "writing finished"), GPT-4.1-mini reads the handwriting, and LLM evaluates the answer with step-by-step feedback and encouragement.</li>
-<li><strong>Spelling bee (two modes):</strong> Spoken mode where the child spells words aloud and STT checks each letter, and written mode where the child writes words on paper and the camera OCR reads them. Both modes use LLM-generated word lists tuned to the child's age (4-16 years).</li>
-<li><strong>Quiz game:</strong> Three rounds (Geography, History, Science) with LLM-generated questions displayed on the projector. Child answers vocally, system transcribes and checks answers with fuzzy matching and LLM verification.</li>
-<li><strong>Pronunciation assessment:</strong> Azure Speech SDK scores pronunciation accuracy (phoneme-level), and the LLM generates friendly feedback explaining which sounds need practice.</li>
-<li><strong>Projector-based UI:</strong> Full 1920×1080 projector output via OpenCV with software keystone correction (configurable 4-point warp), 180° rotation, child-friendly color palette, Patrick Hand font for a handwritten feel. Displays questions, word lists, scores, and real-time feedback.</li>
-<li><strong>OAK-D camera pipeline:</strong> DepthAI-based capture with auto-focus, page quad detection (Canny + contour + polygon approximation), stability tracking (8 consecutive stable frames required), motion detection gate (ensures child has finished writing before capture), and perspective-corrected cropping.</li>
-<li><strong>Latency optimization:</strong> Filler audio plays during LLM processing so the child never hears dead silence. Streaming TTS starts speaking the first sentence while the rest is still generating. Audio stream reuse (same sounddevice stream for wake word and speech capture to avoid open/close latency).</li>
-<li><strong>Context-aware utilities:</strong> Weather queries (Open-Meteo API), time/date responses, location-based place recommendations (Google Places API), all routed through natural language intent detection before falling back to the general LLM.</li>
+<li><strong>Stage one, the API pipeline:</strong> wake word "Hey Buddy" through Picovoice Porcupine, WebRTC voice activity detection, OpenAI transcription, GPT responses with emotion tags, and ElevenLabs voices matched to those emotions. Filler audio and streaming playback hide processing time so the child never hears dead silence.</li>
+<li><strong>Learning games proved the concept first:</strong> math and spelling games built on a Windows laptop with API models such as GPT and Gemini to confirm the audio path and the OCR path worked before committing to hardware. I designed a highly attractive, child friendly UI and UX for both games, projected through an HDMI projector with software keystone correction, showing every question, the child’s answer and step by step corrections in playful layouts that keep kids engaged, while the OAK D camera detects the page, waits for the child to finish writing, then captures it for OCR.</li>
+<li><strong>The latency problem, found and measured:</strong> voice activity detection cannot know whether a pausing child is thinking or finished, which sometimes delayed the answer by 2 to 5 seconds. That finding is what motivated the redesign around push to talk.</li>
+<li><strong>PTT platform, phase one on the Pi 5:</strong> a full test bench that runs the pipeline on device and through APIs, with a live dashboard for pipeline, cost, hardware and run history, plus drivers I wrote for the button, LEDs, ReSpeaker microphone array, camera and projector.</li>
+<li><strong>PTT platform, phase two on rented GPU servers:</strong> H100 and H200 machines rented from JarvisLabs.ai in the regions nearest to us, running speech to text, the language model and text to speech behind one orchestrator. One warm secure WebSocket per robot, raw PCM streamed both ways, and per turn ids so barge in and cancelled turns never leak audio into the next one.</li>
+<li><strong>Ultra low latency engineering:</strong> models loaded once and kept warm on a timer, the first clause of every answer flushed to text to speech before the sentence is complete, a TCP tuned nginx gateway with TLS and API keys, and automatic resampling on the Pi from the advertised sample rate. The dashboard reports button release to first sound for every single turn.</li>
+<li><strong>Researched model menu:</strong> Parakeet TDT v2 and v3, the Canary family, Kid Whisper and Kyutai for speech to text; Qwen3 VL 8B and 4B, Llama 3.1 8B, GPT OSS 20B, Phi 4 Mini and Mistral NeMo for the language model; Chatterbox Turbo, Kokoro, Maya1, Dia, Orpheus and Piper for the voice. Any stage can be swapped per turn with fallback toggles to find the best combination for children.</li>
+<li><strong>Safety and privacy by design:</strong> the whole pipeline runs on the rented servers so no child audio is ever sent to any third party API, an always on child specific system prompt, and an optional guard model that checks each clause of the answer before it is spoken.</li>
+<li><strong>Production style operations:</strong> Docker Compose for the whole model tier, model downloads to a persistent disk, warmup scripts, a network round trip measuring tool, run history with Excel and CSV export, and a single launcher that switches between the two phases while safely sharing one button, microphone and speaker.</li>
 </ul>
 </div>
 
@@ -827,16 +828,16 @@ body.dark .arch-c{color:#8A8A92}
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
 <div class="gg">
-<figure class="gi" data-slot="IMAGE 01"><img src="media/p02-children-robot/01.jpg" alt="Robot prototype with projector and camera" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p02-children-robot/02.jpg" alt="Math game projected on surface" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p02-children-robot/03.jpg" alt="Spelling bee results display" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p02-children-robot/04.jpg" alt="OAK-D camera capturing handwriting" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p02-children-robot/05.jpg" alt="Quiz game score display" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p02-children-robot/06.jpg" alt="Projector keystone correction" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p02-children-robot/07.jpg" alt="Child interacting with robot" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p02-children-robot/08.jpg" alt="Pronunciation game feedback" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p02-children-robot/09.jpg" alt="Hardware setup overview" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p02-children-robot/10.jpg" alt="Tracing projector mode" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 01"><img src="media/p02-children-robot/01.jpg" alt="Robot prototype with projector and camera" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p02-children-robot/02.jpg" alt="Math game projected on surface" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p02-children-robot/03.jpg" alt="Spelling bee results display" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p02-children-robot/04.jpg" alt="OAK-D camera capturing handwriting" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p02-children-robot/05.jpg" alt="Quiz game score display" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p02-children-robot/06.jpg" alt="Projector keystone correction" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p02-children-robot/07.jpg" alt="Child interacting with robot" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p02-children-robot/08.jpg" alt="Pronunciation game feedback" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p02-children-robot/09.jpg" alt="Hardware setup overview" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p02-children-robot/10.jpg" alt="Tracing projector mode" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 </div></div>
 
 <div class="pv">
@@ -848,9 +849,6 @@ body.dark .arch-c{color:#8A8A92}
 <div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH</div></div>
 </div></div>
 
-<div class="ps"><span class="sl">TECH STACK</span>
-<span class="si">Python</span><span class="si">OpenAI GPT-4o</span><span class="si">GPT-4.1-mini</span><span class="si">ElevenLabs TTS</span><span class="si">Picovoice Porcupine</span><span class="si">WebRTC VAD</span><span class="si">OAK-D Camera</span><span class="si">DepthAI</span><span class="si">OpenCV</span><span class="si">Azure Speech SDK</span><span class="si">Projector UI</span><span class="si">sounddevice</span>
-</div>
 </article>
 <article class="pj rv" id="p03-audio-sim">
 <div class="ps-strip">
@@ -858,21 +856,23 @@ body.dark .arch-c{color:#8A8A92}
 <span class="psrc">Figmentum Robotics LLC, USA</span>
 <div class="pt"><span class="tag tag-a">ML / AI</span><span class="tag">Speech</span><span class="tag">Test Infrastructure</span></div>
 </div>
-<h2 class="pjt">Audio Simulation &amp; STT Accuracy Testing Platform<span class="pjs">Transcription Testing Under Real-World Conditions</span></h2>
-<p class="pjsum">Streamlit-based platform for testing speech-to-text accuracy under simulated real-world audio conditions. 16 audio transforms, multi-provider STT, conversation simulation with VAD and barge-in detection, and automated WER/CER evaluation. Currently in beta inside Figmentum's robot pipeline.</p>
+<h2 class="pjt">STT Accuracy Test Bench &amp; Validation Platform<span class="pjs">Ground Truth Validation of Speech to Text Models for Children</span></h2>
+<p class="pjsum">The STT tab of the test bench validation platform I built for Figmentum: a single port web app with a FastAPI backend and a React frontend created to prove which models are good enough for the robot. It runs cloud transcription APIs and open models served on an H100 GPU rented from JarvisLabs.ai through seven strict ground truth validation sections and produces professional PDF reports with clear pass or fail verdicts.</p>
 
-<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p03-audio-sim/hero.jpg" alt="Audio Simulation &amp; STT Accuracy Testing Platform" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p03-audio-sim/hero.jpg" alt="STT Accuracy Test Bench &amp; Validation Platform" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 
 <div class="wtd">
 <h3>What This Project Does</h3>
-<p>At Figmentum Robotics, we were building a robot that talks to children. One of the hardest problems was getting the speech-to-text (STT) engine to work reliably in a child's room, where there is background noise, echo from walls, and the child might be standing far from the microphone. I needed a way to systematically test how well different STT providers handle these messy real-world conditions, so I built this platform.</p>
-<p>The platform lets me take a clean audio recording, then deliberately degrade it by adding specific types of noise, reverb, codec compression, network packet loss, echo, and other real-world artifacts. I built 16 different audio transform blocks that can be chained together and individually tuned. The degraded audio is then sent to multiple STT providers simultaneously, including OpenAI's GPT-4o Transcribe and Google's Gemini 2.5 Flash, and the platform automatically compares their transcription accuracy using metrics like Word Error Rate (WER) and Character Error Rate (CER).</p>
-<p>There is also a conversation simulation engine that tests the full back-and-forth dialogue flow, including voice activity detection (knowing when the child starts and stops speaking), barge-in handling (what happens if the child interrupts the robot), and end-to-end latency measurement. Everything runs through a Streamlit web interface where I can configure tests, run parameter sweeps, save presets, and export results. The platform is currently in beta testing and being used daily by the Figmentum team to optimize the robot's audio pipeline.</p>
+<p>The robot lives or dies on how well it understands children, and children are the hardest audience in speech recognition: small voices, invented words, long thinking pauses, noisy rooms. Guessing which model handles all of that best was not acceptable, so I implemented the STT tab of Figmentum’s test bench validation platform, a web app with a FastAPI backend and a React frontend served on a single port, to prove it with measurements instead. The vision side of the same platform is project 04.</p>
+<p>A run starts with recordings of children's speech and a matching ground truth file. I pick a model and the platform pushes every clip through seven validation sections: transcription accuracy measured by word error rate, pause and disfluency detection, accuracy under background noise, end of turn detection, STT latency, spelling precision measured by character error rate, and projected running cost. The first four are marked as ship blockers because the robot cannot ship if they fail; the rest are important. Every verdict is judged against the ground truth with thresholds I define, never hardcoded limits, so a pass actually means something.</p>
+<p>The model list mixes cloud transcription APIs such as GPT 4o Transcribe with the open models served from the STT server I built and deployed on an H100 GPU rented from JarvisLabs.ai, reached through an SSH tunnel: Parakeet TDT v2 and v3, Canary Qwen 2.5B, Canary 1B Flash and v2, Kid Whisper (a Whisper fine tuned on children's speech), Kyutai, and Whisper large v3 turbo in separate lowest latency and highest accuracy variants. Underneath, the scoring engine aligns every transcript word by word and normalizes numbers, spelling, possessives and contractions, handles fillers and disfluencies, and runs homophone and phonetic analysis, so no model is punished for a fair transcription.</p>
+<p>Each run ends in a professional PDF report with an executive summary, KPI cards, a validation readiness checklist that separates ship blockers from important checks, and per file detail tables, plus HTML and one page summary formats. State is scoped per browser session so ground truth, audio and results never mix, every run is kept in history, and an automated test suite guards the platform itself. The models that pass here are the ones trusted inside the robot's push to talk system.</p>
+<div class="ps"><span class="sl">SKILLS COVERED</span><span class="si">STT Model Validation (WER, CER)</span><span class="si">Ground Truth Dataset Design</span><span class="si">Speech Model Benchmarking (Cloud &amp; Open Models)</span><span class="si">Open Model Deployment on Rented GPUs</span><span class="si">SSH Tunneling &amp; Remote Access</span><span class="si">Text Normalization &amp; Phonetic Analysis</span><span class="si">End of Turn &amp; Pause Analysis</span><span class="si">Latency &amp; Cost Analysis</span><span class="si">Automated PDF &amp; HTML Reporting</span><span class="si">Full Stack Development (FastAPI, React)</span><span class="si">Test Automation</span></div>
 </div>
 
 <div class="pd">
 <h3 class="sh">Key Features &amp; Technical Highlights</h3>
-<ul class="pf"><li><strong>16 audio transform blocks:</strong> noise (white/pink/brown + library), gain, clipping, reverb, resample, crosstalk, transients, codec artifacts, network impairments, bandpass, AGC, noise suppression, echo leakage, speed perturbation, pitch shift.</li><li><strong>Multi-provider STT:</strong> GPT-4o Transcribe (OpenAI), Gemini 2.5 Flash Native Audio (Vertex AI), with adapter pattern for one-line provider extension.</li><li><strong>VAD + endpointing:</strong> WebRTC + Silero, state machine (idle → speaking → thinking → finished), per-pause classification distinguishing thinking pauses from complete stops.</li><li><strong>Conversation simulation</strong> with AEC (acoustic echo cancellation), barge-in detection, turn-taking, and end-to-end latency measurement (TTFT, TTFinal, RTF).</li><li><strong>Automated evaluation:</strong> WER, CER, alignment view, keyword accuracy, confidence scoring, yes/no flip detection, critical-phrase flags.</li><li><strong>Run history</strong> (JSON-based, CSV/zip export), presets, parameter sweep builder, dependency manager with one-click installs.</li></ul>
+<ul class="pf"><li><strong>Seven ground truth validation sections:</strong> transcription accuracy (WER), pause and disfluency detection, noise robustness, end of turn detection, STT latency, spelling precision (CER) and projected running cost, with the first four marked as ship blockers.</li><li><strong>Cloud and open models side by side:</strong> GPT 4o Transcribe in the cloud next to Parakeet TDT v2 and v3, Canary Qwen 2.5B, Canary 1B Flash and v2, Kid Whisper, Kyutai and Whisper large v3 turbo served from the H100 GPU rented from JarvisLabs.ai, with lowest latency and highest accuracy variants offered as separate choices.</li><li><strong>Fair scoring engine:</strong> word level alignment with normalization for numbers, spelling, possessives and contractions, filler and disfluency handling, and homophone and phonetic analysis, so accuracy numbers reflect real understanding.</li><li><strong>User defined pass gates:</strong> every threshold comes from the ground truth files and acceptance criteria I define, never from hardcoded limits, so the platform proves quality rather than assuming it.</li><li><strong>Professional reporting:</strong> a full PDF with an executive summary, KPI cards, a validation readiness checklist, pass or fail badges and per file detail tables, plus HTML and one page summary formats, all downloadable per run.</li><li><strong>Solid web app engineering:</strong> a FastAPI backend serving a React and TypeScript frontend on one port, per session state so different users never mix data, complete run history and an automated pytest suite.</li></ul>
 </div>
 
 <div class="arch">
@@ -898,21 +898,21 @@ body.dark .arch-c{color:#8A8A92}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p03-audio-sim/01.jpg" alt="Transform pipeline config" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p03-audio-sim/02.jpg" alt="STT comparison results" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p03-audio-sim/03.jpg" alt="VAD state visualization" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p03-audio-sim/04.jpg" alt="WER/CER evaluation report" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p03-audio-sim/05.jpg" alt="Parameter sweep builder" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p03-audio-sim/06.jpg" alt="Preset library" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p03-audio-sim/07.jpg" alt="Audio waveform before/after" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p03-audio-sim/08.jpg" alt="Conversation simulation timeline" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p03-audio-sim/09.jpg" alt="Endpointing analysis" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p03-audio-sim/10.jpg" alt="Latency breakdown chart" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p03-audio-sim/01.jpg" alt="Transform pipeline config" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p03-audio-sim/02.jpg" alt="STT comparison results" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p03-audio-sim/03.jpg" alt="VAD state visualization" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p03-audio-sim/04.jpg" alt="WER/CER evaluation report" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p03-audio-sim/05.jpg" alt="Parameter sweep builder" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p03-audio-sim/06.jpg" alt="Preset library" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p03-audio-sim/07.jpg" alt="Audio waveform before/after" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p03-audio-sim/08.jpg" alt="Conversation simulation timeline" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p03-audio-sim/09.jpg" alt="Endpointing analysis" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p03-audio-sim/10.jpg" alt="Latency breakdown chart" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
 <div class="pv">
-<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Platform walkthrough: transform → transcribe → evaluate</span></div>
+<div class="pvh"><span class="pvl">▶ VIDEO WALKTHROUGH</span><span class="pvt">Platform walkthrough: upload → validate → report</span></div>
 <div class="vs">
 <video controls preload="metadata" poster="media/p03-audio-sim/demo-poster.jpg" onloadedmetadata="this.parentNode.querySelector('.vp').style.display='none'">
 <source src="media/p03-audio-sim/demo.mp4" type="video/mp4">
@@ -920,7 +920,6 @@ body.dark .arch-c{color:#8A8A92}
 <div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH</div></div>
 </div></div>
 
-<div class="ps"><span class="sl">TECH STACK</span><span class="si">Python</span><span class="si">Streamlit</span><span class="si">OpenAI GPT-4o</span><span class="si">Vertex AI</span><span class="si">WebRTC VAD</span><span class="si">Silero VAD</span><span class="si">ffmpeg</span><span class="si">librosa</span><span class="si">jiwer</span></div>
 </article>
 <article class="pj rv" id="p04-ocr">
 <div class="ps-strip">
@@ -928,21 +927,23 @@ body.dark .arch-c{color:#8A8A92}
 <span class="psrc">Figmentum Robotics LLC, USA</span>
 <div class="pt"><span class="tag tag-a">ML / AI</span><span class="tag">Computer Vision</span><span class="tag">Test Infrastructure</span></div>
 </div>
-<h2 class="pjt">OCR Simulation &amp; Benchmarking Platform<span class="pjs">ChildScript — Handwriting Recognition Testing</span></h2>
-<p class="pjsum">FastAPI + React platform for evaluating OCR models on children's handwriting. 13+ OCR backends with image degradation simulation, hybrid cost-optimization chains, and statistical accuracy analysis. Currently in beta for Figmentum's handwriting pipeline.</p>
+<h2 class="pjt">OCR Simulation &amp; Benchmarking Platform<span class="pjs">Handwriting OCR Test Bench with GPU Served Models and a Pi Capture Station</span></h2>
+<p class="pjsum">A two part system for finding the best handwriting OCR for children. A Raspberry Pi capture station photographs handwriting sheets under identical, repeatable conditions, and a vision test bench runs those images through more than 25 OCR models, from cloud APIs to open models served on an H100 class GPU rented from JarvisLabs.ai, with honest accuracy scoring and per stage latency measurement.</p>
 
-<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p04-ocr/hero.jpg" alt="OCR Simulation &amp; Benchmarking Platform" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p04-ocr/hero.jpg" alt="OCR Simulation &amp; Benchmarking Platform" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 
 <div class="wtd">
 <h3>What This Project Does</h3>
-<p>The Figmentum robot teaches children to spell and do math by looking at what they write on paper using a camera. But children's handwriting is inconsistent: some letters are barely formed, spacing is uneven, and the camera angle and lighting are never perfect. I needed to figure out which OCR (Optical Character Recognition) model reads messy handwriting best, and under what conditions each model breaks down. So I built this benchmarking platform.</p>
-<p>The platform has a React frontend and a FastAPI backend with over 40 API endpoints. I can upload a handwriting image, then simulate real-world degradation: poor lighting, camera tilt, smudges, glare, watermarks, and perspective distortion. The image is sent to 13+ different OCR models, from fast and cheap ones like GPT-4o-mini to expensive reasoning models like o3. The platform compares their outputs with detailed statistics: confusion matrices, word-level error breakdowns, and model agreement scores.</p>
-<p>One feature I am particularly proud of is the hybrid model chain. Instead of always using the most expensive model, the system first tries a cheap model. If that model's confidence score is below a threshold, it automatically escalates to a more powerful model. This approach gives us nearly the same accuracy as always using the best model, but at about one-third to one-fifth of the cost. The platform also supports batch processing, scheduled regression checks, and webhook notifications for CI/CD integration.</p>
+<p>Children write words anywhere on the page, at any angle, in handwriting that is barely formed, and the robot has to read it correctly. Choosing the right OCR model for that job needed two things that did not exist yet: a dataset captured under perfectly consistent conditions, and a bench that measures every model with complete honesty. So I built both.</p>
+<p>The Pi capture station is a Raspberry Pi with a Camera Module 3 mounted on a fixed rig at a fixed height and tilt, controlled from a browser dashboard. I engineered the live preview to show the camera's full sensor view exactly as the still will be captured, with no hidden cropping, so what you see is precisely what you get. Autofocus confirmation, a stability check and a sharpness gate make sure a blurred still is never saved, and every image lands as a lossless full resolution file. Because the rig never changes, every photo of children's handwriting in the dataset is directly comparable to every other.</p>
+<p>The vision test bench is a web platform with a FastAPI backend and a React frontend running on my laptop, while the models themselves run on an H100 class GPU server rented from JarvisLabs.ai, which the app reaches through a secure tunnel and a small router which spreads requests across two model server instances. Every image passes through a three stage pipeline: page geometry first (upright rotation, keystone correction and page orientation), then PaddleOCR detects each handwritten word on the GPU, crops it upright and classifies whether the crop is right side up, and finally the model under test reads each crop. Whatever a model outputs is stored exactly as recognized, with no silent corrections, because honest numbers were the whole point of building this.</p>
+<p>The bench covers more than 25 models: open models served on the GPU such as Nemotron OCR, Nemotron Nano VL, Ministral 3, Molmo2, TrOCR, HTRflow, Llama 3.2 Vision, Phi 3.5 Vision, PaddleOCR VL and Baidu Unlimited OCR, next to cloud APIs like the GPT 4o and 4.1 families, the o series reasoning models, Gemini 2.5 and Google Cloud Vision. A validation tab scores each model across structured sections and builds a PDF report, a history tab keeps every run, and a Detection Lab shows every detected word crop as a thumbnail with per image latency so I can visually verify the detection stage. All models are warmed before timing, every measurement is taken per stage, and a suite of roughly four hundred automated tests keeps the platform itself trustworthy. Its verdicts choose the OCR that powers the robot's reading games.</p>
+<div class="ps"><span class="sl">SKILLS COVERED</span><span class="si">OCR Model Benchmarking &amp; Selection</span><span class="si">PaddleOCR Word Detection &amp; Cropping</span><span class="si">Vision Language Model Integration (Local &amp; Cloud)</span><span class="si">Full Stack Development (FastAPI, React)</span><span class="si">GPU Model Serving &amp; Warmup Discipline</span><span class="si">Raspberry Pi Camera Engineering (Camera Module 3)</span><span class="si">Camera Geometry &amp; Optics Simulation</span><span class="si">Image Geometry &amp; Keystone Correction</span><span class="si">Repeatable Dataset Capture Design</span><span class="si">Per Stage Latency Profiling</span><span class="si">Automated Testing &amp; Byte Stability</span><span class="si">Linux, SSH &amp; Remote GPU Operations</span><span class="si">Ground Truth Accuracy Scoring</span></div>
 </div>
 
 <div class="pd">
 <h3 class="sh">Key Features &amp; Technical Highlights</h3>
-<ul class="pf"><li><strong>13+ OCR backends:</strong> GPT-4o, 4o-mini, GPT-4.1 family, reasoning models (o3/o3-mini/o4-mini), Cloud Vision (Document + Handwriting), Gemini 2.5 Pro/Flash/Flash-Lite.</li><li><strong>Image degradation:</strong> lighting, glare, smudges, perspective warp, network conditions, watermarks, document boundaries, teacher marks, code switching.</li><li><strong>Statistical analysis:</strong> confusion matrices, error categorization, word-level analysis, model agreement, calibration, regression detection vs saved baselines.</li><li><strong>Hybrid model chains</strong> (cost-optimized routing): cheap first-pass → confidence check → reasoning escalation. ~3-5× cost reduction vs always-premium.</li><li><strong>Batch parallel processing</strong> with SSE streaming, webhooks for CI/CD, scheduled regression, annotation UI.</li><li><strong>Reports:</strong> HTML/CSV/JSON exports, rubric evaluation, child handwriting analysis (spacing, overwriting, incomplete letters).</li></ul>
+<ul class="pf"><li><strong>Pi capture station:</strong> a Raspberry Pi with Camera Module 3 on a fixed rig, controlled from a browser dashboard. The live preview shows the full sensor view exactly matching the still, and autofocus confirmation plus stability and sharpness gates guarantee that a blurred capture is never saved.</li><li><strong>Pi camera position simulator:</strong> an interactive planning tool I built that models every Raspberry Pi camera module (Module 1, 2, 3, 3 Wide and the HQ Camera with its lenses) at any height, tilt and pan above the table, draws the exact field of view over the paper sheets, and computes the resolution landing on the page in pixels per inch, so the capture rig geometry was proven to resolve the smallest handwriting before anything was physically built.</li><li><strong>Three stage OCR pipeline:</strong> page geometry on the laptop (upright rotation, keystone correction, page orientation), then PaddleOCR word detection with upright cropping and crop orientation classification on the GPU, then the model under test reading each crop. Models that prefer full pages receive the raw image instead.</li><li><strong>More than 25 models on one bench:</strong> open models served on the GPU (Nemotron OCR and Nano VL, Ministral 3, Molmo2, TrOCR, HTRflow, Llama 3.2 Vision, Phi 3.5 Vision, PaddleOCR VL, Baidu Unlimited OCR) beside cloud APIs (GPT 4o and 4.1 families, o series reasoning models, Gemini 2.5, Google Cloud Vision).</li><li><strong>Honest measurement rules:</strong> every model output is stored exactly as recognized with no silent corrections, all models are warmed before any timed run, latency is reported per stage, and accuracy is scored against labelled ground truth.</li><li><strong>Validation, History and Detection Lab:</strong> structured validation sections with accuracy scoring and PDF reports, a complete run history, and a visual Detection Lab that renders every detected crop with badges and per image latency so the detection stage can be verified by eye.</li><li><strong>Distributed architecture:</strong> laptop web app, SSH tunnel, a request router and two GPU server instances so models with conflicting environments can coexist, with warmup endpoints, health checks and environment switches that can turn any new behavior off instantly.</li><li><strong>Engineering discipline:</strong> around four hundred automated tests, byte stability guarantees for untouched code paths, and a documented GPU bring up checklist for every new model added, such as the evaluation and integration of Baidu Unlimited OCR.</li></ul>
 </div>
 
 <div class="arch">
@@ -978,16 +979,16 @@ body.dark .arch-c{color:#8A8A92}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p04-ocr/01.jpg" alt="Image degradation preview" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p04-ocr/02.jpg" alt="Model accuracy comparison" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p04-ocr/03.jpg" alt="Confusion matrix analysis" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p04-ocr/04.jpg" alt="Hybrid chain cost view" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p04-ocr/05.jpg" alt="Batch processing dashboard" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p04-ocr/06.jpg" alt="Annotation review UI" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p04-ocr/07.jpg" alt="Word-level error analysis" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p04-ocr/08.jpg" alt="Regression detection report" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p04-ocr/09.jpg" alt="Image preprocessing pipeline" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p04-ocr/10.jpg" alt="Statistical calibration" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p04-ocr/01.jpg" alt="Image degradation preview" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p04-ocr/02.jpg" alt="Model accuracy comparison" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p04-ocr/03.jpg" alt="Confusion matrix analysis" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p04-ocr/04.jpg" alt="Hybrid chain cost view" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p04-ocr/05.jpg" alt="Batch processing dashboard" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p04-ocr/06.jpg" alt="Annotation review UI" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p04-ocr/07.jpg" alt="Word-level error analysis" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p04-ocr/08.jpg" alt="Regression detection report" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p04-ocr/09.jpg" alt="Image preprocessing pipeline" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p04-ocr/10.jpg" alt="Statistical calibration" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -1000,7 +1001,6 @@ body.dark .arch-c{color:#8A8A92}
 <div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH</div></div>
 </div></div>
 
-<div class="ps"><span class="sl">TECH STACK</span><span class="si">Python</span><span class="si">FastAPI</span><span class="si">React</span><span class="si">TypeScript</span><span class="si">Vite</span><span class="si">Tailwind</span><span class="si">OpenAI</span><span class="si">Cloud Vision</span><span class="si">Gemini API</span><span class="si">SQLite</span></div>
 </article>
 <article class="pj rv" id="p05-event-planner">
 <div class="ps-strip">
@@ -1008,21 +1008,23 @@ body.dark .arch-c{color:#8A8A92}
 <span class="psrc">WellSmart Automations · Independent Product</span>
 <div class="pt"><span class="tag tag-a">Mobile</span><span class="tag">Cloud / SaaS</span><span class="tag">Full Stack</span></div>
 </div>
-<h2 class="pjt">EventPlanners — Digital Invitation SaaS <a href="https://eventplanners.app" target="_blank" rel="noopener"><span class="lv">● LIVE</span></a><span class="pjs">Multi-Tenant Platform · Live at eventplanners.app</span></h2>
-<p class="pjsum">Multi-tenant SaaS for event invitations, RSVPs, and post-event galleries. Native Android app + dynamic web invitations + Firebase backend + Cloudflare CDN + Google Play Billing. Independently designed, developed, and deployed. Live at eventplanners.app.</p>
+<h2 class="pjt">EventPlanners Digital Invitation SaaS <a href="https://eventplanners.app" target="_blank" rel="noopener"><span class="lv">● LIVE</span></a><span class="pjs">Full Event Lifecycle SaaS · Live at eventplanners.app</span></h2>
+<p class="pjsum">A complete SaaS for event invitations, RSVPs and post event memories: a native Android app, dynamic web invitations, a Firebase backend, a Cloudflare CDN layer and Google Play Billing subscriptions. Independently designed, developed and deployed, and live at eventplanners.app.</p>
 
-<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p05-event-planner/hero.jpg" alt="EventPlanners — Digital Invitation SaaS <a href="https://eventplanners.app" target="_blank" rel="noopener"><span class="lv">● LIVE</span></a>" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p05-event-planner/hero.jpg" alt="EventPlanners Digital Invitation SaaS" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 
 <div class="wtd">
 <h3>What This Project Does</h3>
-<p>I built EventPlanners because I saw how much effort people put into organizing events, from weddings to birthday parties, and how scattered the tools were. I wanted to create a single app that handles the entire lifecycle: designing beautiful digital invitations, sending them out, tracking who is coming, managing the event day, and sharing memories afterward.</p>
-<p>The Android app is built with Kotlin and Jetpack Compose following Material 3 design guidelines. Users can create customizable invitations with over 18 fonts and a template editor, and the app even uses OpenAI's API (proxied through Firebase Cloud Functions for security) to generate invitation text. Each event gets a single shareable link that dynamically changes based on where the event is in its lifecycle: before the event it shows the invitation, after someone RSVPs it shows their confirmation, and after the event it becomes a photo gallery.</p>
-<p>Behind the scenes, I built a Cloudflare CDN layer in front of Firebase Storage that dramatically cuts hosting costs. Every photo or video is served by Firebase exactly once, then Cloudflare caches it at the edge and serves all subsequent requests for free. This reduced potential Firebase egress bills by over 95%. The app also includes real-time RSVP tracking, QR code check-in for event day, a drag-and-drop seating chart, a budget tracker that exports PDF reports, a photo gallery with moderated uploads and Chromecast slideshow support, co-host management with real-time chat, and a tiered subscription model through Google Play Billing. I designed, developed, and deployed every part of this myself. It is live at <a href="https://eventplanners.app" target="_blank" rel="noopener" style="border-bottom:1px solid var(--r2);color:var(--i)">eventplanners.app</a>.</p>
+<p>I built EventPlanners because I saw how much effort people put into organizing events, from weddings to birthday parties, and how scattered the tools were. I wanted one app that carries a host through the entire journey: designing the invitation, delivering it, tracking who is coming, running the event day, and thanking everyone afterward.</p>
+<p>The Android app is built with Kotlin and Jetpack Compose following Material 3 design. Hosts design invitations with a template editor and more than 18 fonts, and an AI writer (OpenAI, proxied through Firebase Cloud Functions so no key ever ships in the app) drafts the wording for them. Delivery is built around WhatsApp: the app opens a personalized message for each guest one by one, runs a bulk send across the whole list, or copies a broadcast ready message, while tracking per guest delivery and RSVP status with sorting and filtering. Every event gets one shareable link that changes with the lifecycle: before the event it shows the invitation, after someone responds it shows their RSVP confirmation, and after the event it becomes the photo gallery.</p>
+<p>The event day and everything after are covered too: QR code check in, a drag and drop seating chart, a budget tracker with PDF reports, schedules, vendors, guest surveys, a Live Wall photo slideshow and an analytics view. When the event completes, the thank you flow sends every accepted guest a personalized WhatsApp message with a photo from the event gallery attached, either the same photo for everyone or a random one per guest, with AI written templates, sent tracking and a resend option, so no guest is forgotten or thanked twice.</p>
+<p>Behind the scenes, Firestore security rules enforce co host access, Cloud Functions send RSVP deadline reminders and push notifications, a home screen widget shows the event countdown with live RSVP counts, and a Cloudflare CDN with HMAC signed URLs serves every photo from the edge, cutting Firebase egress costs by over 95%. Subscriptions run through Google Play Billing across Free, Starter, Pro and Business tiers. I designed, developed and deployed every part of this myself. It is live at <a href="https://eventplanners.app" target="_blank" rel="noopener" style="border-bottom:1px solid var(--r2);color:var(--i)">eventplanners.app</a>.</p>
+<div class="ps"><span class="sl">SKILLS COVERED</span><span class="si">Native Android Development (Kotlin, Jetpack Compose)</span><span class="si">Material 3 UI Design</span><span class="si">Firebase Backend (Firestore, Cloud Functions, FCM)</span><span class="si">Firestore Security Rules &amp; Co Host Access</span><span class="si">WhatsApp Delivery &amp; Deep Linking</span><span class="si">Dynamic Web Invitations (Firebase JS SDK)</span><span class="si">Cloudflare CDN &amp; HMAC Signed URLs</span><span class="si">AI Text Generation (OpenAI via Cloud Functions)</span><span class="si">Google Play Billing &amp; Subscription Tiers</span><span class="si">QR Check In &amp; Event Tooling</span><span class="si">Full Product Ownership (Design to Deployment)</span></div>
 </div>
 
 <div class="pd">
 <h3 class="sh">Key Features &amp; Technical Highlights</h3>
-<ul class="pf"><li><strong>Native Android:</strong> Kotlin + Jetpack Compose + Material 3 + MVVM, offline manager, signed-URL cache, contact importer, lifecycle-aware analytics.</li><li><strong>Dynamic single-link invitations:</strong> same URL transforms between invitation / RSVP / gallery based on event lifecycle. Single HTML page with Firebase JS SDK.</li><li><strong>18+ font system,</strong> template editor, AI text generation (OpenAI via Cloud Functions proxy), font pairing suggestions.</li><li><strong>RSVP tracking,</strong> QR check-in, drag-and-drop seating, budget tracker with PDF/CSV/XLSX reports, photo gallery with moderated uploads and Chromecast slideshow.</li><li><strong>Co-host management</strong> with Firebase custom claims, real-time chat, countdown widgets, FCM push notifications, post-event thank-you cards.</li><li><strong>Cloudflare CDN</strong> at media.eventplanners.app with HMAC-signed URLs; 95%+ Firebase egress reduction at scale.</li><li><strong>Google Play Billing</strong> tiered model (Free / Starter / Pro / Business) with admin P&amp;L dashboard.</li></ul>
+<ul class="pf"><li><strong>Native Android app:</strong> Kotlin, Jetpack Compose and Material 3 with an MVVM architecture, offline support, contact bulk import and lifecycle aware analytics.</li><li><strong>WhatsApp first delivery:</strong> personalized messages opened per guest, sequential bulk send across the whole list, broadcast mode, and per guest delivery and RSVP status with sorting and filtering.</li><li><strong>Dynamic single link invitations:</strong> one URL that transforms between invitation, RSVP confirmation and photo gallery as the event moves through its lifecycle, served by a lightweight web page on the Firebase JS SDK.</li><li><strong>Design and AI writing:</strong> a template editor with more than 18 fonts and an AI writer powered by OpenAI, proxied through Cloud Functions so the key never ships inside the app.</li><li><strong>Event day tools:</strong> QR code check in, drag and drop seating, a budget tracker with PDF reports, schedules, vendors, guest surveys, a Live Wall photo slideshow and analytics.</li><li><strong>Post event thank you cards:</strong> personalized WhatsApp messages to every accepted guest with a gallery photo attached (the same photo for all or a random one per guest), AI written templates, sent tracking and resend.</li><li><strong>Cloud infrastructure:</strong> Firestore security rules enforcing co host access, Cloud Functions for RSVP deadline reminders and push notifications, a home screen countdown widget with live RSVP counts, and a Cloudflare CDN with HMAC signed URLs cutting Firebase egress by over 95%.</li><li><strong>Google Play Billing:</strong> Free, Starter, Pro and Business tiers gating features and tabs across the app.</li></ul>
 </div>
 
 <div class="arch">
@@ -1054,16 +1056,16 @@ body.dark .arch-c{color:#8A8A92}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p05-event-planner/01.jpg" alt="Invitation template editor" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p05-event-planner/02.jpg" alt="RSVP tracking dashboard" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p05-event-planner/03.jpg" alt="Photo gallery + Chromecast" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p05-event-planner/04.jpg" alt="Budget tracker PDF reports" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p05-event-planner/05.jpg" alt="Web invitation page" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p05-event-planner/06.jpg" alt="QR check-in screen" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p05-event-planner/07.jpg" alt="Seating chart drag-drop" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p05-event-planner/08.jpg" alt="AI text generation" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p05-event-planner/09.jpg" alt="Co-host management" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p05-event-planner/10.jpg" alt="Subscription tiers" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p05-event-planner/01.jpg" alt="Invitation template editor" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p05-event-planner/02.jpg" alt="RSVP tracking dashboard" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p05-event-planner/03.jpg" alt="Photo gallery + Chromecast" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p05-event-planner/04.jpg" alt="Budget tracker PDF reports" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p05-event-planner/05.jpg" alt="Web invitation page" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p05-event-planner/06.jpg" alt="QR check-in screen" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p05-event-planner/07.jpg" alt="Seating chart drag-drop" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p05-event-planner/08.jpg" alt="AI text generation" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p05-event-planner/09.jpg" alt="Co-host management" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p05-event-planner/10.jpg" alt="Subscription tiers" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -1076,7 +1078,6 @@ body.dark .arch-c{color:#8A8A92}
 <div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH</div></div>
 </div></div>
 
-<div class="ps"><span class="sl">TECH STACK</span><span class="si">Kotlin</span><span class="si">Jetpack Compose</span><span class="si">Material 3</span><span class="si">Firebase</span><span class="si">Cloud Functions</span><span class="si">Firestore</span><span class="si">FCM</span><span class="si">Cloudflare</span><span class="si">Google Play Billing</span><span class="si">OpenAI</span></div>
 </article>
 <article class="pj rv" id="p06-predictive-maintenance">
 <div class="ps-strip">
@@ -1087,13 +1088,14 @@ body.dark .arch-c{color:#8A8A92}
 <h2 class="pjt">Predictive Maintenance Hardware Platform<span class="pjs">Industrial Vibration Monitoring + ML Dashboard</span></h2>
 <p class="pjsum">End-to-end industrial vibration monitoring for two motors. Custom hardware (vibration sensors + power-switching PCB + battery backup) on Raspberry Pi, ML fault detection, and a full FastAPI + React dashboard with adaptive baselines and bearing-fault frequency analysis.</p>
 
-<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p06-predictive-maintenance/hero.jpg" alt="Predictive Maintenance Hardware Platform" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p06-predictive-maintenance/hero.jpg" alt="Predictive Maintenance Hardware Platform" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 
 <div class="wtd">
 <h3>What This Project Does</h3>
 <p>At Hypen Holdings, I was tasked with building a system that could warn factory engineers before an industrial motor fails. Motor failures cause expensive unplanned downtime, and the traditional approach of scheduled maintenance either replaces parts too early (wasting money) or too late (after the damage is done). Predictive maintenance solves this by continuously monitoring the motor's health and catching the early signs of trouble.</p>
 <p>I started with the hardware: I mounted three types of sensors on each motor (a tri-axial vibration sensor, a current sensor, and a temperature sensor) and connected them to a Raspberry Pi 4. I wrote Python code that samples these sensors at high speed, processes the data in real time, and packages it into compressed Parquet files that get uploaded to AWS S3 every minute. Because factory power can cut out at any time, I designed a custom PCB with a battery backup and high-speed power switching circuit, so the Pi keeps running and no data is lost during an outage.</p>
 <p>On the cloud side, a FastAPI server running on DigitalOcean pulls the Parquet files from S3 every five minutes, runs analytics (FFT spectrum analysis, bearing fault frequency detection, ISO 10816 vibration severity classification), and stores hourly summaries in a PostgreSQL database. The system learns what "normal" vibration looks like for each specific motor during a baseline period, then flags any deviation using a statistical threshold approach. The React web dashboard shows everything in real time: FFT plots, trend charts, bearing health indicators, and a maintenance log with a timeline view. I deployed the whole stack using Docker Compose behind Nginx.</p>
+<div class="ps"><span class="sl">SKILLS COVERED</span><span class="si">Industrial Sensor Integration (Vibration, Current, Temperature)</span><span class="si">PCB Design in KiCad (Battery Backup, Power Switching)</span><span class="si">Embedded Data Acquisition (Raspberry Pi, Python)</span><span class="si">Signal Processing &amp; FFT Analysis</span><span class="si">Bearing Fault Diagnostics (BPFI, BPFO, BSF, FTF)</span><span class="si">ISO 10816 Vibration Classification</span><span class="si">Adaptive Baselines &amp; Anomaly Detection</span><span class="si">Cloud Data Pipelines (AWS S3, Parquet)</span><span class="si">Backend &amp; Database (FastAPI, PostgreSQL)</span><span class="si">Dashboard Development (React, Recharts)</span><span class="si">Docker &amp; Nginx Deployment (DigitalOcean)</span></div>
 </div>
 
 <div class="pd">
@@ -1136,16 +1138,16 @@ body.dark .arch-c{color:#8A8A92}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p06-predictive-maintenance/01.jpg" alt="Custom PCB for battery-backup" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p06-predictive-maintenance/02.jpg" alt="Sensor installation on motor" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p06-predictive-maintenance/03.jpg" alt="Dashboard overview mini-FFT" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p06-predictive-maintenance/04.jpg" alt="Engineering analysis waveform" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p06-predictive-maintenance/05.jpg" alt="Maintenance log timeline" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p06-predictive-maintenance/06.jpg" alt="Bearing fault indicators" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p06-predictive-maintenance/07.jpg" alt="Trend chart with event markers" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p06-predictive-maintenance/08.jpg" alt="Hardware enclosure" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p06-predictive-maintenance/09.jpg" alt="Parquet ingestion monitor" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p06-predictive-maintenance/10.jpg" alt="ISO 10816 zone display" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p06-predictive-maintenance/01.jpg" alt="Custom PCB for battery-backup" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p06-predictive-maintenance/02.jpg" alt="Sensor installation on motor" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p06-predictive-maintenance/03.jpg" alt="Dashboard overview mini-FFT" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p06-predictive-maintenance/04.jpg" alt="Engineering analysis waveform" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p06-predictive-maintenance/05.jpg" alt="Maintenance log timeline" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p06-predictive-maintenance/06.jpg" alt="Bearing fault indicators" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p06-predictive-maintenance/07.jpg" alt="Trend chart with event markers" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p06-predictive-maintenance/08.jpg" alt="Hardware enclosure" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p06-predictive-maintenance/09.jpg" alt="Parquet ingestion monitor" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p06-predictive-maintenance/10.jpg" alt="ISO 10816 zone display" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -1158,7 +1160,6 @@ body.dark .arch-c{color:#8A8A92}
 <div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH</div></div>
 </div></div>
 
-<div class="ps"><span class="sl">TECH STACK</span><span class="si">Raspberry Pi 4</span><span class="si">Python</span><span class="si">KiCad</span><span class="si">FastAPI</span><span class="si">PostgreSQL</span><span class="si">React</span><span class="si">Vite</span><span class="si">Tailwind</span><span class="si">Recharts</span><span class="si">AWS S3</span><span class="si">DigitalOcean</span><span class="si">Docker</span><span class="si">Nginx</span></div>
 </article>
 <article class="pj rv" id="p07-heat-transfer">
 <div class="ps-strip">
@@ -1169,13 +1170,14 @@ body.dark .arch-c{color:#8A8A92}
 <h2 class="pjt">Heat Transfer Machine — Glove Printing Automation<span class="pjs">Production-Deployed Industrial PLC System</span></h2>
 <p class="pjsum">Production-deployed automation for printing on industrial gloves. Delta PLC with recipe-driven sequencing, HMI touchscreen, and pneumatics integration. Replaced a manual process on the Awissawella production floor.</p>
 
-<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p07-heat-transfer/hero.jpg" alt="Heat Transfer Machine — Glove Printing Automation" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p07-heat-transfer/hero.jpg" alt="Heat Transfer Machine — Glove Printing Automation" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 
 <div class="wtd">
 <h3>What This Project Does</h3>
 <p>At the Midas Safety glove factory in Awissawella, designs are printed onto industrial gloves by pressing them against a heated plate at a specific temperature for a specific duration. Before I built this system, an operator did everything manually: setting the temperature, watching a timer, pressing and releasing the pneumatic cylinders by feel. The problem was inconsistency. Some prints came out too light, others were scorched, and the defect rate was higher than it needed to be.</p>
 <p>I designed and built an automated version using a Delta PLC (Programmable Logic Controller). The core idea is recipe-based operation: an engineer defines a recipe for each glove type (specifying the exact temperature, dwell time, and pressure), and the operator simply selects the recipe on the HMI touchscreen and presses start. From there, the PLC handles everything automatically. It heats the plate to the precise setpoint using PID control (holding within half a degree), sequences the pneumatic cylinders for exactly the right press duration, then releases and advances to the next position.</p>
 <p>I also designed the electrical control panel, wired all the I/O modules, programmed the safety interlocks (the machine will not operate if the door is open or the temperature exceeds safe limits), and built an alarm management system that logs faults. The result was a measurable reduction in glove defect rate because the machine now delivers the exact same temperature and timing on every single cycle, regardless of which operator is running it. This machine has been running on the production floor since 2023.</p>
+<div class="ps"><span class="sl">SKILLS COVERED</span><span class="si">PLC Programming (Delta)</span><span class="si">Recipe Driven Sequencing</span><span class="si">PID Temperature Control</span><span class="si">HMI Touchscreen Design</span><span class="si">Pneumatic System Integration</span><span class="si">Electrical Panel Design &amp; Wiring (24V DC I/O)</span><span class="si">Safety Interlocks &amp; Alarm Management</span><span class="si">Production Commissioning &amp; Support</span></div>
 </div>
 
 <div class="pd">
@@ -1213,16 +1215,16 @@ body.dark .arch-c{color:#8A8A92}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p07-heat-transfer/01.jpg" alt="Electrical control panel" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p07-heat-transfer/02.jpg" alt="HMI touchscreen recipe" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p07-heat-transfer/03.jpg" alt="Pneumatic system" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p07-heat-transfer/04.jpg" alt="PLC wiring and I/O" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p07-heat-transfer/05.jpg" alt="Glove print output" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p07-heat-transfer/06.jpg" alt="Heater plate assembly" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p07-heat-transfer/07.jpg" alt="Machine overview" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p07-heat-transfer/08.jpg" alt="Safety interlock wiring" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p07-heat-transfer/09.jpg" alt="Operator station" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p07-heat-transfer/10.jpg" alt="Production line context" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p07-heat-transfer/01.jpg" alt="Electrical control panel" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p07-heat-transfer/02.jpg" alt="HMI touchscreen recipe" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p07-heat-transfer/03.jpg" alt="Pneumatic system" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p07-heat-transfer/04.jpg" alt="PLC wiring and I/O" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p07-heat-transfer/05.jpg" alt="Glove print output" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p07-heat-transfer/06.jpg" alt="Heater plate assembly" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p07-heat-transfer/07.jpg" alt="Machine overview" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p07-heat-transfer/08.jpg" alt="Safety interlock wiring" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p07-heat-transfer/09.jpg" alt="Operator station" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p07-heat-transfer/10.jpg" alt="Production line context" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -1235,7 +1237,6 @@ body.dark .arch-c{color:#8A8A92}
 <div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH</div></div>
 </div></div>
 
-<div class="ps"><span class="sl">TECH STACK</span><span class="si">Delta PLC</span><span class="si">HMI</span><span class="si">Pneumatics</span><span class="si">SSR</span><span class="si">Thermocouple</span><span class="si">Electrical Panel</span><span class="si">24V DC I/O</span></div>
 </article>
 <article class="pj rv" id="p08-smart-home">
 <div class="ps-strip">
@@ -1246,13 +1247,14 @@ body.dark .arch-c{color:#8A8A92}
 <h2 class="pjt">Smart Home Automation System (ESP32)<span class="pjs">Custom PCB + Voice Assistants + Touchscreen</span></h2>
 <p class="pjsum">Custom smart-home controller built around ESP32. PCB designed in KiCad, firmware in ESP-IDF, integrated with Google Home and Alexa, with touchscreen for local control. Works offline via local fallback.</p>
 
-<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p08-smart-home/hero.jpg" alt="Smart Home Automation System (ESP32)" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('missing')"></figure>
+<figure class="ph" data-slot="HERO · 1600×900"><img src="media/p08-smart-home/hero.jpg" alt="Smart Home Automation System (ESP32)" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 
 <div class="wtd">
 <h3>What This Project Does</h3>
 <p>For my university project, I decided to build a smart home controller entirely from scratch rather than using an off-the-shelf solution like a Raspberry Pi with Home Assistant. I wanted to understand every layer: the circuit board, the firmware, the communication protocols, and the cloud integrations.</p>
 <p>I designed a custom PCB in KiCad centered around an ESP32 microcontroller. The board includes relay drivers for switching lights and appliances, inputs for a DHT temperature and humidity sensor, a PIR motion detector, and a light-dependent resistor. There is also a capacitive touchscreen connected for local control, so you can tap through different room presets ("Movie Mode" dims the lights and turns off the ceiling fan, "Sleep Mode" turns everything off except a night light) without needing your phone or voice assistant.</p>
 <p>The firmware is written in C using Espressif's ESP-IDF framework. It runs a scene engine for preset configurations, a schedule manager for time-based automation (like turning on porch lights at sunset), and an OTA updater so I can push firmware changes over WiFi without physically accessing the device. The system connects to Google Home and Amazon Alexa through MQTT for voice control. The key design decision was making it local-first: all the automation logic runs on the ESP32 itself. If the internet goes down, the touchscreen and scheduled automations keep working normally. The cloud services are nice additions, not requirements.</p>
+<div class="ps"><span class="sl">SKILLS COVERED</span><span class="si">Custom PCB Design (KiCad)</span><span class="si">ESP32 Firmware in C (ESP IDF)</span><span class="si">Sensor &amp; Relay Interfacing (DHT, PIR, LDR)</span><span class="si">Touchscreen UI Development</span><span class="si">Scene &amp; Schedule Automation</span><span class="si">OTA Firmware Updates</span><span class="si">Voice Assistant Integration (Google Home, Alexa)</span><span class="si">MQTT Communication</span><span class="si">Local First IoT Architecture</span></div>
 </div>
 
 <div class="pd">
@@ -1288,16 +1290,16 @@ body.dark .arch-c{color:#8A8A92}
 
 <div class="pg">
 <div class="pgh"><span class="pgl">GALLERY</span></div>
-<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p08-smart-home/01.jpg" alt="Custom PCB layout KiCad" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 02"><img src="media/p08-smart-home/02.jpg" alt="Assembled PCB with ESP32" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 03"><img src="media/p08-smart-home/03.jpg" alt="Touchscreen UI scenes" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 04"><img src="media/p08-smart-home/04.jpg" alt="Google Home integration" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 05"><img src="media/p08-smart-home/05.jpg" alt="Sensor wiring enclosure" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 06"><img src="media/p08-smart-home/06.jpg" alt="3D render of PCB" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 07"><img src="media/p08-smart-home/07.jpg" alt="Relay driver testing" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 08"><img src="media/p08-smart-home/08.jpg" alt="OTA update process" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 09"><img src="media/p08-smart-home/09.jpg" alt="Scene configuration" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
-<figure class="gi" data-slot="IMAGE 10"><img src="media/p08-smart-home/10.jpg" alt="Installed in home" loading="lazy" onerror="this.parentNode.style.display='none'"></figure>
+<div class="gg"><figure class="gi" data-slot="IMAGE 01"><img src="media/p08-smart-home/01.jpg" alt="Custom PCB layout KiCad" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 02"><img src="media/p08-smart-home/02.jpg" alt="Assembled PCB with ESP32" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 03"><img src="media/p08-smart-home/03.jpg" alt="Touchscreen UI scenes" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 04"><img src="media/p08-smart-home/04.jpg" alt="Google Home integration" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 05"><img src="media/p08-smart-home/05.jpg" alt="Sensor wiring enclosure" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 06"><img src="media/p08-smart-home/06.jpg" alt="3D render of PCB" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 07"><img src="media/p08-smart-home/07.jpg" alt="Relay driver testing" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 08"><img src="media/p08-smart-home/08.jpg" alt="OTA update process" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 09"><img src="media/p08-smart-home/09.jpg" alt="Scene configuration" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
+<figure class="gi" data-slot="IMAGE 10"><img src="media/p08-smart-home/10.jpg" alt="Installed in home" loading="lazy" decoding="async" onerror="this.parentNode.style.display='none'"></figure>
 </div>
 </div>
 
@@ -1310,7 +1312,6 @@ body.dark .arch-c{color:#8A8A92}
 <div class="vp"><div class="vpb"></div><div class="vpt">VIDEO WALKTHROUGH</div></div>
 </div></div>
 
-<div class="ps"><span class="sl">TECH STACK</span><span class="si">ESP32</span><span class="si">ESP-IDF (C)</span><span class="si">KiCad</span><span class="si">Google Home</span><span class="si">Alexa</span><span class="si">MQTT</span><span class="si">Touchscreen</span><span class="si">Relays</span><span class="si">DHT</span><span class="si">PIR</span></div>
 </article>
 </div></div>
 
@@ -1448,7 +1449,7 @@ tabs.forEach(btn=>{
 });
 
 // ═══ TYPING ANIMATION ═══
-const phrases=['Embedded AI', 'Computer Vision', 'Autonomous Robotics','Android Apps','IoT Solutions','Edge ML Deployment', 'Industrial Automation', 'Custom PCB Design'];;
+const phrases=['Real Time AI Pipelines (STT, LLM, TTS)','Ultra Low Latency AI Pipelines','GPU Model Serving (STT, LLM, TTS)','Computer Vision & Handwriting OCR','AI Model Benchmarking Platforms','Autonomous Robotics','Embedded Systems & PCB Design','Industrial Automation (PLC)','Full Stack Apps & Live SaaS','Concept to Production, End to End'];
 let pi=0,ci=0,deleting=false;
 const typingEl=document.getElementById('typing-text');
 function typeLoop(){
@@ -1483,7 +1484,27 @@ document.querySelectorAll('.pg').forEach(gallery=>{
   });
 });
 
-// ═══ VIDEO — hidden by default, shown only if file exists ═══
+// ═══ LATE IMAGE ERRORS — lazy images that fail after page load ═══
+// Hides broken hero images, broken gallery cards, and the gallery box once empty
+document.addEventListener('error',function(ev){
+  const t=ev.target;
+  if(!t||t.tagName!=='IMG')return;
+  const gi=t.closest('.gi');
+  if(gi){
+    gi.style.display='none';
+    const pg=gi.closest('.pg');
+    if(pg&&!Array.from(pg.querySelectorAll('.gi')).some(x=>x.style.display!=='none')){pg.style.display='none';}
+    return;
+  }
+  const ph=t.closest('.ph');
+  if(ph){ph.style.display='none';}
+},true);
+
+// ═══ VIDEO — the card appears only for projects that actually have a video ═══
+// Existence is confirmed the moment the page loads (a tiny HEAD request that
+// downloads nothing), so projects WITH a video show their grid card and play
+// button right away — even while the video file itself is still loading — and
+// projects WITHOUT a video never show a card at all.
 document.querySelectorAll('.pv').forEach(section=>{
   const video=section.querySelector('video');
   const source=video?video.querySelector('source'):null;
@@ -1491,27 +1512,29 @@ document.querySelectorAll('.pv').forEach(section=>{
   const url=source.getAttribute('src');
   if(!url)return;
 
-  // Quick check if file exists (HEAD request, no download)
+  const show=()=>{section.style.display='block';};
+  // If the browser reports the file failed to load, the card is removed / never shown
+  source.addEventListener('error',()=>{section.style.display='none';},{once:true});
+  // When metadata arrives, swap the play button placeholder for the real player
+  video.addEventListener('loadedmetadata',()=>{
+    const ph=section.querySelector('.vp');
+    if(ph)ph.style.display='none';
+  },{once:true});
+
+  // Fallback when the quick check cannot decide: let the video element itself
+  // prove the file exists (metadata loaded → show; load error → stay hidden)
+  const decideByLoading=()=>{
+    if(video.readyState>=1){show();return;}
+    video.addEventListener('loadedmetadata',show,{once:true});
+    try{video.load();}catch(e){}
+  };
+
+  // Instant existence check
   fetch(url,{method:'HEAD'}).then(r=>{
-    if(r.ok){
-      // File exists — show section immediately with play button
-      section.style.display='block';
-      // When video metadata loads, replace play button with actual player
-      video.addEventListener('loadedmetadata',()=>{
-        const ph=section.querySelector('.vp');
-        if(ph)ph.style.display='none';
-      },{once:true});
-    }
-    // If not ok (404) — section stays hidden, nothing shows
-  }).catch(()=>{
-    // fetch failed (local file://) — try loading video directly
-    video.addEventListener('loadedmetadata',()=>{
-      section.style.display='block';
-      const ph=section.querySelector('.vp');
-      if(ph)ph.style.display='none';
-    },{once:true});
-    source.addEventListener('error',()=>{},{once:true});
-  });
+    if(r.ok){show();}                        // file exists — show card + play button now
+    else if(r.status===404||r.status===410){} // no video — card stays hidden
+    else{decideByLoading();}                 // ambiguous status — let the video decide
+  }).catch(decideByLoading);                 // offline or file:// — let the video decide
 });
 
 // ═══ REVEAL ANIMATION ═══
